@@ -1,0 +1,15 @@
+{
+  "ticker": "2308.TW",
+  "name": "Delta Electronics, Inc.",
+  "exchange": "TAI",
+  "currency": "TWD",
+  "price": 2075.0,
+  "previousClose": 2155.0,
+  "dayChangePct": -3.712297,
+  "marketCap": 5389902413824,
+  "fiftyTwoWeekHigh": 2370.0,
+  "fiftyTwoWeekLow": 361.0,
+  "trailingPE": 90.09987,
+  "fetchedAt": "2026-05-17T19:45:26+00:00",
+  "source": "yfinance.info"
+}

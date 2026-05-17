@@ -1,0 +1,28 @@
+{
+  "ticker": "PWR",
+  "cik": "1050915",
+  "entityName": "QUANTA SERVICES, INC.",
+  "sicDescription": "Electrical Work",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-30",
+    "periodOfReport": null,
+    "accessionNumber": "0001050915-26-000016",
+    "primaryDocument": "pwr-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1050915/000105091526000016/pwr-20260331.htm",
+    "entityName": "QUANTA SERVICES, INC.",
+    "sicDescription": "Electrical Work"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 23672795000,
+    "currency": "USD",
+    "periodEnd": "2024-12-31",
+    "fy": null,
+    "fp": null,
+    "form": "8-K",
+    "filed": "2025-02-20"
+  },
+  "fetchedAt": "2026-05-17T19:46:42+00:00",
+  "source": "sec.gov/edgar"
+}

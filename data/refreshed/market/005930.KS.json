@@ -1,0 +1,15 @@
+{
+  "ticker": "005930.KS",
+  "name": "Samsung Electronics Co., Ltd.",
+  "exchange": "KSC",
+  "currency": "KRW",
+  "price": 270500.0,
+  "previousClose": 296000.0,
+  "dayChangePct": -8.614865,
+  "marketCap": 1776255397527552,
+  "fiftyTwoWeekHigh": 299500.0,
+  "fiftyTwoWeekLow": 0.0,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "source": "yfinance.info"
+}

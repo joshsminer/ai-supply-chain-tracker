@@ -1,0 +1,73 @@
+{
+  "slug": "large-power-transformers",
+  "name": "Large power transformers (LPT)",
+  "shortName": "Large transformers",
+  "layerId": "power-equipment",
+  "severity": "critical",
+  "severityNote": "Lead times 4-5 years; structural shortage",
+  "description": "Large power transformers (≥100 MVA) step voltage between transmission and datacenter substations. Lead times have stretched from ~50 weeks (2020) to 200+ weeks (2026) as datacenter demand collides with grid-replacement cycles and a global manufacturing base that did not anticipate the load.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "LPT lead time", "value": "~210 wk", "sub": "from 50 wk (2020)", "direction": "up-bad" },
+    { "label": "Top-4 OEM share (global)", "value": "~70%", "sub": "Hitachi/Siemens/GE/Mitsubishi", "direction": "neutral" },
+    { "label": "US LPT import share", "value": "~80%", "sub": "Domestic capacity remains thin", "direction": "up-bad" },
+    { "label": "Grain-oriented electrical steel", "value": "~5×", "sub": "Spot pricing vs 2020", "direction": "up-bad" }
+  ],
+  "stackPosition": "Grain-oriented electrical steel (Nippon Steel, POSCO, AK Steel/Cliffs) → core lamination → coil winding → vacuum impregnation → testing → ship by special transport → datacenter substation install. The OEM stage is the visible chokepoint but the upstream constraint is GOES (grain-oriented electrical steel) plus skilled coil-winding labor.",
+  "supplyStructure": [
+    { "name": "Hitachi Energy", "location": "Switzerland HQ · global", "sharePct": 22, "note": "Spun from ABB, part of Hitachi group", "ticker": "6501.T" },
+    { "name": "Siemens Energy", "location": "Germany · Nuremberg + global", "sharePct": 18, "ticker": "ENR.DE" },
+    { "name": "GE Vernova", "location": "US · Pittsburgh, Charleroi", "sharePct": 16, "note": "Onshoring beneficiary; Charleroi capex announced", "ticker": "GEV" },
+    { "name": "Mitsubishi Electric", "location": "Japan · Ako + global", "sharePct": 14, "ticker": "6503.T" },
+    { "name": "HD Hyundai Electric", "location": "Korea · Ulsan", "sharePct": 8, "ticker": "267260.KS" },
+    { "name": "Other (Toshiba/CG/Hyosung/SGB)", "location": "Various", "sharePct": 22, "note": "Fragmented long tail" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 48, "demandIndex": 78, "status": "critical" },
+    { "year": "2025", "supplyIndex": 55, "demandIndex": 88, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 62, "demandIndex": 95, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 72, "demandIndex": 98, "status": "critical" },
+    { "year": "2028E", "supplyIndex": 84, "demandIndex": 96, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "GE Vernova Electrification segment book-to-bill and orders backlog", "source": "GEV 10-Q", "url": "https://www.gevernova.com/investors" },
+    { "cadence": "quarterly", "name": "Siemens Energy Grid Technologies orders and lead-time commentary", "source": "ENR.DE earnings" },
+    { "cadence": "quarterly", "name": "Hitachi Energy and Mitsubishi Electric power systems segment results", "source": "Hitachi, MELCO IR" },
+    { "cadence": "quarterly", "name": "EEI / utility capex guidance and transformer procurement commentary", "source": "Utility 10-Q + EEI member surveys" },
+    { "cadence": "event", "name": "DOE LPT working group announcements / Defense Production Act actions", "source": "DOE press" },
+    { "cadence": "annual", "name": "Wood Mackenzie / S&P grid hardware market reports", "source": "WoodMac, S&P Global (paid)" }
+  ],
+  "companies": [
+    { "name": "GE Vernova", "tier": "public-primary", "note": "US-listed pure play on grid hardware; Electrification segment is the engine", "ticker": "GEV" },
+    { "name": "Siemens Energy", "tier": "public-primary", "note": "Grid Technologies + gas turbines; combined power-equipment exposure", "ticker": "ENR.DE" },
+    { "name": "Hitachi", "tier": "public-primary", "note": "Hitachi Energy subsidiary is the global LPT volume leader", "ticker": "6501.T" },
+    { "name": "Mitsubishi Electric", "tier": "public-enabler", "note": "Japan + US (TN) LPT capacity; growing US footprint", "ticker": "6503.T" },
+    { "name": "HD Hyundai Electric", "tier": "public-enabler", "note": "Korea LPT exporter; US tariff exposure", "ticker": "267260.KS" },
+    { "name": "Eaton", "tier": "public-enabler", "note": "Adjacent electrical equipment; pad-mount / medium-voltage exposure", "ticker": "ETN" },
+    { "name": "Prolec GE", "tier": "private", "note": "JV between GE Vernova and Mexican firm Xignux; major US-market transformer supplier", "url": "https://prolecge.com" },
+    { "name": "ERMCO", "tier": "private", "note": "US-based pad-mount + distribution transformer specialist", "url": "https://www.ermco.com" }
+  ],
+  "insight": "The transformer shortage is the most under-priced bottleneck in the AI capex chain because it is upstream of every announced datacenter MW. Hyperscalers can fund any GPU cost, but they cannot conjure a 345 kV transformer in under three years. The investable trade is the OEM long: GE Vernova as the US-listed pure play, Hitachi for those willing to take Japan exposure, Siemens Energy for European listing. The asymmetric kicker is grain-oriented electrical steel — a tiny supply chain (5-6 producers globally) where pricing power may exceed the transformer OEMs themselves. Watch for second-tier names (Toshiba Energy Systems, Hyosung Heavy) gaining qualification at US utilities as the majors run out of slots.",
+  "debates": [
+    {
+      "question": "Do US LPT lead times shorten below 150 weeks by end of 2027?",
+      "currentBelief": "Modest improvement likely as GEV Charleroi and Hitachi US expansion ramp; unlikely to drop below 150 wk",
+      "probability": 0.30,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does a US LPT supply Defense Production Act invocation occur by end of 2026?",
+      "currentBelief": "Discussed in working groups; political appetite real but legal mechanism unclear",
+      "probability": 0.35,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does grain-oriented electrical steel become the binding constraint in 2027?",
+      "currentBelief": "Likely — GOES capacity additions trail transformer OEM capacity adds; spot pricing already signaling tightness",
+      "probability": 0.60,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": ["interconnection-queues"]
+}

@@ -1,0 +1,1162 @@
+{
+  "reporter": "Korea",
+  "hsCode": "854232",
+  "hsLabel": "Electronic ICs - Memories",
+  "flow": "Exports",
+  "byPeriod": [
+    {
+      "period": "202312",
+      "totalUsd": 5314815425,
+      "byPartner": [
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1883110445,
+          "netWeightKg": 131216
+        },
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 1739498904,
+          "netWeightKg": 129790
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 776719467,
+          "netWeightKg": 49776.3
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 378813197,
+          "netWeightKg": 26085.3
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 131652134,
+          "netWeightKg": 3368.7
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 85125125,
+          "netWeightKg": 1968.89
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 51468653,
+          "netWeightKg": 5756.92
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 46704843,
+          "netWeightKg": 3033.68
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 40573515,
+          "netWeightKg": 2900.04
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 39267495,
+          "netWeightKg": 2061.85
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 38879741,
+          "netWeightKg": 4881.57
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 34225460,
+          "netWeightKg": 1270.56
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 16160709,
+          "netWeightKg": 1352.59
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 14368308,
+          "netWeightKg": 2071.59
+        },
+        {
+          "partner": "United Kingdom",
+          "partnerCode": 826,
+          "valueUsd": 7763729,
+          "netWeightKg": 373.84
+        }
+      ]
+    },
+    {
+      "period": "202401",
+      "totalUsd": 4537021212,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 1911468861,
+          "netWeightKg": 107557
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1502537868,
+          "netWeightKg": 73332.3
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 472346141,
+          "netWeightKg": 43896.6
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 357725673,
+          "netWeightKg": 21590.5
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 73869455,
+          "netWeightKg": 7343.1
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 57459352,
+          "netWeightKg": 2605.78
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 47410373,
+          "netWeightKg": 3932.22
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 26034621,
+          "netWeightKg": 1918.74
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 20713481,
+          "netWeightKg": 1517.57
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 9336652,
+          "netWeightKg": 1548.85
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 9107362,
+          "netWeightKg": 2498.93
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 7307398,
+          "netWeightKg": 2530.26
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 6617659,
+          "netWeightKg": 1195.23
+        },
+        {
+          "partner": "T\u00fcrkiye",
+          "partnerCode": 792,
+          "valueUsd": 6550103,
+          "netWeightKg": 352.649
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 6127293,
+          "netWeightKg": 534.693
+        }
+      ]
+    },
+    {
+      "period": "202402",
+      "totalUsd": 5176639915,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2190679147,
+          "netWeightKg": 102844
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1703323702,
+          "netWeightKg": 87207.8
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 499987440,
+          "netWeightKg": 32730.8
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 267940210,
+          "netWeightKg": 19772.7
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 132477074,
+          "netWeightKg": 1173.42
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 119503513,
+          "netWeightKg": 3032.59
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 68800838,
+          "netWeightKg": 2773.84
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 60164145,
+          "netWeightKg": 4939.74
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 29854582,
+          "netWeightKg": 2229.82
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 19498808,
+          "netWeightKg": 1687.67
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 16809896,
+          "netWeightKg": 1819.41
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 15789891,
+          "netWeightKg": 3648.05
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 13325868,
+          "netWeightKg": 2324.38
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 7760279,
+          "netWeightKg": 500.548
+        },
+        {
+          "partner": "T\u00fcrkiye",
+          "partnerCode": 792,
+          "valueUsd": 7096455,
+          "netWeightKg": 401.389
+        }
+      ]
+    },
+    {
+      "period": "202403",
+      "totalUsd": 5765592551,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2123363102,
+          "netWeightKg": 100374
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 2081421087,
+          "netWeightKg": 84595.6
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 655752018,
+          "netWeightKg": 37375.5
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 458752660,
+          "netWeightKg": 23722.9
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 124944545,
+          "netWeightKg": 3018.49
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 59884548,
+          "netWeightKg": 3285.64
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 53167958,
+          "netWeightKg": 3062.44
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 39850333,
+          "netWeightKg": 2109.6
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 28207115,
+          "netWeightKg": 1660.19
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 26377868,
+          "netWeightKg": 1422.13
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 22758850,
+          "netWeightKg": 1420.24
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 19958378,
+          "netWeightKg": 2139.66
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 19021648,
+          "netWeightKg": 1054.96
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 13338445,
+          "netWeightKg": 2917.26
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 8149503,
+          "netWeightKg": 1172.34
+        }
+      ]
+    },
+    {
+      "period": "202404",
+      "totalUsd": 4896711483,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 1945727378,
+          "netWeightKg": 92693.8
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1472465673,
+          "netWeightKg": 72325.9
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 585572978,
+          "netWeightKg": 24657.1
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 472918738,
+          "netWeightKg": 34348.3
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 97136407,
+          "netWeightKg": 6577.96
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 80134832,
+          "netWeightKg": 2777.37
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 67457502,
+          "netWeightKg": 3520.06
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 42509282,
+          "netWeightKg": 2145.83
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 33012375,
+          "netWeightKg": 3875.84
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 21931812,
+          "netWeightKg": 840.562
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 13795732,
+          "netWeightKg": 841.009
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 12679042,
+          "netWeightKg": 1914.66
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 10549233,
+          "netWeightKg": 1222.34
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 9018688,
+          "netWeightKg": 654.229
+        },
+        {
+          "partner": "M49 818",
+          "partnerCode": 818,
+          "valueUsd": 5179803,
+          "netWeightKg": 422.394
+        }
+      ]
+    },
+    {
+      "period": "202405",
+      "totalUsd": 5714466095,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2403952931,
+          "netWeightKg": 110564
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1387489720,
+          "netWeightKg": 57961.1
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 913864900,
+          "netWeightKg": 24461.8
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 547696522,
+          "netWeightKg": 33995.8
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 137786510,
+          "netWeightKg": 8455.63
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 90802963,
+          "netWeightKg": 3931.74
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 41851183,
+          "netWeightKg": 2000.7
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 41005162,
+          "netWeightKg": 2768.11
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 27574353,
+          "netWeightKg": 2431.92
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 22441904,
+          "netWeightKg": 2873.62
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 18985057,
+          "netWeightKg": 1365.07
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 17099703,
+          "netWeightKg": 2589.92
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 12798126,
+          "netWeightKg": 1021.47
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 8245717,
+          "netWeightKg": 467.2
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 6541545,
+          "netWeightKg": 589.159
+        }
+      ]
+    },
+    {
+      "period": "202406",
+      "totalUsd": 7055050042,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2528658960,
+          "netWeightKg": 129418
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1852785663,
+          "netWeightKg": 83518
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1195098472,
+          "netWeightKg": 27210.4
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 896785897,
+          "netWeightKg": 53112.1
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 141206402,
+          "netWeightKg": 4307.9
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 89141011,
+          "netWeightKg": 5813.47
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 68828072,
+          "netWeightKg": 3327.46
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 61125249,
+          "netWeightKg": 2693.48
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 54913074,
+          "netWeightKg": 3249.57
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 37712731,
+          "netWeightKg": 2562.94
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 33447595,
+          "netWeightKg": 1756.29
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 25101363,
+          "netWeightKg": 1337.97
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 18770274,
+          "netWeightKg": 714.766
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 16387809,
+          "netWeightKg": 2435.15
+        },
+        {
+          "partner": "Netherlands",
+          "partnerCode": 528,
+          "valueUsd": 6019504,
+          "netWeightKg": 379.589
+        }
+      ]
+    },
+    {
+      "period": "202407",
+      "totalUsd": 5804491763,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2320921664,
+          "netWeightKg": 95790.1
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1319525307,
+          "netWeightKg": 21385.3
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1176975403,
+          "netWeightKg": 71226.8
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 594300362,
+          "netWeightKg": 40396.8
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 93416057,
+          "netWeightKg": 5138.77
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 81363917,
+          "netWeightKg": 3612.59
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 39356140,
+          "netWeightKg": 2778.22
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 28074144,
+          "netWeightKg": 961.012
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 22888829,
+          "netWeightKg": 1373.99
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 19187866,
+          "netWeightKg": 1461.45
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 18822645,
+          "netWeightKg": 1682.03
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 18349739,
+          "netWeightKg": 880.521
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 15785328,
+          "netWeightKg": 1134.02
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 10415401,
+          "netWeightKg": 447.996
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 8259109,
+          "netWeightKg": 913.654
+        }
+      ]
+    },
+    {
+      "period": "202408",
+      "totalUsd": 6034933835,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 1997054940,
+          "netWeightKg": 80735.2
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1600617154,
+          "netWeightKg": 23593.6
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1258609443,
+          "netWeightKg": 81164.3
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 599389948,
+          "netWeightKg": 36078.2
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 148024287,
+          "netWeightKg": 6978.5
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 129325169,
+          "netWeightKg": 4713.84
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 65205698,
+          "netWeightKg": 1624.51
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 61488050,
+          "netWeightKg": 3051.77
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 38073763,
+          "netWeightKg": 1821.26
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 26498488,
+          "netWeightKg": 817.924
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 20759790,
+          "netWeightKg": 2539.16
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 16972170,
+          "netWeightKg": 1705.94
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 15090420,
+          "netWeightKg": 819.97
+        },
+        {
+          "partner": "M49 818",
+          "partnerCode": 818,
+          "valueUsd": 9343824,
+          "netWeightKg": 651.769
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 8235087,
+          "netWeightKg": 761.095
+        }
+      ]
+    },
+    {
+      "period": "202409",
+      "totalUsd": 6926348924,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2230456350,
+          "netWeightKg": 98977.9
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1788438507,
+          "netWeightKg": 29089
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1663230204,
+          "netWeightKg": 94878
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 698290997,
+          "netWeightKg": 38348.5
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 120022430,
+          "netWeightKg": 5979.27
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 79417675,
+          "netWeightKg": 3032.99
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 72076699,
+          "netWeightKg": 2232.22
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 59737434,
+          "netWeightKg": 2512.79
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 55777804,
+          "netWeightKg": 5201.18
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 43929615,
+          "netWeightKg": 3073.51
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 33813551,
+          "netWeightKg": 1467.24
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 31259362,
+          "netWeightKg": 1449.68
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 9293118,
+          "netWeightKg": 648.875
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 9145285,
+          "netWeightKg": 556.435
+        },
+        {
+          "partner": "M49 620",
+          "partnerCode": 620,
+          "valueUsd": 7553890,
+          "netWeightKg": 230.137
+        }
+      ]
+    },
+    {
+      "period": "202410",
+      "totalUsd": 6220656370,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2017122323,
+          "netWeightKg": 81602.5
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1954206550,
+          "netWeightKg": 28080.6
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 986707405,
+          "netWeightKg": 47943.1
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 604133947,
+          "netWeightKg": 32434.2
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 305763795,
+          "netWeightKg": 2320.05
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 100092839,
+          "netWeightKg": 2713.35
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 82916830,
+          "netWeightKg": 3620.52
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 44142800,
+          "netWeightKg": 2387.48
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 29763585,
+          "netWeightKg": 1789.3
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 20447178,
+          "netWeightKg": 1308.34
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 15228866,
+          "netWeightKg": 2774.78
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 13493926,
+          "netWeightKg": 847.012
+        },
+        {
+          "partner": "Mexico",
+          "partnerCode": 484,
+          "valueUsd": 9830518,
+          "netWeightKg": 770.979
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 9248801,
+          "netWeightKg": 766.615
+        },
+        {
+          "partner": "T\u00fcrkiye",
+          "partnerCode": 792,
+          "valueUsd": 5417124,
+          "netWeightKg": 270.997
+        }
+      ]
+    },
+    {
+      "period": "202411",
+      "totalUsd": 6443621669,
+      "byPartner": [
+        {
+          "partner": "China",
+          "partnerCode": 156,
+          "valueUsd": 2061000511,
+          "netWeightKg": 83259.6
+        },
+        {
+          "partner": "Other Asia (incl. Taiwan)",
+          "partnerCode": 490,
+          "valueUsd": 1836649833,
+          "netWeightKg": 23551.9
+        },
+        {
+          "partner": "Hong Kong SAR",
+          "partnerCode": 344,
+          "valueUsd": 1276100643,
+          "netWeightKg": 84859.5
+        },
+        {
+          "partner": "Vietnam",
+          "partnerCode": 704,
+          "valueUsd": 744609174,
+          "netWeightKg": 42219.3
+        },
+        {
+          "partner": "Malaysia",
+          "partnerCode": 458,
+          "valueUsd": 123679026,
+          "netWeightKg": 2047.82
+        },
+        {
+          "partner": "M49 699",
+          "partnerCode": 699,
+          "valueUsd": 118852458,
+          "netWeightKg": 4661.15
+        },
+        {
+          "partner": "United States",
+          "partnerCode": 842,
+          "valueUsd": 63654417,
+          "netWeightKg": 837.642
+        },
+        {
+          "partner": "Philippines",
+          "partnerCode": 608,
+          "valueUsd": 53594570,
+          "netWeightKg": 2387.45
+        },
+        {
+          "partner": "Japan",
+          "partnerCode": 392,
+          "valueUsd": 37933660,
+          "netWeightKg": 1934.86
+        },
+        {
+          "partner": "M49 76",
+          "partnerCode": 76,
+          "valueUsd": 33907569,
+          "netWeightKg": 2346.02
+        },
+        {
+          "partner": "Indonesia",
+          "partnerCode": 360,
+          "valueUsd": 19869712,
+          "netWeightKg": 1158.01
+        },
+        {
+          "partner": "Germany",
+          "partnerCode": 276,
+          "valueUsd": 18852116,
+          "netWeightKg": 814.867
+        },
+        {
+          "partner": "Thailand",
+          "partnerCode": 764,
+          "valueUsd": 15082272,
+          "netWeightKg": 1276.11
+        },
+        {
+          "partner": "Singapore",
+          "partnerCode": 702,
+          "valueUsd": 9247003,
+          "netWeightKg": 3595.68
+        },
+        {
+          "partner": "T\u00fcrkiye",
+          "partnerCode": 792,
+          "valueUsd": 6921860,
+          "netWeightKg": 266.684
+        }
+      ]
+    }
+  ],
+  "fetchedAt": "2026-05-17T20:14:07+00:00",
+  "source": "UN Comtrade Plus public preview"
+}

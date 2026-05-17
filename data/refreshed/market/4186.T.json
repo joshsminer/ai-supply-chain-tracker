@@ -1,0 +1,15 @@
+{
+  "ticker": "4186.T",
+  "name": "Tokyo Ohka Kogyo Co., Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 10760.0,
+  "previousClose": 11545.0,
+  "dayChangePct": -6.7994804,
+  "marketCap": 1290129506304,
+  "fiftyTwoWeekHigh": 12925.0,
+  "fiftyTwoWeekLow": 3405.0,
+  "trailingPE": 38.610596,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

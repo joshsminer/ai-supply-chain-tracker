@@ -1,0 +1,60 @@
+{
+  "slug": "high-na-euv",
+  "name": "High-NA EUV lithography",
+  "shortName": "High-NA EUV",
+  "layerId": "wafer-fab-equipment",
+  "severity": "tight",
+  "severityNote": "ASML monopoly; customer ramp is the gate",
+  "description": "ASML's Twinscan EXE high-numerical-aperture EUV scanners are the lithography path beyond the A14 / Intel-14A node. Each tool costs ~$380M, ships ~10 units per year initially, and represents the only viable path to sub-A10 logic for TSMC, Samsung, and Intel. The constraint is not capacity at ASML so much as customer qualification pace and node-economics.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "ASML High-NA backlog", "value": "~30 tools", "sub": "Through 2027 delivery", "direction": "up-good" },
+    { "label": "ASP per tool", "value": "~$380M", "sub": "vs $200M low-NA EUV", "direction": "up-good" },
+    { "label": "Annual ship rate '26E", "value": "~10 units", "sub": "Ramping to ~20 by 2028", "direction": "up-good" },
+    { "label": "First HVM node", "value": "Intel 14A '26", "sub": "TSMC A14/A10 follow", "direction": "neutral" }
+  ],
+  "stackPosition": "EUV light source (Cymer / ASML, CO2 laser into tin droplets) → optics column (Zeiss, multilayer Mo/Si mirrors) → reticle stage + projection optics (0.55 NA for High-NA, up from 0.33) → wafer stage → resist (TOK, JSR, Shin-Etsu) → photomask (Toppan, DNP). ASML integrates the full scanner; the binding upstream constraint is Zeiss optics for the 0.55 NA mirror set.",
+  "supplyStructure": [
+    { "name": "ASML (Twinscan EXE)", "location": "Netherlands · Veldhoven", "sharePct": 100, "ticker": "ASML" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 30, "demandIndex": 35, "status": "tight" },
+    { "year": "2025", "supplyIndex": 55, "demandIndex": 62, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 75, "demandIndex": 78, "status": "balanced" },
+    { "year": "2027E", "supplyIndex": 95, "demandIndex": 92, "status": "balanced" },
+    { "year": "2028E", "supplyIndex": 110, "demandIndex": 105, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "ASML systems backlog, EUV bookings, and High-NA shipment guidance", "source": "ASML earnings + investor day" },
+    { "cadence": "quarterly", "name": "TSMC, Samsung, Intel A14/A10/14A capex and qualification commentary", "source": "TSM, 005930.KS, INTC earnings" },
+    { "cadence": "event", "name": "Zeiss SMT optics deliveries and capacity announcements", "source": "Zeiss group reporting (private subsidiary)" },
+    { "cadence": "event", "name": "SPIE Advanced Lithography conference (Feb) — High-NA results disclosures", "source": "spie.org/al" },
+    { "cadence": "annual", "name": "Gartner / IBS WFE market reports", "source": "IBS, Gartner (paid)" }
+  ],
+  "companies": [
+    { "name": "ASML", "tier": "public-primary", "note": "Monopoly on EUV; High-NA pricing and mix is the upside driver", "ticker": "ASML" },
+    { "name": "Tokyo Electron (TEL)", "tier": "public-enabler", "note": "Track tools (coater/developer) co-developed with ASML for High-NA", "ticker": "8035.T" },
+    { "name": "Applied Materials", "tier": "public-enabler", "note": "Deposition + etch around EUV; ALD process tools for High-NA layers", "ticker": "AMAT" },
+    { "name": "Lam Research", "tier": "public-enabler", "note": "Etch + clean for EUV-patterned features", "ticker": "LRCX" },
+    { "name": "Shin-Etsu Chemical", "tier": "public-materials", "note": "EUV photoresist + photomask blanks; JSR (4185.T) is now JIC-private", "ticker": "4063.T" },
+    { "name": "Tokyo Ohka Kogyo (TOK)", "tier": "public-materials", "note": "EUV photoresist; smaller share than Shin-Etsu but pure play", "ticker": "4186.T" },
+    { "name": "Carl Zeiss SMT", "tier": "private", "note": "0.55 NA optics — the actual upstream constraint" }
+  ],
+  "insight": "High-NA EUV is a tight market masquerading as a critical one. ASML's monopoly is real, but capacity is now stepping up faster than node-adoption requires — Intel 14A, TSMC A14, Samsung 2nm-gen are not all ramping in lockstep. The investable story is the ASP and mix story (more dollars per tool, longer service revenue), not unit volume. The upstream wedge is Zeiss optics, the only true single-source constraint in the chain — but it's not publicly investable. Watch for the 'second tool' decision at TSMC: when they commit to using High-NA for the active-layer print at A10 (not just patterning experiments), the ASP/unit ratio re-rates.",
+  "debates": [
+    {
+      "question": "Does TSMC commit High-NA EUV for active-layer A10 patterning by end of 2026?",
+      "currentBelief": "Likely deferred to A8 — TSMC's preference for multi-patterning low-NA is well established",
+      "probability": 0.35,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does Intel 14A reach high-volume manufacturing on schedule using High-NA?",
+      "currentBelief": "On track for 2026 ramp; volume yield is the open question",
+      "probability": 0.55,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": []
+}

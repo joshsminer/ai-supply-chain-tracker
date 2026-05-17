@@ -1,0 +1,15 @@
+{
+  "ticker": "LIN",
+  "name": "Linde plc",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 506.11,
+  "previousClose": 511.65,
+  "dayChangePct": -1.0827731,
+  "marketCap": 233998581760,
+  "fiftyTwoWeekHigh": 521.28,
+  "fiftyTwoWeekLow": 387.78,
+  "trailingPE": 33.56167,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

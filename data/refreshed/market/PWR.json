@@ -1,0 +1,15 @@
+{
+  "ticker": "PWR",
+  "name": "Quanta Services, Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 769.99,
+  "previousClose": 780.08,
+  "dayChangePct": -1.29346,
+  "marketCap": 115544809472,
+  "fiftyTwoWeekHigh": 788.75,
+  "fiftyTwoWeekLow": 320.56,
+  "trailingPE": 105.333786,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

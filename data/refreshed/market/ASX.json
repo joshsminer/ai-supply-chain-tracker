@@ -1,0 +1,15 @@
+{
+  "ticker": "ASX",
+  "name": "ASE Technology Holding Co., Ltd.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 33.81,
+  "previousClose": 35.25,
+  "dayChangePct": -4.0851,
+  "marketCap": 74177314816,
+  "fiftyTwoWeekHigh": 35.71,
+  "fiftyTwoWeekLow": 9.23,
+  "trailingPE": 52.01539,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

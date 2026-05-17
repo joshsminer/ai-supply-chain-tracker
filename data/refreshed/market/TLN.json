@@ -1,0 +1,15 @@
+{
+  "ticker": "TLN",
+  "name": "Talen Energy Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 334.24,
+  "previousClose": 352.88,
+  "dayChangePct": -5.2822533,
+  "marketCap": 15273099264,
+  "fiftyTwoWeekHigh": 451.28,
+  "fiftyTwoWeekLow": 232.34,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

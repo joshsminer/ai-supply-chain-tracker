@@ -1,0 +1,15 @@
+{
+  "ticker": "LYC.AX",
+  "name": "Lynas Rare Earths Limited",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "price": 17.95,
+  "previousClose": 17.95,
+  "dayChangePct": 0.0,
+  "marketCap": 18066728960,
+  "fiftyTwoWeekHigh": 22.37,
+  "fiftyTwoWeekLow": 7.495,
+  "trailingPE": 224.37502,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

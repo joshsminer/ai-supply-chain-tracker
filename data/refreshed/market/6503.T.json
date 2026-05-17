@@ -1,0 +1,15 @@
+{
+  "ticker": "6503.T",
+  "name": "Mitsubishi Electric Corporation",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 6416.0,
+  "previousClose": 6436.0,
+  "dayChangePct": -0.31075203,
+  "marketCap": 13129932079104,
+  "fiftyTwoWeekHigh": 6667.0,
+  "fiftyTwoWeekLow": 2843.5,
+  "trailingPE": 32.36318,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

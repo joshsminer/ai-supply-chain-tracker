@@ -1,0 +1,61 @@
+{
+  "slug": "abf-substrates",
+  "name": "ABF substrates (high-layer-count)",
+  "shortName": "ABF substrates",
+  "layerId": "substrates-wafers",
+  "severity": "tight",
+  "severityNote": "Easing from '22-'24 critical, AI SKUs still constrained",
+  "description": "Ajinomoto Build-up Film substrates with 14–20+ layer counts are the package-level interposer between BGA and PCB for every AI accelerator, CPU, and FPGA. The high-layer-count, large-body SKUs used by Rubin and MI400-class parts remain capacity-constrained even as mainstream substrate supply has eased.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "Top-3 maker share", "value": "~75%", "sub": "Ibiden + Unimicron + Shinko", "direction": "neutral" },
+    { "label": "AI-SKU lead time", "value": "~28 wk", "sub": "from 50+ wk peak ('22)", "direction": "down-good" },
+    { "label": "Substrate area / accelerator", "value": "~2.4×", "sub": "Rubin vs Hopper", "direction": "up-bad" },
+    { "label": "ABF film unit price", "value": "+8%", "sub": "Ajinomoto YoY", "direction": "up-good" }
+  ],
+  "stackPosition": "ABF film (Ajinomoto monopoly) → laminated multi-layer build-up at Ibiden/Unimicron/Shinko → drill, plate, pattern, repeat for 14–22 layers → outer-layer routing → singulation → ship to TSMC for CoWoS attach OR direct to BGA package. The AI-class SKUs (large body, ultra-high layer count) come from a small subset of lines at the top-3 makers; mainstream PC/server substrates do not consume the same equipment.",
+  "supplyStructure": [
+    { "name": "Ibiden", "location": "Japan · Ogaki / Kawashima", "sharePct": 30, "ticker": "4062.T" },
+    { "name": "Unimicron", "location": "Taiwan · Hsinchu / Suzhou", "sharePct": 26, "ticker": "3037.TW" },
+    { "name": "Shinko Electric", "location": "Japan · Nagano", "sharePct": 19, "note": "Taken private by JIC consortium (2024); 6967.T delisted" },
+    { "name": "Kinsus / Nan Ya PCB / others", "location": "Taiwan", "sharePct": 25, "note": "Mainstream substrate; limited AI-SKU qualification" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 72, "demandIndex": 78, "status": "tight" },
+    { "year": "2025", "supplyIndex": 82, "demandIndex": 88, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 90, "demandIndex": 94, "status": "tight" },
+    { "year": "2027E", "supplyIndex": 100, "demandIndex": 96, "status": "balanced" },
+    { "year": "2028E", "supplyIndex": 110, "demandIndex": 98, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "Ibiden IC package substrate revenue and AI-SKU mix commentary", "source": "Ibiden IR · JP filings" },
+    { "cadence": "quarterly", "name": "Unimicron / Kinsus monthly revenue series", "source": "TWSE monthly disclosures" },
+    { "cadence": "quarterly", "name": "Ajinomoto electronic materials division ABF film volume", "source": "Ajinomoto IR" },
+    { "cadence": "event", "name": "Shinko / JIC takeover close + capex re-direction", "source": "JIC, METI press" },
+    { "cadence": "annual", "name": "Prismark substrate market outlook", "source": "Prismark (paid)" }
+  ],
+  "companies": [
+    { "name": "Ibiden", "tier": "public-primary", "note": "Highest AI-SKU concentration; Ogaki capacity is the constraint", "ticker": "4062.T" },
+    { "name": "Unimicron", "tier": "public-primary", "note": "Taiwan-side leader; tighter coupling to TSMC packaging", "ticker": "3037.TW" },
+    { "name": "Shinko Electric", "tier": "private", "note": "Taken private by JIC consortium (2024); capex direction under new ownership is the key watch item" },
+    { "name": "Ajinomoto", "tier": "public-materials", "note": "ABF film monopoly; pricing power on each new node", "ticker": "2802.T" },
+    { "name": "Kinsus Interconnect", "tier": "public-enabler", "note": "Second-source for mainstream substrates", "ticker": "3189.TW" }
+  ],
+  "insight": "The 2022 ABF shortage created a forest of new capacity that's now coming online into a softer mainstream market — but the AI-SKU sub-market behaves like a separate good. Ibiden's incremental capacity is structurally captured by NVIDIA/AMD demand, while mainstream PC/server substrate pricing decays. The investable wedge is Ibiden specifically, not the basket: it is the only top-3 maker whose AI-SKU mix is growing into existing line capacity rather than via greenfield. The Shinko transition is the wild card — capex re-direction by the new owner could either tighten or loosen the niche.",
+  "debates": [
+    {
+      "question": "Does Ibiden's AI-SKU revenue mix exceed 35% by end of 2027?",
+      "currentBelief": "Likely on current trajectory — Ogaki capacity allocation skews more AI each quarter",
+      "probability": 0.65,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does mainstream ABF substrate ASPs roll over by 2H 2026 as new capacity ramps?",
+      "currentBelief": "Yes for PC/standard server; AI-class SKUs remain firm",
+      "probability": 0.70,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": ["cowos"]
+}

@@ -1,0 +1,15 @@
+{
+  "ticker": "AMKR",
+  "name": "Amkor Technology, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 70.35,
+  "previousClose": 72.09,
+  "dayChangePct": -2.4136467,
+  "marketCap": 17437831168,
+  "fiftyTwoWeekHigh": 79.23,
+  "fiftyTwoWeekLow": 17.79,
+  "trailingPE": 40.431034,
+  "fetchedAt": "2026-05-17T19:45:18+00:00",
+  "source": "yfinance.info"
+}

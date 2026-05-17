@@ -1,0 +1,69 @@
+{
+  "slug": "leading-edge-logic",
+  "name": "Leading-edge logic nodes (TSMC N3 → A14)",
+  "shortName": "Leading-edge nodes",
+  "layerId": "leading-edge-logic",
+  "severity": "critical",
+  "severityNote": "TSMC single-source for AI; Samsung + Intel not at qualification",
+  "description": "TSMC's N3P / N3X / N2 / A16 / A14 family is the only volume foundry path for the most advanced AI accelerator silicon. Samsung's GAA 2nm is technically available but not customer-qualified at NVIDIA / AMD volumes; Intel 18A is the closest second-source watch item but pre-HVM. The constraint is single-source qualification, not capacity in absolute terms.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "TSMC AI-node mix '26E", "value": "~60%", "sub": "Of total wafer revenue", "direction": "up-good" },
+    { "label": "Top-1 share (leading-edge)", "value": "~95%", "sub": "TSMC dominance", "direction": "neutral" },
+    { "label": "N2 HVM start", "value": "2H 2025", "sub": "Ramping into '26-'27", "direction": "neutral" },
+    { "label": "Wafer ASP (N3/N2)", "value": "+15-20%", "sub": "Per-node escalation", "direction": "up-good" }
+  ],
+  "stackPosition": "Mask design → tape-out (Synopsys/Cadence tools) → photomask (Toppan/DNP/Hoya) → fab (TSMC F18/F18A/F22, Samsung S5, Intel D1X/Fab 52) → wafer sort → dicing → bin → ship to packaging. The fab stage is the visible chokepoint but the binding upstream constraint is mask qualification + foundry process release schedules, not silicon wafer supply per se.",
+  "supplyStructure": [
+    { "name": "TSMC (N3/N3P/N2/A16/A14)", "location": "Taiwan · F18/F18A/F20/F22 · AZ pilot", "sharePct": 92, "ticker": "TSM" },
+    { "name": "Samsung Foundry (GAA 2nm)", "location": "Korea · S5 Hwaseong / Pyeongtaek", "sharePct": 5, "note": "GAA technology lead but customer qualification gap", "ticker": "005930.KS" },
+    { "name": "Intel Foundry (18A, 14A)", "location": "US · Arizona / Oregon / Ohio (planned)", "sharePct": 3, "note": "18A HVM ramp the binary event for foundry strategy", "ticker": "INTC" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 55, "demandIndex": 78, "status": "critical" },
+    { "year": "2025", "supplyIndex": 68, "demandIndex": 90, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 82, "demandIndex": 96, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 96, "demandIndex": 99, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 110, "demandIndex": 100, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "TSMC wafer revenue by technology + AI/HPC mix + N2 ramp commentary", "source": "TSM earnings + investor day", "url": "https://investor.tsmc.com/english" },
+    { "cadence": "quarterly", "name": "Samsung Foundry segment results + GAA customer commentary", "source": "005930.KS earnings (foundry segment)" },
+    { "cadence": "quarterly", "name": "Intel Foundry Services revenue + 18A milestones", "source": "INTC 10-Q + foundry IR" },
+    { "cadence": "event", "name": "TSMC Symposium (April) + technology disclosures", "source": "TSMC tech events" },
+    { "cadence": "event", "name": "VLSI Symposium / IEDM accelerator process papers", "source": "IEEE conferences" },
+    { "cadence": "annual", "name": "IBS / TechInsights logic roadmap analyses", "source": "IBS, TechInsights (paid)" }
+  ],
+  "companies": [
+    { "name": "TSMC", "tier": "public-primary", "note": "The pure-play on leading-edge logic; pricing power compounds each node", "ticker": "TSM" },
+    { "name": "Samsung Electronics", "tier": "public-primary", "note": "GAA technology lead; foundry qualification gap is the discount", "ticker": "005930.KS" },
+    { "name": "Intel", "tier": "public-device", "note": "18A foundry customer wins drive the entire thesis", "ticker": "INTC" },
+    { "name": "ASML", "tier": "public-enabler", "note": "Cross-reference — every leading-edge wafer requires EUV; High-NA is the next-node enabler", "ticker": "ASML" },
+    { "name": "Synopsys / Cadence", "tier": "public-enabler", "note": "EDA tools — every tape-out passes through both", "ticker": "SNPS" },
+    { "name": "Tokyo Electron / Applied Materials / Lam", "tier": "public-enabler", "note": "WFE — leading-edge wafer step counts are 1.6× more than 7nm", "ticker": "8035.T" },
+    { "name": "Rapidus", "tier": "private", "note": "Japanese 2nm foundry; METI + IBM co-investment, Hokkaido pilot 2027 target", "url": "https://www.rapidus.inc/en/", "funding": "Strategic · ¥920B+ Japanese gov't commitment", "investors": "METI, Toyota, Sony, Kioxia, NTT, SoftBank" }
+  ],
+  "insight": "Leading-edge logic is the highest-quality structural long in the AI capex chain — TSMC's effective monopoly compounds across nodes and the customer concentration is now durable through 2030. The cleanest expression is TSM directly. The contrarian trade is Intel Foundry on 18A: pre-HVM, customer disclosures are sparse, but a single hyperscaler design win would re-rate the entire stock. Samsung Foundry is the perpetual disappointment — process is good, execution and customer relationships are not. Watch the China-domestic foundry path (SMIC N+2/N+3) — capable but export-controlled out of frontier AI silicon.",
+  "debates": [
+    {
+      "question": "Does Intel 18A achieve >$5B in foundry revenue from external customers by end of 2027?",
+      "currentBelief": "Possible if Microsoft / a hyperscaler ASIC commits; consensus closer to $3B",
+      "probability": 0.35,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does Samsung Foundry gain a flagship NVIDIA or AMD AI design by end of 2027?",
+      "currentBelief": "Unlikely for flagship; possible for tertiary product or networking ASIC",
+      "probability": 0.20,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does TSMC's AI / HPC revenue mix exceed 65% of total wafer revenue by 2027?",
+      "currentBelief": "Almost certain on current trajectory; the question is upside not direction",
+      "probability": 0.80,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["high-na-euv"],
+  "downstreamSlugs": ["datacenter-silicon", "cowos"]
+}

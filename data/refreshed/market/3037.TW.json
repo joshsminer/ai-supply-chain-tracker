@@ -1,0 +1,15 @@
+{
+  "ticker": "3037.TW",
+  "name": "Unimicron Technology Corp.",
+  "exchange": "TAI",
+  "currency": "TWD",
+  "price": 821.0,
+  "previousClose": 881.0,
+  "dayChangePct": -6.8104424,
+  "marketCap": 1292680298496,
+  "fiftyTwoWeekHigh": 948.0,
+  "fiftyTwoWeekLow": 98.1,
+  "trailingPE": 188.73564,
+  "fetchedAt": "2026-05-17T19:45:18+00:00",
+  "source": "yfinance.info"
+}

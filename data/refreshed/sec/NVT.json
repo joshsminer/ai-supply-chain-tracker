@@ -1,0 +1,28 @@
+{
+  "ticker": "NVT",
+  "cik": "1474735",
+  "entityName": "GENERAC HOLDINGS INC.",
+  "sicDescription": "Motors & Generators",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-05",
+    "periodOfReport": null,
+    "accessionNumber": "0001437749-26-014882",
+    "primaryDocument": "gnrc20260331_10q.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1474735/000143774926014882/gnrc20260331_10q.htm",
+    "entityName": "GENERAC HOLDINGS INC.",
+    "sicDescription": "Motors & Generators"
+  },
+  "latestRevenue": {
+    "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 1059365000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-05-05"
+  },
+  "fetchedAt": "2026-05-17T19:46:58+00:00",
+  "source": "sec.gov/edgar"
+}

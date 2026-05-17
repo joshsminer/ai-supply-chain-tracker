@@ -1,0 +1,15 @@
+{
+  "ticker": "VRT",
+  "name": "Vertiv Holdings Co",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 370.94,
+  "previousClose": 376.23,
+  "dayChangePct": -1.40606,
+  "marketCap": 142481326080,
+  "fiftyTwoWeekHigh": 379.935,
+  "fiftyTwoWeekLow": 101.0,
+  "trailingPE": 93.43577,
+  "fetchedAt": "2026-05-17T19:45:26+00:00",
+  "source": "yfinance.info"
+}

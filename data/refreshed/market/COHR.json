@@ -1,0 +1,15 @@
+{
+  "ticker": "COHR",
+  "name": "Coherent Corp.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 382.45,
+  "previousClose": 404.94,
+  "dayChangePct": -5.55391,
+  "marketCap": 74822262784,
+  "fiftyTwoWeekHigh": 413.0,
+  "fiftyTwoWeekLow": 73.66,
+  "trailingPE": 182.11906,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

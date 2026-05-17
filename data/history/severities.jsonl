@@ -1,0 +1,16 @@
+{"slug": "abf-substrates", "severity": "tight", "severityNote": "Easing from '22-'24 critical, AI SKUs still constrained", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "cowos", "severity": "critical", "severityNote": "TSMC-gated, sold out through 2026", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "datacenter-silicon", "severity": "critical", "severityNote": "NVIDIA allocation-gated; custom ASIC ramps lag", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "gas-turbines", "severity": "critical", "severityNote": "Lead times 4-5 years; OEM books full to 2030", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "hbm-memory", "severity": "critical", "severityNote": "Sold out through 2026", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "high-na-euv", "severity": "tight", "severityNote": "ASML monopoly; customer ramp is the gate", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "human-capital", "severity": "critical", "severityNote": "Electrician + construction shortage gates every site", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "indium-phosphide", "severity": "critical", "severityNote": "Single-source exposure", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "interconnection-queues", "severity": "critical", "severityNote": "PJM 5-7 yr; structural across all ISOs", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "large-power-transformers", "severity": "critical", "severityNote": "Lead times 4-5 years; structural shortage", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "leading-edge-logic", "severity": "critical", "severityNote": "TSMC single-source for AI; Samsung + Intel not at qualification", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "raw-materials", "severity": "tight", "severityNote": "Diversified but several single-country exposures", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "thermal-rack", "severity": "tight", "severityNote": "Capacity ramping fast; spec compliance is the gate", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:18:41+00:00"}
+{"slug": "cpo-ramp", "severity": "monitoring", "severityNote": "Real but timing uncertain; pluggables dominate near-term", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:23:07+00:00"}
+{"slug": "dram-wafer-capacity", "severity": "tight", "severityNote": "HBM is consuming the marginal wafer; commodity tightening", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:23:07+00:00"}
+{"slug": "transceivers-1-6t", "severity": "critical", "severityNote": "EML supply tight; 1.6T ramp 2026-2027", "lastUpdated": "2026-05-17", "snapshotAt": "2026-05-17T20:23:07+00:00"}

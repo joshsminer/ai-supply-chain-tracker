@@ -1,0 +1,15 @@
+{
+  "ticker": "NVT",
+  "name": "nVent Electric plc",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 169.01,
+  "previousClose": 173.96,
+  "dayChangePct": -2.84549,
+  "marketCap": 27332372480,
+  "fiftyTwoWeekHigh": 175.0,
+  "fiftyTwoWeekLow": 63.15,
+  "trailingPE": 57.486393,
+  "fetchedAt": "2026-05-17T19:45:26+00:00",
+  "source": "yfinance.info"
+}

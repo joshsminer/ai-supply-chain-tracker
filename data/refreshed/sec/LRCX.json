@@ -1,0 +1,28 @@
+{
+  "ticker": "LRCX",
+  "cik": "707549",
+  "entityName": "LAM RESEARCH CORP",
+  "sicDescription": "Special Industry Machinery, NEC",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-23",
+    "periodOfReport": null,
+    "accessionNumber": "0000707549-26-000022",
+    "primaryDocument": "lrcx-20260329.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000022/lrcx-20260329.htm",
+    "entityName": "LAM RESEARCH CORP",
+    "sicDescription": "Special Industry Machinery, NEC"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 1923378000,
+    "currency": "USD",
+    "periodEnd": "2012-03-25",
+    "fy": 2012,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2012-05-03"
+  },
+  "fetchedAt": "2026-05-17T19:46:43+00:00",
+  "source": "sec.gov/edgar"
+}

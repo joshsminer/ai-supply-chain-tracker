@@ -1,0 +1,74 @@
+{
+  "slug": "interconnection-queues",
+  "name": "Grid interconnection queues",
+  "shortName": "Interconnection queues",
+  "layerId": "site-grid",
+  "severity": "critical",
+  "severityNote": "PJM 5-7 yr; structural across all ISOs",
+  "description": "Grid interconnection queues are the wall every new datacenter must scale to get connected to the transmission system. PJM's queue alone holds >250 GW of pending generation and load requests, with study cycles measured in years. The constraint is not a supplier market — it is a regulatory and engineering process inside the ISOs/RTOs.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "PJM new-load queue time", "value": "~5-7 yr", "sub": "vs 2-3 yr (2020)", "direction": "up-bad" },
+    { "label": "Total US queue GW", "value": "~2,600 GW", "sub": "Generation + storage in queue", "direction": "neutral" },
+    { "label": "Withdrawal rate", "value": "~70%", "sub": "Of queued projects historically", "direction": "neutral" },
+    { "label": "ISO study-cycle reform", "value": "FERC 2023", "sub": "Cluster-study implementation underway", "direction": "down-good" }
+  ],
+  "stackPosition": "Site selection (existing brownfield with capacity headroom > greenfield with full queue cycle) → interconnection request → feasibility study → system impact study → facilities study → interconnection agreement → network upgrade construction → energization. Each ISO runs the cycle differently; PJM/MISO are the slowest, ERCOT (which is not FERC-jurisdictional) is structurally faster. Co-located behind-the-meter generation can short-circuit the queue but creates its own regulatory friction.",
+  "supplyStructure": [
+    { "name": "PJM Interconnection", "location": "Mid-Atlantic · 13 states", "sharePct": 40, "note": "Slowest queue; ~250 GW pending" },
+    { "name": "MISO", "location": "Midwest + South · 15 states", "sharePct": 22, "note": "Cluster-study reform in progress" },
+    { "name": "ERCOT", "location": "Texas · single state", "sharePct": 18, "note": "Fastest queue; non-FERC; reliability margins tightening" },
+    { "name": "CAISO", "location": "California", "sharePct": 11, "note": "Renewables-heavy queue; storage-pair tilt" },
+    { "name": "SPP / NYISO / ISO-NE / others", "location": "Various", "sharePct": 9, "note": "Smaller footprints" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 45, "demandIndex": 72, "status": "critical" },
+    { "year": "2025", "supplyIndex": 48, "demandIndex": 85, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 52, "demandIndex": 95, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 58, "demandIndex": 98, "status": "critical" },
+    { "year": "2028E", "supplyIndex": 66, "demandIndex": 96, "status": "critical" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "PJM queue reports — new requests, completed studies, withdrawals", "source": "PJM Interconnection Queue reports", "url": "https://www.pjm.com/planning/services-requests/interconnection-queues" },
+    { "cadence": "quarterly", "name": "MISO, ERCOT, CAISO queue dashboards", "source": "MISO Queue, ERCOT GIS, CAISO Queue Cluster" },
+    { "cadence": "event", "name": "FERC orders on interconnection process (e.g. Order 2023 implementation)", "source": "ferc.gov", "url": "https://www.ferc.gov/electric-power-markets/order-no-2023" },
+    { "cadence": "event", "name": "State PUC rulings on co-located load + behind-the-meter generation", "source": "PUC dockets — PA, VA, OH, TX" },
+    { "cadence": "annual", "name": "LBNL Berkeley Lab queue and interconnection analysis", "source": "emp.lbl.gov", "url": "https://emp.lbl.gov/queues" },
+    { "cadence": "event", "name": "Hyperscaler PPA + greenfield datacenter siting announcements", "source": "Hyperscaler press" }
+  ],
+  "companies": [
+    { "name": "Vistra", "tier": "public-primary", "note": "Existing nuclear + gas fleet with capacity to pair with data load (Comanche Peak / Perry)", "ticker": "VST" },
+    { "name": "Constellation Energy", "tier": "public-primary", "note": "Nuclear fleet behind Microsoft / TMI restart thesis", "ticker": "CEG" },
+    { "name": "Talen Energy", "tier": "public-primary", "note": "Susquehanna nuclear PPA with Amazon — front-running the model", "ticker": "TLN" },
+    { "name": "NextEra Energy", "tier": "public-enabler", "note": "Largest renewables developer; many projects stuck in queues", "ticker": "NEE" },
+    { "name": "Bloom Energy", "tier": "public-enabler", "note": "Solid-oxide fuel cells — fast deploy, behind-the-meter alternative", "ticker": "BE" },
+    { "name": "Cummins", "tier": "public-enabler", "note": "Reciprocating engines + diesel/gas gensets for stop-gap power", "ticker": "CMI" },
+    { "name": "Last Energy", "tier": "private", "note": "20 MW micro-modular reactors; targeting datacenters with PPA-first model", "url": "https://www.lastenergy.com", "funding": "Series B · $40M raised 2023", "investors": "Gigascale Capital, MCJ Collective" },
+    { "name": "X-Energy", "tier": "private", "note": "Xe-100 HTGR SMR; Amazon $500M strategic investment for AWS datacenter power", "url": "https://x-energy.com", "funding": "Series C-2 · $700M+ raised Oct '24", "investors": "Amazon, Ares Management, Citadel, Ken Griffin" },
+    { "name": "Fervo Energy", "tier": "private", "note": "Enhanced geothermal; live Google PPA in Nevada, scaling Utah project", "url": "https://fervoenergy.com", "funding": "Series D · $244M raised Feb '24", "investors": "Devon Energy, Galvanize Climate Solutions" },
+    { "name": "TerraPower", "tier": "private", "note": "Natrium fast reactor; Wyoming pilot site, Gates-backed", "url": "https://www.terrapower.com", "funding": "Strategic · Bill Gates personal funding", "investors": "Gates, Pacific Capital Group" }
+  ],
+  "insight": "Interconnection queues are the most binding non-OEM constraint in the AI capex chain — every announced datacenter MW has to scale this wall, and the wall is not getting materially shorter for new requests. The trade is anyone with *existing* energization: nuclear operators (Vistra, Constellation, Talen) with co-locatable capacity, and behind-the-meter rapid-deploy generation (Bloom, Cummins) that bypasses the queue entirely. The widow-maker is greenfield renewables developers whose pipelines are queued behind data-load fast-tracks — even good projects get pushed to 2030+. Watch FERC Order 2023 cluster-study implementation: a credible reform path could re-rate the renewables developer pipeline.",
+  "debates": [
+    {
+      "question": "Does PJM new-load queue time drop below 4 years by end of 2027?",
+      "currentBelief": "Cluster-study reform helps at the margin; underlying transmission build-out still dominates the timeline",
+      "probability": 0.25,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Do nuclear restarts (TMI, Palisades, Duane Arnold) reach commercial operation by 2028?",
+      "currentBelief": "TMI (Crane) and Palisades on track; Duane Arnold uncertain. PPA economics drive the decisions",
+      "probability": 0.55,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does FERC mandate uniform interconnection reform across all ISOs by end of 2026?",
+      "currentBelief": "Partial — Order 2023 implementation is in flight, but ERCOT remains structurally separate",
+      "probability": 0.50,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["large-power-transformers", "gas-turbines"],
+  "downstreamSlugs": []
+}

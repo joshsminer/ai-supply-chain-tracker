@@ -1,0 +1,15 @@
+{
+  "ticker": "267260.KS",
+  "name": "HD Hyundai Electric Co., Ltd.",
+  "exchange": "KSC",
+  "currency": "KRW",
+  "price": 1179000.0,
+  "previousClose": 1267000.0,
+  "dayChangePct": -6.945541,
+  "marketCap": 42435396763648,
+  "fiftyTwoWeekHigh": 1430000.0,
+  "fiftyTwoWeekLow": 0.0,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

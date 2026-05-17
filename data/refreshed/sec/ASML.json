@@ -1,0 +1,19 @@
+{
+  "ticker": "ASML",
+  "cik": "937966",
+  "entityName": "ASML HOLDING NV",
+  "sicDescription": "Special Industry Machinery, NEC",
+  "latestFiling": {
+    "form": "6-K",
+    "filedAt": "2026-04-23",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-026703",
+    "primaryDocument": "form6-kagmdisclosureofagmr.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026026703/form6-kagmdisclosureofagmr.htm",
+    "entityName": "ASML HOLDING NV",
+    "sicDescription": "Special Industry Machinery, NEC"
+  },
+  "latestRevenue": null,
+  "fetchedAt": "2026-05-17T19:46:19+00:00",
+  "source": "sec.gov/edgar"
+}

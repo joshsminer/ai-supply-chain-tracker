@@ -1,0 +1,15 @@
+{
+  "ticker": "SU.PA",
+  "name": "Schneider Electric S.E.",
+  "exchange": "PAR",
+  "currency": "EUR",
+  "price": 263.75,
+  "previousClose": 270.95,
+  "dayChangePct": -2.6573212,
+  "marketCap": 148419084288,
+  "fiftyTwoWeekHigh": 287.9,
+  "fiftyTwoWeekLow": 208.8,
+  "trailingPE": 33.09285,
+  "fetchedAt": "2026-05-17T19:45:26+00:00",
+  "source": "yfinance.info"
+}

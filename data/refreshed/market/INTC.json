@@ -1,0 +1,15 @@
+{
+  "ticker": "INTC",
+  "name": "Intel Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 108.77,
+  "previousClose": 115.92999,
+  "dayChangePct": -6.176138,
+  "marketCap": 546677981184,
+  "fiftyTwoWeekHigh": 132.75,
+  "fiftyTwoWeekLow": 18.97,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "source": "yfinance.info"
+}

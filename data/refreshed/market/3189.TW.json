@@ -1,0 +1,15 @@
+{
+  "ticker": "3189.TW",
+  "name": "Kinsus Interconnect Technology Corp.",
+  "exchange": "TAI",
+  "currency": "TWD",
+  "price": 486.0,
+  "previousClose": 522.0,
+  "dayChangePct": -6.8965516,
+  "marketCap": 256081182720,
+  "fiftyTwoWeekHigh": 556.0,
+  "fiftyTwoWeekLow": 77.0,
+  "trailingPE": 145.07463,
+  "fetchedAt": "2026-05-17T19:45:18+00:00",
+  "source": "yfinance.info"
+}

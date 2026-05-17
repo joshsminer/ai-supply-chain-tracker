@@ -1,0 +1,28 @@
+{
+  "ticker": "CMI",
+  "cik": "26172",
+  "entityName": "CUMMINS INC",
+  "sicDescription": "Engines & Turbines",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-05",
+    "periodOfReport": null,
+    "accessionNumber": "0000026172-26-000016",
+    "primaryDocument": "cmi-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000016/cmi-20260331.htm",
+    "entityName": "CUMMINS INC",
+    "sicDescription": "Engines & Turbines"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 33670000000,
+    "currency": "USD",
+    "periodEnd": "2025-12-31",
+    "fy": 2025,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-02-10"
+  },
+  "fetchedAt": "2026-05-17T19:46:40+00:00",
+  "source": "sec.gov/edgar"
+}

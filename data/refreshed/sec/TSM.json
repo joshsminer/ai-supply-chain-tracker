@@ -1,0 +1,19 @@
+{
+  "ticker": "TSM",
+  "cik": "1046179",
+  "entityName": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "6-K",
+    "filedAt": "2026-05-15",
+    "periodOfReport": null,
+    "accessionNumber": "0001046179-26-000280",
+    "primaryDocument": "tsmctosell81ofvanguardinte.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000280/tsmctosell81ofvanguardinte.htm",
+    "entityName": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": null,
+  "fetchedAt": "2026-05-17T19:46:28+00:00",
+  "source": "sec.gov/edgar"
+}

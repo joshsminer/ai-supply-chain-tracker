@@ -1,0 +1,28 @@
+{
+  "ticker": "VST",
+  "cik": "1692819",
+  "entityName": "Vistra Corp.",
+  "sicDescription": "Electric Services",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-08",
+    "periodOfReport": null,
+    "accessionNumber": "0001692819-26-000014",
+    "primaryDocument": "vistra-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000014/vistra-20260331.htm",
+    "entityName": "Vistra Corp.",
+    "sicDescription": "Electric Services"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 5640000000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-05-08"
+  },
+  "fetchedAt": "2026-05-17T19:46:21+00:00",
+  "source": "sec.gov/edgar"
+}

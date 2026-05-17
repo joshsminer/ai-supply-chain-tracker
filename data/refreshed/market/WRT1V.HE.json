@@ -1,0 +1,15 @@
+{
+  "ticker": "WRT1V.HE",
+  "name": "W\u00e4rtsil\u00e4 Oyj Abp",
+  "exchange": "HEL",
+  "currency": "EUR",
+  "price": 34.34,
+  "previousClose": 36.2,
+  "dayChangePct": -5.138123,
+  "marketCap": 20245018624,
+  "fiftyTwoWeekHigh": 40.75,
+  "fiftyTwoWeekLow": 16.95,
+  "trailingPE": 31.218182,
+  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "source": "yfinance.info"
+}

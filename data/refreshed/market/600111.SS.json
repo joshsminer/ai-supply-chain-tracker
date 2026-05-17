@@ -1,0 +1,15 @@
+{
+  "ticker": "600111.SS",
+  "name": "China Northern Rare Earth (Group) High-Tech Co.,Ltd",
+  "exchange": "SHH",
+  "currency": "CNY",
+  "price": 53.78,
+  "previousClose": 53.27,
+  "dayChangePct": 0.95738375,
+  "marketCap": 194418229248,
+  "fiftyTwoWeekHigh": 63.57,
+  "fiftyTwoWeekLow": 23.01,
+  "trailingPE": 70.76316,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

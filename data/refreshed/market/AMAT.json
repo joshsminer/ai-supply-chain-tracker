@@ -1,0 +1,15 @@
+{
+  "ticker": "AMAT",
+  "name": "Applied Materials, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 436.62,
+  "previousClose": 440.56,
+  "dayChangePct": -0.89431685,
+  "marketCap": 346505936896,
+  "fiftyTwoWeekHigh": 448.45,
+  "fiftyTwoWeekLow": 153.47,
+  "trailingPE": 41.151745,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

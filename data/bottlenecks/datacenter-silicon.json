@@ -1,0 +1,79 @@
+{
+  "slug": "datacenter-silicon",
+  "name": "AI accelerator silicon (GPU + ASIC)",
+  "shortName": "AI accelerators",
+  "layerId": "datacenter-silicon",
+  "severity": "critical",
+  "severityNote": "NVIDIA allocation-gated; custom ASIC ramps lag",
+  "description": "GPUs (NVIDIA H/B/Rubin, AMD MI300/400) and hyperscaler-custom ASICs (Google TPU, AWS Trainium, Meta MTIA, Microsoft Maia) are the silicon endpoint of the whole AI capex chain. Aggregate AI accelerator wafer-equivalent demand exceeds TSMC's combined N3/N3P/CoWoS-coupled output, so allocation is the operative variable rather than spot-price.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "NVIDIA datacenter share", "value": "~85%", "sub": "Of accelerator units '25", "direction": "neutral" },
+    { "label": "Hyperscaler custom ASIC mix '26E", "value": "~22%", "sub": "from ~12% (2024)", "direction": "up-good" },
+    { "label": "Rubin / B300 cycle gap", "value": "~12 mo", "sub": "Compressed product cadence", "direction": "up-bad" },
+    { "label": "Accelerator units '26E", "value": "~7.5M", "sub": "Bernstein estimate", "direction": "up-good" }
+  ],
+  "stackPosition": "Tape-out at TSMC N3P/N3 (or Samsung 2nm-gen for some custom) → wafer fab → die sort → ship to CoWoS for HBM stack attach → known-good-package → board assembly at OEM (Foxconn, Wistron, Quanta) → SXM module or OAM → server → rack → datacenter. Every accelerator passes through TSMC + CoWoS + HBM — three of the most constrained nodes in the entire stack — and the silicon endpoint inherits all of those constraints plus its own (mask sets, validation, software stack).",
+  "supplyStructure": [
+    { "name": "NVIDIA (Hopper / Blackwell / Rubin)", "location": "US-designed · TSMC-fabbed", "sharePct": 75, "ticker": "NVDA" },
+    { "name": "AMD (Instinct MI3xx/MI4xx)", "location": "US-designed · TSMC-fabbed", "sharePct": 9, "ticker": "AMD" },
+    { "name": "Google TPU (v5/v6/v7)", "location": "Custom · Broadcom co-design · TSMC", "sharePct": 7, "note": "Largest custom ASIC volume; AVGO is the listed beneficiary" },
+    { "name": "AWS Trainium / Inferentia", "location": "Custom · Marvell + Alchip co-design", "sharePct": 5, "note": "Trainium 2 / 3 ramping in 2026" },
+    { "name": "Microsoft Maia / Meta MTIA / Tesla Dojo", "location": "Various custom", "sharePct": 4, "note": "All ramping but small share of total" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 48, "demandIndex": 78, "status": "critical" },
+    { "year": "2025", "supplyIndex": 68, "demandIndex": 92, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 85, "demandIndex": 97, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 100, "demandIndex": 99, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 115, "demandIndex": 100, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "NVIDIA datacenter revenue, gross margin, and Rubin commentary", "source": "NVDA 10-Q", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1045810&type=10-Q" },
+    { "cadence": "quarterly", "name": "AMD Instinct revenue and customer commentary", "source": "AMD 10-Q" },
+    { "cadence": "quarterly", "name": "Broadcom AI ASIC revenue (Google + Meta + ByteDance) and Marvell ASIC pipeline", "source": "AVGO, MRVL 10-Q" },
+    { "cadence": "quarterly", "name": "Hyperscaler capex guidance and silicon allocation commentary", "source": "MSFT / AMZN / GOOG / META earnings" },
+    { "cadence": "event", "name": "NVIDIA GTC + Hot Chips + ISSCC accelerator disclosures", "source": "Conferences" },
+    { "cadence": "annual", "name": "Bernstein / Morgan Stanley accelerator unit forecasts", "source": "Sell-side research" }
+  ],
+  "companies": [
+    { "name": "NVIDIA", "tier": "public-primary", "note": "Dominant accelerator silicon; pricing power across full stack including networking", "ticker": "NVDA" },
+    { "name": "AMD", "tier": "public-primary", "note": "Second-source accelerator option; Instinct ramp matters most for OpenAI and Meta", "ticker": "AMD" },
+    { "name": "Broadcom", "tier": "public-primary", "note": "Custom ASIC design services (Google TPU, Meta) + AI networking (Tomahawk, Jericho)", "ticker": "AVGO" },
+    { "name": "Marvell", "tier": "public-primary", "note": "AWS Trainium co-design + custom ASIC services + DPU/networking", "ticker": "MRVL" },
+    { "name": "Intel", "tier": "public-device", "note": "Gaudi 3 / Falcon Shores merchant; Intel Foundry as the open question", "ticker": "INTC" },
+    { "name": "Cerebras Systems", "tier": "private", "note": "Wafer-scale CS-3 (4 trillion transistors); inference-as-a-service ramping fast", "url": "https://www.cerebras.ai", "funding": "Series F · pursuing IPO ('25 filing)", "investors": "G42, Coatue, Foundation Capital, Alpha Wave" },
+    { "name": "Groq", "tier": "private", "note": "LPU inference chip; deterministic dataflow, ultra-low-latency inference", "url": "https://groq.com", "funding": "Series E · $750M raised Aug '24 · $6.9B post-money", "investors": "BlackRock, Cisco, Samsung Catalyst" },
+    { "name": "Tenstorrent", "tier": "private", "note": "RISC-V + AI accelerators (Wormhole, Blackhole); open IP licensing model", "url": "https://tenstorrent.com", "funding": "Series D · $693M raised Dec '24 · $2.6B post-money", "investors": "Samsung, AFW Partners, Bezos Expeditions, Hyundai/Kia" },
+    { "name": "SambaNova Systems", "tier": "private", "note": "Reconfigurable dataflow units (RDU); enterprise AI inference appliance", "url": "https://sambanova.ai", "funding": "Series D · $1.1B raised", "investors": "SoftBank Vision Fund 2, BlackRock, Intel Capital" },
+    { "name": "d-Matrix", "tier": "private", "note": "Digital in-memory compute (Corsair); transformer inference at low TCO", "url": "https://www.d-matrix.ai", "funding": "Series B · $110M raised Sep '23", "investors": "Playground Global, Microsoft M12, Marvell" },
+    { "name": "Etched", "tier": "private", "note": "Sohu — transformer-only ASIC; betting hardware against attention as standard", "url": "https://www.etched.com", "funding": "Series A · $120M raised Jun '24", "investors": "Primary VC, Two Sigma Ventures, Skybox Data Centers" },
+    { "name": "Lightmatter", "tier": "private", "note": "Silicon photonics — Passage 3D photonic interconnect + Envise compute", "url": "https://lightmatter.co", "funding": "Series D · $400M raised Oct '24 · $4.4B post-money", "investors": "T. Rowe Price, Fidelity, GV (Google Ventures)" },
+    { "name": "MatX", "tier": "private", "note": "Custom silicon optimized for transformer training at hyperscale", "url": "https://matx.com", "funding": "Series A · $80M+ raised", "investors": "Spark Capital, Plug and Play" },
+    { "name": "Rebellions / FuriosaAI", "tier": "private", "note": "Korean AI inference chip startups; gov't-backed, domestic-market focus" },
+    { "name": "Tesla Dojo / OpenAI silicon team", "tier": "private", "note": "Hyperscaler in-house designs not externalized; strategic-not-merchant" }
+  ],
+  "insight": "The accelerator-silicon market is bimodal: NVIDIA-allocation-gated for merchant supply, and custom-ASIC-pacing-gated for the hyperscalers ramping their own silicon. The investable wedges are (1) NVIDIA at any cyclical drawdown — the moat is software more than silicon, and (2) the ASIC design-service oligopoly Broadcom + Marvell, which captures the hyperscaler-custom dollar without taking technology risk. The widow-maker is small-cap AI silicon pure plays — most are pre-revenue, behind on software, and structurally cannot reach NVIDIA's per-watt economics. Watch China-domestic accelerator path (Huawei Ascend, Cambricon) for the geopolitical edge.",
+  "debates": [
+    {
+      "question": "Does NVIDIA's datacenter market share drop below 75% by end of 2027?",
+      "currentBelief": "Likely as custom ASIC mix climbs; NVIDIA's software moat keeps the floor near 70%",
+      "probability": 0.60,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does AMD's Instinct revenue exceed $25B in fiscal 2027?",
+      "currentBelief": "Plausible if MI400 ramp + OpenAI / Meta commits hold; consensus around $18B",
+      "probability": 0.35,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does Intel reach a credible foundry-customer milestone (TSM-class qualification) by 2027?",
+      "currentBelief": "18A is the binary event; recent yield disclosures encouraging but not definitive",
+      "probability": 0.40,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["leading-edge-logic", "cowos", "hbm-memory", "abf-substrates"],
+  "downstreamSlugs": []
+}

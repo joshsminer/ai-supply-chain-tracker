@@ -1,0 +1,15 @@
+{
+  "ticker": "TSM",
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 404.35,
+  "previousClose": 417.72,
+  "dayChangePct": -3.20071,
+  "marketCap": 2097120935936,
+  "fiftyTwoWeekHigh": 421.97,
+  "fiftyTwoWeekLow": 188.81,
+  "trailingPE": 34.708157,
+  "fetchedAt": "2026-05-17T19:45:18+00:00",
+  "source": "yfinance.info"
+}

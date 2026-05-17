@@ -1,0 +1,28 @@
+{
+  "ticker": "MTZ",
+  "cik": "15615",
+  "entityName": "MASTEC INC",
+  "sicDescription": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-30",
+    "periodOfReport": null,
+    "accessionNumber": "0000015615-26-000050",
+    "primaryDocument": "mtz-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/15615/000001561526000050/mtz-20260331.htm",
+    "entityName": "MASTEC INC",
+    "sicDescription": "Water, Sewer, Pipeline, Comm & Power Line Construction"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 3828801000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-04-30"
+  },
+  "fetchedAt": "2026-05-17T19:46:32+00:00",
+  "source": "sec.gov/edgar"
+}

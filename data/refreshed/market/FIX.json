@@ -1,0 +1,15 @@
+{
+  "ticker": "FIX",
+  "name": "Comfort Systems USA, Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 1992.74,
+  "previousClose": 2041.56,
+  "dayChangePct": -2.39131,
+  "marketCap": 70149275648,
+  "fiftyTwoWeekHigh": 2073.99,
+  "fiftyTwoWeekLow": 452.04,
+  "trailingPE": 57.47736,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

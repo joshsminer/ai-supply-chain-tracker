@@ -1,0 +1,15 @@
+{
+  "ticker": "MP",
+  "name": "MP Materials Corp.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 61.27,
+  "previousClose": 60.31,
+  "dayChangePct": 1.59177,
+  "marketCap": 10907419648,
+  "fiftyTwoWeekHigh": 100.251,
+  "fiftyTwoWeekLow": 18.64,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

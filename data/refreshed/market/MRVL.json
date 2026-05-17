@@ -1,0 +1,15 @@
+{
+  "ticker": "MRVL",
+  "name": "Marvell Technology, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 176.89,
+  "previousClose": 182.58,
+  "dayChangePct": -3.1164434,
+  "marketCap": 154876592128,
+  "fiftyTwoWeekHigh": 192.15,
+  "fiftyTwoWeekLow": 58.61,
+  "trailingPE": 57.43182,
+  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "source": "yfinance.info"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "MRVL",
+  "cik": "1835632",
+  "entityName": "Marvell Technology, Inc.",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-K",
+    "filedAt": "2026-03-11",
+    "periodOfReport": null,
+    "accessionNumber": "0001835632-26-000011",
+    "primaryDocument": "mrvl-20260131.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000011/mrvl-20260131.htm",
+    "entityName": "Marvell Technology, Inc.",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 8194600000,
+    "currency": "USD",
+    "periodEnd": "2026-01-31",
+    "fy": 2026,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2026-03-11"
+  },
+  "fetchedAt": "2026-05-17T19:46:24+00:00",
+  "source": "sec.gov/edgar"
+}

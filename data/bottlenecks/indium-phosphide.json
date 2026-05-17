@@ -1,0 +1,66 @@
+{
+  "slug": "indium-phosphide",
+  "name": "Indium phosphide (InP)",
+  "shortName": "Indium phosphide",
+  "layerId": "optical-interconnect",
+  "severity": "critical",
+  "severityNote": "Single-source exposure",
+  "description": "III-V semiconductor used for EMLs, DFB lasers, and photodiodes in 800G/1.6T pluggable transceivers and the InP die in co-packaged optics. The 4\" to 6\" wafer transition is the binding constraint for the 2026 to 2028 optics ramp.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "Wafer lead time", "value": "38 wk", "sub": "from 22 wk (2023)", "direction": "up-bad" },
+    { "label": "Top-2 wafer share", "value": "~82%", "sub": "Sumitomo + JX", "direction": "neutral" },
+    { "label": "6\" wafer readiness", "value": "~15%", "sub": "Pilot lines only", "direction": "neutral" },
+    { "label": "1.6T attach growth", "value": "+220%", "sub": "'26 vs '25 forecast", "direction": "up-good" }
+  ],
+  "stackPosition": "InP wafer → epitaxy (MOCVD) → device fab (EML, DFB, PD) → pluggable transceiver OR co-packaged optics → switch / GPU rack → datacenter network spine. The wafer layer is the chokepoint; downstream device capacity at Coherent and Lumentum can scale faster than upstream wafer supply.",
+  "supplyStructure": [
+    { "name": "Sumitomo Electric", "location": "Japan · 2/3/4\"", "sharePct": 55, "ticker": "5802.T" },
+    { "name": "JX Advanced Metals", "location": "Japan · 2/3/4\"", "sharePct": 27, "ticker": "5016.T" },
+    { "name": "AXT", "location": "US-listed / China fab", "sharePct": 12, "note": "Subject to China export-control risk", "ticker": "AXTI" },
+    { "name": "IQE / others", "location": "UK · epi-on-wafer", "sharePct": 6, "ticker": "IQE.L" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 55, "demandIndex": 48, "status": "balanced" },
+    { "year": "2025", "supplyIndex": 58, "demandIndex": 64, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 62, "demandIndex": 84, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 72, "demandIndex": 95, "status": "critical" },
+    { "year": "2028E", "supplyIndex": 88, "demandIndex": 92, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "Sumitomo Electric optical components segment revenue", "source": "Sumitomo IR · JP filings", "url": "https://sumitomoelectric.com/ir" },
+    { "cadence": "quarterly", "name": "AXT InP revenue mix & China export license status", "source": "AXTI 10-Q · BIS notices", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1051627&type=10-Q" },
+    { "cadence": "quarterly", "name": "Coherent and Lumentum datacom backlog and EML capacity commentary", "source": "COHR, LITE earnings transcripts" },
+    { "cadence": "monthly", "name": "LightCounting transceiver unit forecast by speed", "source": "LightCounting reports (paid)" },
+    { "cadence": "event", "name": "OFC and ECOC 6\" InP wafer demo and qualification announcements", "source": "Conference press · March / September" },
+    { "cadence": "event", "name": "NVIDIA Quantum-X and Broadcom Bailly CPO product milestones", "source": "Vendor keynotes" }
+  ],
+  "companies": [
+    { "name": "AXT", "tier": "public-primary", "note": "InP wafer; China overhang", "ticker": "AXTI" },
+    { "name": "Coherent", "tier": "public-device", "note": "EMLs, transceivers, full optical stack", "ticker": "COHR" },
+    { "name": "Lumentum", "tier": "public-device", "note": "EMLs, ramping 1.6T", "ticker": "LITE" },
+    { "name": "IQE", "tier": "public-epi", "note": "III-V epitaxy services", "ticker": "IQE.L" },
+    { "name": "Ayar Labs", "tier": "private", "note": "TeraPHY optical I/O chiplet; ELS (external laser source) architecture for CPO", "url": "https://ayarlabs.com", "funding": "Series D · $155M total · 2024 expansion led by AMD Ventures", "investors": "AMD, Intel Capital, NVIDIA, GlobalFoundries, HPE" },
+    { "name": "Lightmatter", "tier": "private", "note": "Passage photonic interconnect substrate; competes with CPO + electrical fabric simultaneously", "url": "https://lightmatter.co", "funding": "Series D · $400M raised Oct '24 · $4.4B post-money", "investors": "T. Rowe Price, Fidelity, GV (Google Ventures)" },
+    { "name": "Celestial AI", "tier": "private", "note": "Photonic Fabric — chip-to-chip + chip-to-memory optical bandwidth", "url": "https://www.celestial.ai", "funding": "Series C · $175M raised Mar '24", "investors": "US Innovative Technology Fund, Temasek, Porsche, Imec" },
+    { "name": "Nubis Communications", "tier": "private", "note": "Linear-drive pluggable optics + optical I/O chiplets for AI fabrics", "url": "https://nubis-inc.com", "funding": "Series A · $50M+ raised", "investors": "Matrix Partners, Vertex Ventures" },
+    { "name": "NcodiN", "tier": "private", "note": "III-V-on-Si nanolasers; substrate-bypass thesis on the 6\" wafer constraint", "url": "https://ncodin.com", "funding": "Seed · €5M raised 2024", "investors": "Earlybird, French government Bpifrance" }
+  ],
+  "insight": "The chokepoint is not InP devices — it's 6\" wafer qualification at Sumitomo and JX. Anyone with a credible path to 6\" epi yield in 2026 owns the next-cycle margin pool. Watch for non-Japanese supply emerging in Korea or via CHIPS-funded US pilot lines. The investable wedge is the qualification race itself, not the incumbents. Contrarian path: substrate-bypass plays like III-V-on-silicon that route around the wafer constraint entirely.",
+  "debates": [
+    {
+      "question": "Does Sumitomo or JX reach production-yield 6\" InP wafers by end of 2026?",
+      "currentBelief": "Sumitomo more likely than JX; both still pilot as of mid-2026. Updated after recent OFC commentary",
+      "probability": 0.40,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does CPO meaningfully cannibalize pluggable transceiver volumes by 2027?",
+      "currentBelief": "CPO ramps but pluggables grow alongside through 2028",
+      "probability": 0.25,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["inp-wafers-6inch"],
+  "downstreamSlugs": ["transceivers-1-6t", "cpo-ramp"]
+}

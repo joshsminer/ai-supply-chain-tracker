@@ -1,0 +1,19 @@
+{
+  "ticker": "ASX",
+  "cik": "1122411",
+  "entityName": "ASE Technology Holding Co., Ltd.",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "6-K",
+    "filedAt": "2026-05-08",
+    "periodOfReport": null,
+    "accessionNumber": "0000950103-26-006979",
+    "primaryDocument": "dp246487_6k.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326006979/dp246487_6k.htm",
+    "entityName": "ASE Technology Holding Co., Ltd.",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": null,
+  "fetchedAt": "2026-05-17T19:46:07+00:00",
+  "source": "sec.gov/edgar"
+}

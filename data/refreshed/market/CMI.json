@@ -1,0 +1,15 @@
+{
+  "ticker": "CMI",
+  "name": "Cummins Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 696.53,
+  "previousClose": 716.45,
+  "dayChangePct": -2.78037,
+  "marketCap": 96113532928,
+  "fiftyTwoWeekHigh": 718.08,
+  "fiftyTwoWeekLow": 307.9,
+  "trailingPE": 36.239857,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

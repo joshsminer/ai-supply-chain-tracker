@@ -1,0 +1,68 @@
+{
+  "slug": "hbm-memory",
+  "name": "High-bandwidth memory (HBM3E to HBM4)",
+  "shortName": "HBM3E / HBM4",
+  "layerId": "memory",
+  "severity": "critical",
+  "severityNote": "Sold out through 2026",
+  "description": "Stacked DRAM with TSV interconnect, attached to GPU and ASIC dies via 2.5D packaging. HBM4 introduces a logic base die fabbed at TSMC, deepening the foundry-memory coupling. HBM bit growth is the single most important AI memory metric.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "HBM bit growth '26E", "value": "~70%", "sub": "YoY, industry", "direction": "up-good" },
+    { "label": "Top-3 share", "value": "~100%", "sub": "Hynix + Samsung + Micron", "direction": "neutral" },
+    { "label": "Wafer area vs DDR5", "value": "~3×", "sub": "Per equivalent bit", "direction": "neutral" },
+    { "label": "HBM contract price", "value": "~5× DDR5", "sub": "Premium widening", "direction": "up-good" }
+  ],
+  "stackPosition": "DRAM wafer → TSV and stacking → HBM cube (8-Hi, 12-Hi, 16-Hi) → known-good-stacked-die sort → ship to TSMC for CoWoS attach to GPU or ASIC → SXM or OAM module → server → rack → datacenter. The structural shift in HBM4 is that the base die moves to TSMC's logic process, making HBM4 supply also gated by foundry capacity.",
+  "supplyStructure": [
+    { "name": "SK Hynix", "location": "M15X, Cheongju", "sharePct": 52, "ticker": "000660.KS" },
+    { "name": "Samsung", "location": "P3 / P4 Pyeongtaek", "sharePct": 35, "note": "HBM4 NVIDIA qualification is make-or-break", "ticker": "005930.KS" },
+    { "name": "Micron", "location": "Taichung, Hiroshima", "sharePct": 13, "ticker": "MU" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 42, "demandIndex": 48, "status": "tight" },
+    { "year": "2025", "supplyIndex": 62, "demandIndex": 74, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 82, "demandIndex": 96, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 95, "demandIndex": 99, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "SK Hynix HBM revenue mix and capex guidance", "source": "000660.KS earnings", "url": "https://www.skhynix.com/eng/ir/" },
+    { "cadence": "quarterly", "name": "Samsung HBM3E 12-Hi and HBM4 NVIDIA qualification language", "source": "005930.KS calls and Korean trade press", "url": "https://www.samsung.com/global/ir/" },
+    { "cadence": "quarterly", "name": "Micron HBM revenue and sold-out commentary", "source": "MU 10-Q", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=723125&type=10-Q" },
+    { "cadence": "monthly", "name": "TrendForce HBM and DDR5 contract price index", "source": "TrendForce / DRAMeXchange", "url": "https://www.trendforce.com/" },
+    { "cadence": "monthly", "name": "Korea DRAM exports by destination", "source": "MOTIE / KITA trade statistics", "url": "https://stat.kita.net/" },
+    { "cadence": "event", "name": "NVIDIA Rubin BOM disclosures including HBM stack count and capacity per stack", "source": "GTC keynotes and supplier IR" }
+  ],
+  "companies": [
+    { "name": "SK Hynix", "tier": "public-primary", "note": "Highest-conviction long; HBM is the engine", "ticker": "000660.KS" },
+    { "name": "Micron", "tier": "public-primary", "note": "Higher-beta catch-up; US-listed pure-ish exposure", "ticker": "MU" },
+    { "name": "Hanmi Semiconductor", "tier": "public-enabler", "note": "TC bonders for HBM stacking", "ticker": "042700.KS" },
+    { "name": "BE Semiconductor (BESI)", "tier": "public-enabler", "note": "Hybrid bonding for HBM4 16-Hi and beyond", "ticker": "BESI.AS" },
+    { "name": "Soulbrain / SK Materials", "tier": "public-materials", "note": "TSV etch and precursors", "ticker": "357780.KS" },
+    { "name": "Eliyan", "tier": "private", "note": "NuLink chiplet interconnect — alternative to HBM at high-bandwidth scale, organic substrate-friendly", "url": "https://eliyan.com", "funding": "Series A · $40M raised Sep '23", "investors": "Tiger Global, Cerberus Capital, Tracker Capital" },
+    { "name": "Astera Labs", "tier": "public-enabler", "note": "Aries retimers + Taurus CXL + Scorpio fabric switches; PCIe + CXL infra layer (now public)", "ticker": "ALAB" }
+  ],
+  "insight": "The next leg isn't capacity — it's hybrid bonding qualification for HBM4 16-Hi at sub-55 micron pitch. BESI tool wins, Hynix and TSMC base-die yields, and the TC-bonder-to-hybrid-bonder transition are the deciding variables. Samsung's HBM4 NVIDIA qualification is the highest-variance event for the 2026 to 2027 supply picture. The under-watched second-order trade is the broader memory backend equipment shift from TCB to hybrid bonding, which extends well past HBM into mainstream DRAM and NAND.",
+  "debates": [
+    {
+      "question": "Does Samsung qualify HBM4 at NVIDIA by end of 2H 2026?",
+      "currentBelief": "Partial qualification likely; full volume share gain still uncertain",
+      "probability": 0.55,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does hybrid bonding meaningfully replace TCB for HBM4 production volumes in 2027?",
+      "currentBelief": "Hybrid bonding wins at 16-Hi; TCB persists at 12-Hi longer than consensus expects",
+      "probability": 0.65,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does CXMT (China) reach competitive HBM2 production by 2028?",
+      "currentBelief": "Yes for domestic Chinese market; export-controlled out of frontier accelerators",
+      "probability": 0.60,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["dram-wafer-capacity", "tsv-throughput"],
+  "downstreamSlugs": ["cowos", "datacenter-silicon"]
+}

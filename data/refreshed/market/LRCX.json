@@ -1,0 +1,15 @@
+{
+  "ticker": "LRCX",
+  "name": "Lam Research Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 284.72,
+  "previousClose": 299.15,
+  "dayChangePct": -4.8236647,
+  "marketCap": 356062593024,
+  "fiftyTwoWeekHigh": 302.0,
+  "fiftyTwoWeekLow": 79.49,
+  "trailingPE": 53.720753,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

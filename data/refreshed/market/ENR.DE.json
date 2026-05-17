@@ -1,0 +1,15 @@
+{
+  "ticker": "ENR.DE",
+  "name": "Siemens Energy AG",
+  "exchange": "GER",
+  "currency": "EUR",
+  "price": 169.54,
+  "previousClose": 177.0,
+  "dayChangePct": -4.214693,
+  "marketCap": 144252862464,
+  "fiftyTwoWeekHigh": 191.66,
+  "fiftyTwoWeekLow": 75.14,
+  "trailingPE": 66.74803,
+  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "source": "yfinance.info"
+}

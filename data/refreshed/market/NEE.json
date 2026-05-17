@@ -1,0 +1,15 @@
+{
+  "ticker": "NEE",
+  "name": "NextEra Energy, Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 93.36,
+  "previousClose": 95.68,
+  "dayChangePct": -2.42475,
+  "marketCap": 194687483904,
+  "fiftyTwoWeekHigh": 98.75,
+  "fiftyTwoWeekLow": 63.88,
+  "trailingPE": 23.69543,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

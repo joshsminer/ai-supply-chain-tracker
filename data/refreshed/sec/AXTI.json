@@ -1,0 +1,28 @@
+{
+  "ticker": "AXTI",
+  "cik": "1051627",
+  "entityName": "AXT INC",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-14",
+    "periodOfReport": null,
+    "accessionNumber": "0001437749-26-017054",
+    "primaryDocument": "axti20260331_10q.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1051627/000143774926017054/axti20260331_10q.htm",
+    "entityName": "AXT INC",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 19356000,
+    "currency": "USD",
+    "periodEnd": "2025-03-31",
+    "fy": 2025,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2025-05-14"
+  },
+  "fetchedAt": "2026-05-17T19:46:00+00:00",
+  "source": "sec.gov/edgar"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "FIX",
+  "cik": "1035983",
+  "entityName": "COMFORT SYSTEMS USA INC",
+  "sicDescription": "Electrical Work",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-23",
+    "periodOfReport": null,
+    "accessionNumber": "0001104659-26-047689",
+    "primaryDocument": "fix-20260331x10q.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926047689/fix-20260331x10q.htm",
+    "entityName": "COMFORT SYSTEMS USA INC",
+    "sicDescription": "Electrical Work"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 2865332000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-04-23"
+  },
+  "fetchedAt": "2026-05-17T19:45:59+00:00",
+  "source": "sec.gov/edgar"
+}

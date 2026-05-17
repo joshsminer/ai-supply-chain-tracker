@@ -1,0 +1,28 @@
+{
+  "ticker": "VRT",
+  "cik": "1674101",
+  "entityName": "Vertiv Holdings Co",
+  "sicDescription": "Electronic Components, NEC",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-22",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-026556",
+    "primaryDocument": "vrt-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026026556/vrt-20260331.htm",
+    "entityName": "Vertiv Holdings Co",
+    "sicDescription": "Electronic Components, NEC"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 0,
+    "currency": "USD",
+    "periodEnd": "2019-12-31",
+    "fy": 2019,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2020-03-12"
+  },
+  "fetchedAt": "2026-05-17T19:46:15+00:00",
+  "source": "sec.gov/edgar"
+}

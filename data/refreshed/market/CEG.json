@@ -1,0 +1,15 @@
+{
+  "ticker": "CEG",
+  "name": "Constellation Energy Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 267.2,
+  "previousClose": 275.26,
+  "dayChangePct": -2.9281397,
+  "marketCap": 96509984768,
+  "fiftyTwoWeekHigh": 412.7,
+  "fiftyTwoWeekLow": 243.3,
+  "trailingPE": 23.194445,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

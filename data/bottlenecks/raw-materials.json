@@ -1,0 +1,72 @@
+{
+  "slug": "raw-materials",
+  "name": "Critical raw materials (REE, neon, helium, photoresist precursors)",
+  "shortName": "Critical materials",
+  "layerId": "raw-materials",
+  "severity": "tight",
+  "severityNote": "Diversified but several single-country exposures",
+  "description": "The semi/datacenter materials base spans rare earth elements (NdPr for motor magnets in cooling/power, Dy/Tb for high-temp magnets), neon (excimer laser fill, mostly Ukrainian/Korean), helium (cryogenics + lithography), high-purity quartz (silicon crucibles), and photoresist precursors. Each is a sub-bottleneck with its own geopolitical exposure; collectively they do not currently gate the cycle but individually any one could.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "China REE refining share", "value": "~85%", "sub": "Of global capacity", "direction": "neutral" },
+    { "label": "Neon price '26 vs '21", "value": "~2.8×", "sub": "Eased from 30× '22 spike", "direction": "down-good" },
+    { "label": "High-purity quartz HPQ-1", "value": "1 source", "sub": "Sibelco Spruce Pine NC", "direction": "neutral" },
+    { "label": "Photoresist precursor concentration", "value": "~90% Japan", "sub": "Tokuyama, Mitsubishi Chemical", "direction": "neutral" }
+  ],
+  "stackPosition": "Mine output (China, Australia, US-Mountain Pass, Malaysia-Lynas) → separation + refining (China 85%+) → metal/oxide forms → permanent magnet manufacture OR semiconductor process gas blends. The neon sub-chain: air-separation by-product (Ukraine + Korea + Russia historically; Korean expansion post-2022 invasion) → purification → mixed Ne/Xe/F gas blends → fab. Each material has a distinct supply chain; the common thread is concentration risk.",
+  "supplyStructure": [
+    { "name": "China (REE refining)", "location": "Inner Mongolia · Jiangxi · Sichuan", "sharePct": 65, "note": "China Northern Rare Earth + China Rare Earth Group" },
+    { "name": "Ukraine + Korea (neon)", "location": "Mariupol historically · Korea expansion '22-'26", "sharePct": 12, "note": "Ukraine pre-war was ~40-50% of high-grade neon" },
+    { "name": "Sibelco (HPQ)", "location": "US · Spruce Pine NC", "sharePct": 8, "note": "Effective monopoly on highest-purity crucible quartz" },
+    { "name": "Japan (photoresist precursors)", "location": "Various · Tokuyama, Mitsubishi Chemical, Shin-Etsu", "sharePct": 8, "note": "Concentrated chemical supply" },
+    { "name": "Lynas + MP Materials + others", "location": "Australia · US · ex-China REE", "sharePct": 7, "ticker": "MP" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 70, "demandIndex": 78, "status": "tight" },
+    { "year": "2025", "supplyIndex": 76, "demandIndex": 84, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 84, "demandIndex": 90, "status": "tight" },
+    { "year": "2027E", "supplyIndex": 92, "demandIndex": 95, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 102, "demandIndex": 98, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "monthly", "name": "REE price index — NdPr, Dy, Tb spot", "source": "Argus, Shanghai Metals Market" },
+    { "cadence": "quarterly", "name": "MP Materials and Lynas operating results + concentrate / oxide shipments", "source": "MP 10-Q, Lynas ASX disclosures" },
+    { "cadence": "quarterly", "name": "Neon price commentary in fab earnings (SK Hynix, Samsung Foundry)", "source": "Korean fab earnings transcripts" },
+    { "cadence": "event", "name": "China export-control announcements on REE / processing tech", "source": "MOFCOM, Customs notices" },
+    { "cadence": "event", "name": "US Defense Production Act / DOE critical materials investments", "source": "DOE press" },
+    { "cadence": "annual", "name": "USGS Mineral Commodity Summaries", "source": "usgs.gov", "url": "https://pubs.usgs.gov/periodicals/mcs2025/" }
+  ],
+  "companies": [
+    { "name": "MP Materials", "tier": "public-primary", "note": "Only US-listed integrated REE play; Mountain Pass + Fort Worth processing", "ticker": "MP" },
+    { "name": "Lynas Rare Earths", "tier": "public-primary", "note": "Australian-listed; largest ex-China integrated producer", "ticker": "LYC.AX" },
+    { "name": "China Northern Rare Earth", "tier": "public-primary", "note": "Largest light-REE producer globally; Shanghai-listed", "ticker": "600111.SS" },
+    { "name": "Sibelco", "tier": "private", "note": "Spruce Pine HPQ monopoly — only commercial source of HPQ-1 globally", "url": "https://www.sibelco.com" },
+    { "name": "USA Rare Earth", "tier": "private", "note": "Round Top heavy-REE deposit + Stillwater OK magnet plant; DoD-backed", "url": "https://usare.com", "funding": "SPAC merger pending (Inflection Point Acquisition Corp II)" },
+    { "name": "Niron Magnetics", "tier": "private", "note": "Rare-earth-free iron-nitride magnets; alternative path around China REE controls", "url": "https://www.niron.com", "funding": "Series B · $33M raised + DoE/DoD grants", "investors": "GM Ventures, Stellantis Ventures, Volvo Cars" },
+    { "name": "Air Products / Linde", "tier": "public-enabler", "note": "Industrial gases including neon, helium; AI exposure dilutes in vast diversified businesses", "ticker": "LIN" },
+    { "name": "Tokuyama / Shin-Etsu / Mitsubishi Chemical", "tier": "public-materials", "note": "Photoresist precursors; concentrated Japanese supply chain", "ticker": "4063.T" }
+  ],
+  "insight": "Raw materials are the tail-risk bottleneck — none is currently gating the cycle, but several have asymmetric downside if geopolitics break the wrong way. The watch items in order of severity: (1) China REE export-controls extending to refined NdPr / Dy, which would whack permanent-magnet motor supply across cooling and EV; (2) Sibelco Spruce Pine HPQ — a single North Carolina quarry feeds essentially every silicon wafer crucible globally, with Hurricane Helene proving the single-point-of-failure; (3) neon back to spike if Korea expansion underdelivers. The investable wedge is MP Materials at any geopolitical re-rating, plus a long-dated option on whoever owns Sibelco when it eventually surfaces. None of this is an AI-cycle thesis on its own — it's a portfolio-protection thesis layered behind the cycle.",
+  "debates": [
+    {
+      "question": "Does China impose new export controls on refined REE / magnets by end of 2026?",
+      "currentBelief": "Likely on at least one heavy-REE or magnet category; precise scope uncertain",
+      "probability": 0.50,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does a credible second-source HPQ-1 emerge by 2028?",
+      "currentBelief": "Norwegian / Australian projects exist but qualification is multi-year; unlikely at scale by 2028",
+      "probability": 0.25,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does neon pricing re-spike (>5× current) at any point through 2027?",
+      "currentBelief": "Possible if Korean expansion underdelivers OR Russia-side supply normalizes faster than consensus; both look ~10% likely",
+      "probability": 0.15,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": ["leading-edge-logic", "large-power-transformers"]
+}

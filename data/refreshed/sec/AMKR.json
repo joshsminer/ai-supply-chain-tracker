@@ -1,0 +1,28 @@
+{
+  "ticker": "AMKR",
+  "cik": "1047127",
+  "entityName": "AMKOR TECHNOLOGY, INC.",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-28",
+    "periodOfReport": null,
+    "accessionNumber": "0001047127-26-000020",
+    "primaryDocument": "amkr-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000020/amkr-20260331.htm",
+    "entityName": "AMKOR TECHNOLOGY, INC.",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 4413685000,
+    "currency": "USD",
+    "periodEnd": "2021-09-30",
+    "fy": 2021,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2021-10-29"
+  },
+  "fetchedAt": "2026-05-17T19:46:37+00:00",
+  "source": "sec.gov/edgar"
+}

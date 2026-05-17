@@ -1,0 +1,65 @@
+{
+  "slug": "cpo-ramp",
+  "name": "Co-packaged optics (CPO)",
+  "shortName": "CPO ramp",
+  "layerId": "optical-interconnect",
+  "severity": "monitoring",
+  "severityNote": "Real but timing uncertain; pluggables dominate near-term",
+  "description": "Co-packaged optics integrate optical engines onto the switch/GPU substrate rather than into a pluggable cage, slashing electrical-channel loss and pluggable-transceiver power overhead. NVIDIA Quantum-X (CPO switch) and Broadcom Bailly are the leading commercial efforts; volume ramp is gated by yield, optical-engine modularity, and serviceability — not by underlying technology readiness.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "Power per bit vs pluggable", "value": "~50%", "sub": "CPO advantage at 1.6T+", "direction": "down-good" },
+    { "label": "Quantum-X CPO ports", "value": "115.2 Tb/s", "sub": "NVIDIA Spectrum-X CPO switch", "direction": "up-good" },
+    { "label": "Yield maturity", "value": "Pilot", "sub": "Volume HVM 2027E", "direction": "neutral" },
+    { "label": "Adoption share '27E", "value": "<10%", "sub": "Of new fabric ports", "direction": "neutral" }
+  ],
+  "stackPosition": "InP wafer (or III-V-on-Si) → laser die → optical engine (Lightwave Logic / Ayar / NVIDIA in-house) → ELS (external laser source) module → switch/GPU substrate co-package integration → 2.5D/3D packaging at TSMC → board / rack. CPO compresses 3-4 layers of the optical stack into the package step, with most value migrating upstream to laser-source vendors and integrators.",
+  "supplyStructure": [
+    { "name": "TSMC + NVIDIA integration", "location": "Taiwan · co-design", "sharePct": 45, "note": "Quantum-X CPO production", "ticker": "TSM" },
+    { "name": "Broadcom + co-pack partners", "location": "US · ASE Taiwan back-end", "sharePct": 25, "note": "Bailly + Tomahawk CPO variant", "ticker": "AVGO" },
+    { "name": "Ayar Labs (ELS)", "location": "US · private", "sharePct": 12, "note": "External laser source IP licensee" },
+    { "name": "Coherent / Lumentum (laser die supply)", "location": "US · merchant", "sharePct": 12, "note": "Underlying laser supply for ELS modules", "ticker": "COHR" },
+    { "name": "Other (Marvell, NcodiN, Cisco)", "location": "Various", "sharePct": 6, "note": "Trailing efforts" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 8, "demandIndex": 12, "status": "tight" },
+    { "year": "2025", "supplyIndex": 22, "demandIndex": 30, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 45, "demandIndex": 50, "status": "tight" },
+    { "year": "2027E", "supplyIndex": 70, "demandIndex": 75, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 95, "demandIndex": 95, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "event", "name": "NVIDIA Quantum-X CPO switch volume shipment milestones", "source": "NVIDIA GTC / datacenter events" },
+    { "cadence": "event", "name": "Broadcom Bailly CPO product disclosures + hyperscaler design wins", "source": "AVGO earnings + analyst day" },
+    { "cadence": "quarterly", "name": "TSMC advanced packaging commentary mentioning CPO-coupling", "source": "TSM earnings transcripts" },
+    { "cadence": "annual", "name": "OFC and ECOC CPO panel + commercial demo announcements", "source": "Conferences" },
+    { "cadence": "event", "name": "Ayar Labs commercial design wins + funding events", "source": "Vendor + private-market press" }
+  ],
+  "companies": [
+    { "name": "TSMC", "tier": "public-primary", "note": "Substrate-side integrator; captures packaging margin on each CPO die", "ticker": "TSM" },
+    { "name": "Broadcom", "tier": "public-primary", "note": "Bailly + Tomahawk-CPO; switching-silicon integration story", "ticker": "AVGO" },
+    { "name": "NVIDIA", "tier": "public-primary", "note": "Quantum-X CPO is the lead reference design; in-house optical engine", "ticker": "NVDA" },
+    { "name": "Coherent / Lumentum", "tier": "public-device", "note": "Underlying laser supply regardless of CPO vs pluggable mix", "ticker": "COHR" },
+    { "name": "Ayar Labs", "tier": "private", "note": "TeraPHY + ELS architecture; lead-design partner with NVIDIA and Intel for CPO", "url": "https://ayarlabs.com", "funding": "Series D · $155M total", "investors": "NVIDIA, AMD, Intel Capital, HPE, GlobalFoundries" },
+    { "name": "Lightmatter", "tier": "private", "note": "Passage photonic interconnect substrate — direct alternative to CPO at the package level", "url": "https://lightmatter.co", "funding": "Series D · $400M raised Oct '24 · $4.4B post-money", "investors": "T. Rowe Price, Fidelity, GV" },
+    { "name": "Celestial AI", "tier": "private", "note": "Photonic Fabric — competes with both CPO and HBM-side high-bandwidth approaches", "url": "https://www.celestial.ai", "funding": "Series C · $175M raised Mar '24", "investors": "US Innovative Technology Fund, Temasek, Porsche" },
+    { "name": "NcodiN", "tier": "private", "note": "III-V-on-Si monolithic nanolaser approach to ELS", "url": "https://ncodin.com", "funding": "Seed · €5M", "investors": "Earlybird, Bpifrance" }
+  ],
+  "insight": "CPO is real technology with uncertain volume timing — the industry has been called 'CPO next year' for five consecutive years. The investable framing is that pluggable transceivers remain dominant through 2027, with CPO ramping as a complement at the highest bandwidth tiers rather than a replacement. The asymmetric long is laser-source vendors (Coherent, Lumentum) whose demand is mix-agnostic. The widow-maker is calling CPO too early and shorting transceiver makers — that trade has burned multiple managers in 2024-2025. Watch ELS architecture wins as the leading indicator: if Ayar Labs or NcodiN closes a hyperscaler GPU deal, the curve steepens fast.",
+  "debates": [
+    {
+      "question": "Does CPO exceed 10% of new fabric port shipments by end of 2027?",
+      "currentBelief": "Likely below — pluggable inertia plus serviceability concerns drag the ramp",
+      "probability": 0.30,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does a non-NVIDIA hyperscaler adopt CPO at volume by 2027?",
+      "currentBelief": "Possible Google / Meta tertiary deployments; volume adoption unlikely",
+      "probability": 0.25,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["indium-phosphide", "leading-edge-logic"],
+  "downstreamSlugs": ["datacenter-silicon"]
+}

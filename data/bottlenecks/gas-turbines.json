@@ -1,0 +1,63 @@
+{
+  "slug": "gas-turbines",
+  "name": "Heavy-duty gas turbines",
+  "shortName": "Gas turbines",
+  "layerId": "power-equipment",
+  "severity": "critical",
+  "severityNote": "Lead times 4-5 years; OEM books full to 2030",
+  "description": "H-class and J-class heavy-duty gas turbines are the fastest path to firm dispatchable generation for behind-the-meter datacenter power. The three-OEM oligopoly (GE Vernova, Siemens Energy, Mitsubishi Power) is sold out through end-of-decade for both new builds and major-overhaul slots.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "New-build slot lead time", "value": "~5 yr", "sub": "from 2 yr (2022)", "direction": "up-bad" },
+    { "label": "Top-3 share (heavy-duty)", "value": "~95%", "sub": "GEV + SIE + MHI", "direction": "neutral" },
+    { "label": "GEV gas-power backlog", "value": "~$30B", "sub": "1Q26", "direction": "up-good" },
+    { "label": "Hot-section material lead time", "value": "~24 mo", "sub": "single-crystal blades", "direction": "up-bad" }
+  ],
+  "stackPosition": "Nickel-base superalloy + investment castings (PCC, Doncasters) → single-crystal turbine blades → hot-section assembly → compressor and combustor build → full unit test at OEM facility → ship by rail or barge → site erection and commissioning → grid sync OR direct datacenter feed. The OEM hot-section is the visible chokepoint; single-crystal blade casting is the upstream constraint.",
+  "supplyStructure": [
+    { "name": "GE Vernova (gas power)", "location": "US · Greenville SC + global", "sharePct": 38, "ticker": "GEV" },
+    { "name": "Siemens Energy (gas services)", "location": "Germany · Berlin + Charlotte NC", "sharePct": 32, "ticker": "ENR.DE" },
+    { "name": "Mitsubishi Power", "location": "Japan · Takasago", "sharePct": 25, "note": "Subsidiary of Mitsubishi Heavy Industries", "ticker": "7011.T" },
+    { "name": "Other (Ansaldo, Solar Turbines)", "location": "Various", "sharePct": 5, "note": "Smaller frames; not at datacenter scale" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 50, "demandIndex": 72, "status": "tight" },
+    { "year": "2025", "supplyIndex": 55, "demandIndex": 88, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 62, "demandIndex": 96, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 70, "demandIndex": 99, "status": "critical" },
+    { "year": "2028E", "supplyIndex": 80, "demandIndex": 95, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "GE Vernova Gas Power orders, backlog, and book-to-bill", "source": "GEV 10-Q" },
+    { "cadence": "quarterly", "name": "Siemens Energy Gas Services orders + services attach commentary", "source": "ENR.DE earnings" },
+    { "cadence": "quarterly", "name": "Mitsubishi Heavy Industries Energy segment results", "source": "7011.T earnings" },
+    { "cadence": "event", "name": "Hyperscaler behind-the-meter PPA / EPC announcements", "source": "Microsoft, Meta, AWS press" },
+    { "cadence": "event", "name": "DOE / state PUC interconnection rulings on co-located gas + datacenter", "source": "PUC dockets" },
+    { "cadence": "annual", "name": "McCoy Power Reports gas turbine market data", "source": "McCoy (paid)" }
+  ],
+  "companies": [
+    { "name": "GE Vernova", "tier": "public-primary", "note": "Pure-play public OEM with US-listed liquidity; cleanest expression", "ticker": "GEV" },
+    { "name": "Siemens Energy", "tier": "public-primary", "note": "Gas Services + Grid combined; European listing", "ticker": "ENR.DE" },
+    { "name": "Mitsubishi Heavy Industries", "tier": "public-primary", "note": "Mitsubishi Power parent; conglomerate discount applies", "ticker": "7011.T" },
+    { "name": "Precision Castparts (Berkshire)", "tier": "private", "note": "Hot-section investment castings — unlisted since BRK acquisition" },
+    { "name": "Doncasters", "tier": "private", "note": "Single-crystal blade casting; UK-based" },
+    { "name": "Wartsila", "tier": "public-enabler", "note": "Reciprocating gas engines — smaller-scale alternative for fast-start peakers", "ticker": "WRT1V.HE" }
+  ],
+  "insight": "Heavy-duty gas turbines are the cleanest behind-the-meter generation play available, and the OEM oligopoly is so tight that pricing has crossed from cost-plus to scarcity-rent within 18 months. GEV is the cleanest US-listed expression and has already moved hard; the second-order trade is hot-section materials — single-crystal blade casting at PCC and Doncasters is an even narrower oligopoly with stronger pricing power but no listed pure play. The under-watched leg is reciprocating engines (Wartsila, Cummins) for sub-100 MW colos where waiting 5 years for a frame turbine kills the project IRR.",
+  "debates": [
+    {
+      "question": "Do hyperscaler behind-the-meter gas builds reach 10 GW of announced capacity by end of 2026?",
+      "currentBelief": "On track — Meta, Microsoft, and AWS have collectively signaled >6 GW already",
+      "probability": 0.75,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does a major hyperscaler walk back gas commitments under sustainability pressure by 2027?",
+      "currentBelief": "Unlikely while load growth dominates the agenda; carbon offsets absorb the optics",
+      "probability": 0.20,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": ["interconnection-queues"]
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "AVGO",
+  "cik": "1730168",
+  "entityName": "Broadcom Inc.",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-03-11",
+    "periodOfReport": null,
+    "accessionNumber": "0001730168-26-000016",
+    "primaryDocument": "avgo-20260201.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/avgo-20260201.htm",
+    "entityName": "Broadcom Inc.",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 20848000000,
+    "currency": "USD",
+    "periodEnd": "2018-11-04",
+    "fy": 2018,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2018-12-21"
+  },
+  "fetchedAt": "2026-05-17T19:46:18+00:00",
+  "source": "sec.gov/edgar"
+}

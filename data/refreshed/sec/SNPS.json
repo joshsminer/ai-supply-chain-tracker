@@ -1,0 +1,28 @@
+{
+  "ticker": "SNPS",
+  "cik": "883241",
+  "entityName": "SYNOPSYS INC",
+  "sicDescription": "Services-Prepackaged Software",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-02-25",
+    "periodOfReport": null,
+    "accessionNumber": "0000883241-26-000014",
+    "primaryDocument": "snps-20260131.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000014/snps-20260131.htm",
+    "entityName": "SYNOPSYS INC",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 5081542000,
+    "currency": "USD",
+    "periodEnd": "2022-10-31",
+    "fy": 2022,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2022-12-12"
+  },
+  "fetchedAt": "2026-05-17T19:46:27+00:00",
+  "source": "sec.gov/edgar"
+}

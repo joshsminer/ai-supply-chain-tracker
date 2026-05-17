@@ -1,0 +1,15 @@
+{
+  "ticker": "SNPS",
+  "name": "Synopsys, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 502.42,
+  "previousClose": 510.02002,
+  "dayChangePct": -1.4901388,
+  "marketCap": 96244596736,
+  "fiftyTwoWeekHigh": 651.73,
+  "fiftyTwoWeekLow": 376.18,
+  "trailingPE": 76.94028,
+  "fetchedAt": "2026-05-17T19:45:25+00:00",
+  "source": "yfinance.info"
+}

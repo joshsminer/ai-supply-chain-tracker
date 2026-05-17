@@ -1,0 +1,15 @@
+{
+  "ticker": "VST",
+  "name": "Vistra Corp.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 139.68,
+  "previousClose": 141.9,
+  "dayChangePct": -1.56448,
+  "marketCap": 47097643008,
+  "fiftyTwoWeekHigh": 219.82,
+  "fiftyTwoWeekLow": 137.81,
+  "trailingPE": 23.357859,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

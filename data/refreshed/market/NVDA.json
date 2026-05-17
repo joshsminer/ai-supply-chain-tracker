@@ -1,0 +1,15 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 225.32,
+  "previousClose": 235.74,
+  "dayChangePct": -4.420123,
+  "marketCap": 5457368842240,
+  "fiftyTwoWeekHigh": 236.54,
+  "fiftyTwoWeekLow": 129.16,
+  "trailingPE": 46.077713,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

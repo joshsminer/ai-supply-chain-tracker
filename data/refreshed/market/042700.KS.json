@@ -1,0 +1,15 @@
+{
+  "ticker": "042700.KS",
+  "name": "HANMI Semiconductor Co., Ltd.",
+  "exchange": "KSC",
+  "currency": "KRW",
+  "price": 369000.0,
+  "previousClose": 409500.0,
+  "dayChangePct": -9.89011,
+  "marketCap": 35000758042624,
+  "fiftyTwoWeekHigh": 426000.0,
+  "fiftyTwoWeekLow": 0.0,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "source": "yfinance.info"
+}

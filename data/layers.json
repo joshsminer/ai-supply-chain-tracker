@@ -1,0 +1,14 @@
+[
+  { "id": "site-grid", "number": 12, "name": "Site & grid", "subtitle": "Physical" },
+  { "id": "power-equipment", "number": 11, "name": "Power equipment", "subtitle": "Electrical" },
+  { "id": "human-capital", "number": 10, "name": "Human capital", "subtitle": "Labor" },
+  { "id": "thermal-rack", "number": 9, "name": "Thermal & rack", "subtitle": "Datacenter" },
+  { "id": "optical-interconnect", "number": 8, "name": "Optical & interconnect", "subtitle": "Datacenter" },
+  { "id": "datacenter-silicon", "number": 7, "name": "Datacenter silicon", "subtitle": "Compute" },
+  { "id": "advanced-packaging", "number": 6, "name": "Advanced packaging", "subtitle": "Back-end" },
+  { "id": "memory", "number": 5, "name": "Memory", "subtitle": "DRAM / HBM" },
+  { "id": "leading-edge-logic", "number": 4, "name": "Leading-edge logic", "subtitle": "Foundry" },
+  { "id": "wafer-fab-equipment", "number": 3, "name": "Wafer-fab equipment", "subtitle": "WFE" },
+  { "id": "substrates-wafers", "number": 2, "name": "Substrates & wafers", "subtitle": "Materials" },
+  { "id": "raw-materials", "number": 1, "name": "Raw materials", "subtitle": "Upstream" }
+]

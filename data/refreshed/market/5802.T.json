@@ -1,0 +1,15 @@
+{
+  "ticker": "5802.T",
+  "name": "Sumitomo Electric Industries, Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 10980.0,
+  "previousClose": 12105.0,
+  "dayChangePct": -9.29368,
+  "marketCap": 8563520438272,
+  "fiftyTwoWeekHigh": 13030.0,
+  "fiftyTwoWeekLow": 2562.0,
+  "trailingPE": 23.20176,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

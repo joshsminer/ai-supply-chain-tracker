@@ -1,0 +1,15 @@
+{
+  "ticker": "5016.T",
+  "name": "JX Advanced Metals Corporation",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 4175.0,
+  "previousClose": 4447.0,
+  "dayChangePct": -6.116483,
+  "marketCap": 3866575765504,
+  "fiftyTwoWeekHigh": 5828.0,
+  "fiftyTwoWeekLow": 737.3,
+  "trailingPE": 37.035393,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

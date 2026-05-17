@@ -1,0 +1,15 @@
+{
+  "ticker": "AVGO",
+  "name": "Broadcom Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 425.19,
+  "previousClose": 439.79,
+  "dayChangePct": -3.3197675,
+  "marketCap": 2013133668352,
+  "fiftyTwoWeekHigh": 442.36,
+  "fiftyTwoWeekLow": 221.6,
+  "trailingPE": 82.721794,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

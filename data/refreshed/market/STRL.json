@@ -1,0 +1,15 @@
+{
+  "ticker": "STRL",
+  "name": "Sterling Infrastructure, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 848.84,
+  "previousClose": 889.03,
+  "dayChangePct": -4.520657,
+  "marketCap": 26047465472,
+  "fiftyTwoWeekHigh": 893.13,
+  "fiftyTwoWeekLow": 176.15,
+  "trailingPE": 75.78929,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

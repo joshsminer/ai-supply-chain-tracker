@@ -1,0 +1,15 @@
+{
+  "ticker": "AMD",
+  "name": "Advanced Micro Devices, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 424.1,
+  "previousClose": 449.7,
+  "dayChangePct": -5.6926856,
+  "marketCap": 691537707008,
+  "fiftyTwoWeekHigh": 469.22,
+  "fiftyTwoWeekLow": 107.67,
+  "trailingPE": 140.89702,
+  "fetchedAt": "2026-05-17T19:45:19+00:00",
+  "source": "yfinance.info"
+}

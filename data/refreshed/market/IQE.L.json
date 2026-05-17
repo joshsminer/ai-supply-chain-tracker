@@ -1,0 +1,15 @@
+{
+  "ticker": "IQE.L",
+  "name": "IQE plc",
+  "exchange": "LSE",
+  "currency": "GBp",
+  "price": 46.0,
+  "previousClose": 49.6,
+  "dayChangePct": -7.2580614,
+  "marketCap": 450745888,
+  "fiftyTwoWeekHigh": 72.9,
+  "fiftyTwoWeekLow": 4.655,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "ETN",
+  "cik": "1551182",
+  "entityName": "Eaton Corp plc",
+  "sicDescription": "Misc Industrial & Commercial Machinery & Equipment",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-05",
+    "periodOfReport": null,
+    "accessionNumber": "0001551182-26-000013",
+    "primaryDocument": "etn-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000013/etn-20260331.htm",
+    "entityName": "Eaton Corp plc",
+    "sicDescription": "Misc Industrial & Commercial Machinery & Equipment"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 0,
+    "currency": "USD",
+    "periodEnd": "2016-12-31",
+    "fy": 2016,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2017-02-22"
+  },
+  "fetchedAt": "2026-05-17T19:46:47+00:00",
+  "source": "sec.gov/edgar"
+}

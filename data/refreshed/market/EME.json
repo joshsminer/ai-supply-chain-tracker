@@ -1,0 +1,15 @@
+{
+  "ticker": "EME",
+  "name": "EMCOR Group, Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 913.11,
+  "previousClose": 930.03,
+  "dayChangePct": -1.8193,
+  "marketCap": 40663134208,
+  "fiftyTwoWeekHigh": 951.96,
+  "fiftyTwoWeekLow": 450.68,
+  "trailingPE": 30.672152,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

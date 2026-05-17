@@ -1,0 +1,28 @@
+{
+  "ticker": "MOD",
+  "cik": "67347",
+  "entityName": "MODINE MANUFACTURING CO",
+  "sicDescription": "Motor Vehicle Parts & Accessories",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-02-05",
+    "periodOfReport": null,
+    "accessionNumber": "0001104659-26-010790",
+    "primaryDocument": "mod-20251231x10q.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/mod-20251231x10q.htm",
+    "entityName": "MODINE MANUFACTURING CO",
+    "sicDescription": "Motor Vehicle Parts & Accessories"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 1352500000,
+    "currency": "USD",
+    "periodEnd": "2016-03-31",
+    "fy": 2016,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2016-05-26"
+  },
+  "fetchedAt": "2026-05-17T19:46:02+00:00",
+  "source": "sec.gov/edgar"
+}

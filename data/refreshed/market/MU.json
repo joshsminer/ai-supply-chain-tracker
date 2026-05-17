@@ -1,0 +1,15 @@
+{
+  "ticker": "MU",
+  "name": "Micron Technology, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 724.66,
+  "previousClose": 776.00995,
+  "dayChangePct": -6.6171803,
+  "marketCap": 817223696384,
+  "fiftyTwoWeekHigh": 818.67,
+  "fiftyTwoWeekLow": 90.93,
+  "trailingPE": 34.246693,
+  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "source": "yfinance.info"
+}

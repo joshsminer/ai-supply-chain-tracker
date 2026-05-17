@@ -1,0 +1,70 @@
+{
+  "slug": "thermal-rack",
+  "name": "Liquid cooling & rack-scale thermal",
+  "shortName": "Liquid cooling",
+  "layerId": "thermal-rack",
+  "severity": "tight",
+  "severityNote": "Capacity ramping fast; spec compliance is the gate",
+  "description": "Direct-to-chip cold plates, coolant distribution units (CDUs), and rack manifolds are mandatory for NVL72-class racks running >100 kW per rack. The market is supply-constrained on engineering hours and validation labs more than on materials; lead times are falling but qualification cycles per hyperscaler are long.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "Rack density 2026", "value": "~120 kW", "sub": "vs ~30 kW (2023)", "direction": "up-bad" },
+    { "label": "DLC market growth '26E", "value": "+95%", "sub": "Dell'Oro estimate", "direction": "up-good" },
+    { "label": "CDU lead time", "value": "~26 wk", "sub": "from 40+ wk peak", "direction": "down-good" },
+    { "label": "Hyperscaler DLC mix '26E", "value": "~55%", "sub": "Of new AI builds", "direction": "up-good" }
+  ],
+  "stackPosition": "Cold plate (copper micro-channel, on GPU/CPU) → manifold + quick-disconnect → in-rack distribution → CDU (rack or row level) → secondary loop → facility chilled water → cooling tower OR dry cooler. Materials are commoditized; the binding constraint is integration engineering at the rack OEM (Foxconn, Quanta, Wiwynn, Supermicro) and the validation labs at hyperscalers.",
+  "supplyStructure": [
+    { "name": "Vertiv (Liebert)", "location": "US · Westerville OH + global", "sharePct": 24, "ticker": "VRT" },
+    { "name": "Delta Electronics", "location": "Taiwan · datacenter PDUs + cooling", "sharePct": 18, "ticker": "2308.TW" },
+    { "name": "Schneider Electric (Motivair)", "location": "France · global · acquired Motivair '24", "sharePct": 16, "ticker": "SU.PA" },
+    { "name": "nVent Electric", "location": "US · datacenter cooling + enclosures", "sharePct": 9, "ticker": "NVT" },
+    { "name": "Asetek + Coolerator + GRC + Submer", "location": "Various · DLC pure plays / immersion", "sharePct": 12, "note": "Asetek taken private 2024; mostly small-cap / private names" },
+    { "name": "Other (Modine, Trane, Carrier)", "location": "Various", "sharePct": 21, "ticker": "MOD" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 35, "demandIndex": 52, "status": "critical" },
+    { "year": "2025", "supplyIndex": 58, "demandIndex": 78, "status": "tight" },
+    { "year": "2026E", "supplyIndex": 82, "demandIndex": 92, "status": "tight" },
+    { "year": "2027E", "supplyIndex": 102, "demandIndex": 100, "status": "balanced" },
+    { "year": "2028E", "supplyIndex": 118, "demandIndex": 104, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "Vertiv liquid cooling order book and book-to-bill", "source": "VRT 10-Q" },
+    { "cadence": "quarterly", "name": "Delta Electronics monthly revenue and segment commentary", "source": "TWSE monthly disclosures" },
+    { "cadence": "quarterly", "name": "Schneider Electric Secure Power segment and Motivair integration", "source": "SU.PA earnings" },
+    { "cadence": "quarterly", "name": "nVent and Modine datacenter cooling segment results", "source": "NVT, MOD 10-Q" },
+    { "cadence": "event", "name": "NVIDIA NVL72 / NVL576 deployment milestones at hyperscalers", "source": "GTC, hyperscaler events" },
+    { "cadence": "annual", "name": "Dell'Oro datacenter physical infrastructure report", "source": "Dell'Oro Group (paid)" }
+  ],
+  "companies": [
+    { "name": "Vertiv", "tier": "public-primary", "note": "Largest pure-play datacenter infrastructure; highest beta to AI rack ramp", "ticker": "VRT" },
+    { "name": "Schneider Electric", "tier": "public-primary", "note": "Motivair acquisition brings DLC IP in-house; European listing", "ticker": "SU.PA" },
+    { "name": "Delta Electronics", "tier": "public-primary", "note": "Power + cooling combined; integrated rack delivery model", "ticker": "2308.TW" },
+    { "name": "nVent Electric", "tier": "public-enabler", "note": "Smaller share but pure-play DLC + enclosures", "ticker": "NVT" },
+    { "name": "Modine Manufacturing", "tier": "public-enabler", "note": "Edge / smaller datacenter HVAC; less pure AI mix", "ticker": "MOD" },
+    { "name": "Asetek", "tier": "private", "note": "Workstation DLC heritage; taken private by Solar III Holdings 2024", "url": "https://www.asetek.com" },
+    { "name": "Submer", "tier": "private", "note": "Single-phase immersion cooling; gaining sovereign-AI datacenter deployments in EU/MENA", "url": "https://submer.com", "funding": "Series C · $55M+ raised", "investors": "Mundi Ventures, A&G Energy Transition" },
+    { "name": "Green Revolution Cooling (GRC)", "tier": "private", "note": "ICEraQ single-phase immersion; 1000+ deployments globally", "url": "https://www.grcooling.com" },
+    { "name": "JetCool Technologies", "tier": "private", "note": "Microconvective DLC at chip level; commercial DLC for HPE / Supermicro", "url": "https://jetcool.com", "funding": "Series A · $17M raised", "investors": "Coolerator parent (Flex)" },
+    { "name": "Iceotope", "tier": "private", "note": "Chassis-level precision immersion; edge + AI deployments", "url": "https://www.iceotope.com", "funding": "Growth · $35M+ raised", "investors": "ABC Impact, Edinburgh Worldwide" },
+    { "name": "ZutaCore", "tier": "private", "note": "HyperCool waterless two-phase DLC; Equinix + Mizuno deployments", "url": "https://zutacore.com" }
+  ],
+  "insight": "Liquid cooling is rapidly moving from constrained to competitive — the right framing is not 'who has capacity' but 'who has hyperscaler qualification at scale.' Vertiv is the cleanest US-listed expression with the highest AI-rack mix; Schneider's Motivair integration is the upside catalyst over the next 18 months. The widow-maker trade is the small-cap DLC pure plays (Asetek, Coolerator-class) that look mispriced on technology but lose on relationship and execution. Watch immersion cooling closely — the technical advantages are real but hyperscaler adoption has been slower than industry voices suggest.",
+  "debates": [
+    {
+      "question": "Does direct-to-chip liquid cooling penetrate >60% of new AI builds by end of 2026?",
+      "currentBelief": "Likely — NVL72 hard requirement plus Meta + Microsoft DLC roadmap commitments",
+      "probability": 0.70,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does immersion cooling reach >10% share of new AI deployments by 2027?",
+      "currentBelief": "Unlikely — qualification cycle longer, hyperscaler ops resistance persistent",
+      "probability": 0.20,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": []
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "LIN",
+  "cik": "1707925",
+  "entityName": "LINDE PLC",
+  "sicDescription": "Industrial Inorganic Chemicals",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-01",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-029165",
+    "primaryDocument": "lin-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026029165/lin-20260331.htm",
+    "entityName": "LINDE PLC",
+    "sicDescription": "Industrial Inorganic Chemicals"
+  },
+  "latestRevenue": {
+    "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 8781000000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-05-01"
+  },
+  "fetchedAt": "2026-05-17T19:46:38+00:00",
+  "source": "sec.gov/edgar"
+}

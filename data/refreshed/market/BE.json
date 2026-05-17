@@ -1,0 +1,15 @@
+{
+  "ticker": "BE",
+  "name": "Bloom Energy Corporation",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 275.95,
+  "previousClose": 303.41,
+  "dayChangePct": -9.05046,
+  "marketCap": 78492286976,
+  "fiftyTwoWeekHigh": 310.0,
+  "fiftyTwoWeekLow": 17.01,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "LITE",
+  "cik": "1633978",
+  "entityName": "Lumentum Holdings Inc.",
+  "sicDescription": "Communications Equipment, NEC",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-06",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-030777",
+    "primaryDocument": "lite-20260328.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm",
+    "entityName": "Lumentum Holdings Inc.",
+    "sicDescription": "Communications Equipment, NEC"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 404600000,
+    "currency": "USD",
+    "periodEnd": "2019-06-29",
+    "fy": 2019,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2019-08-27"
+  },
+  "fetchedAt": "2026-05-17T19:46:05+00:00",
+  "source": "sec.gov/edgar"
+}

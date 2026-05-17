@@ -1,0 +1,28 @@
+{
+  "ticker": "EME",
+  "cik": "105634",
+  "entityName": "EMCOR Group, Inc.",
+  "sicDescription": "Electrical Work",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-29",
+    "periodOfReport": null,
+    "accessionNumber": "0000105634-26-000046",
+    "primaryDocument": "eme-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000046/eme-20260331.htm",
+    "entityName": "EMCOR Group, Inc.",
+    "sicDescription": "Electrical Work"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 4628233000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-04-29"
+  },
+  "fetchedAt": "2026-05-17T19:46:12+00:00",
+  "source": "sec.gov/edgar"
+}

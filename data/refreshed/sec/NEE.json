@@ -1,0 +1,28 @@
+{
+  "ticker": "NEE",
+  "cik": "753308",
+  "entityName": "NEXTERA ENERGY INC",
+  "sicDescription": "Electric Services",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-23",
+    "periodOfReport": null,
+    "accessionNumber": "0000753308-26-000031",
+    "primaryDocument": "nee-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000031/nee-20260331.htm",
+    "entityName": "NEXTERA ENERGY INC",
+    "sicDescription": "Electric Services"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 11506000000,
+    "currency": "USD",
+    "periodEnd": "2013-09-30",
+    "fy": 2013,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2013-11-01"
+  },
+  "fetchedAt": "2026-05-17T19:46:23+00:00",
+  "source": "sec.gov/edgar"
+}

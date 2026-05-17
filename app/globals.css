@@ -5,23 +5,55 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --severity-critical: #E24B4A;
+  --severity-critical-bg: #FCEBEB;
+  --severity-critical-fg: #791F1F;
+  --severity-tight: #EF9F27;
+  --severity-tight-bg: #FAEEDA;
+  --severity-tight-fg: #633806;
+  --severity-balanced: #639922;
+  --severity-balanced-bg: #EAF3DE;
+  --severity-balanced-fg: #3B6D11;
+  --severity-monitoring: #B4B2A9;
+  --severity-monitoring-bg: #F1EFE8;
+  --severity-monitoring-fg: #5F5E5A;
+
+  --supplier-1: #534AB7;
+  --supplier-2: #7F77DD;
+  --supplier-3: #AFA9EC;
+  --supplier-4: #D3D1C7;
+
+  --supply-dark: #1D9E75;
+  --supply-light: #5DCAA5;
+  --demand: #534AB7;
+
+  --insight-bg: #FAEEDA;
+  --insight-border: #BA7517;
+  --insight-fg: #633806;
+  --insight-label: #854F0B;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .supply-stripes {
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--supply-dark),
+      var(--supply-dark) 4px,
+      var(--supply-light) 4px,
+      var(--supply-light) 8px
+    );
   }
 }

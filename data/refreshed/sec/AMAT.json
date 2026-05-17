@@ -1,0 +1,28 @@
+{
+  "ticker": "AMAT",
+  "cik": "6951",
+  "entityName": "APPLIED MATERIALS INC /DE",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-02-19",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-009694",
+    "primaryDocument": "amat-20260125.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026009694/amat-20260125.htm",
+    "entityName": "APPLIED MATERIALS INC /DE",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 5162000000,
+    "currency": "USD",
+    "periodEnd": "2021-01-31",
+    "fy": 2021,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2021-02-25"
+  },
+  "fetchedAt": "2026-05-17T19:46:35+00:00",
+  "source": "sec.gov/edgar"
+}

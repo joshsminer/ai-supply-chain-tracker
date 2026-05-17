@@ -1,0 +1,28 @@
+{
+  "ticker": "AMD",
+  "cik": "2488",
+  "entityName": "ADVANCED MICRO DEVICES INC",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-06",
+    "periodOfReport": null,
+    "accessionNumber": "0000002488-26-000076",
+    "primaryDocument": "amd-20260328.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000076/amd-20260328.htm",
+    "entityName": "ADVANCED MICRO DEVICES INC",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 3913000000,
+    "currency": "USD",
+    "periodEnd": "2017-09-30",
+    "fy": 2018,
+    "fp": "Q3",
+    "form": "10-Q",
+    "filed": "2018-10-31"
+  },
+  "fetchedAt": "2026-05-17T19:46:33+00:00",
+  "source": "sec.gov/edgar"
+}

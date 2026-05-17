@@ -1,0 +1,15 @@
+{
+  "ticker": "6501.T",
+  "name": "Hitachi, Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 4812.0,
+  "previousClose": 4671.0,
+  "dayChangePct": 3.0186257,
+  "marketCap": 21670616104960,
+  "fiftyTwoWeekHigh": 6039.0,
+  "fiftyTwoWeekLow": 3707.0,
+  "trailingPE": 27.248016,
+  "fetchedAt": "2026-05-17T19:45:24+00:00",
+  "source": "yfinance.info"
+}

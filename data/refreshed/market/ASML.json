@@ -1,0 +1,15 @@
+{
+  "ticker": "ASML",
+  "name": "ASML Holding N.V.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 1501.81,
+  "previousClose": 1584.51,
+  "dayChangePct": -5.219276,
+  "marketCap": 578824110080,
+  "fiftyTwoWeekHigh": 1603.49,
+  "fiftyTwoWeekLow": 683.48,
+  "trailingPE": 49.499344,
+  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "source": "yfinance.info"
+}

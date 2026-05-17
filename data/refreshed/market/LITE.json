@@ -1,0 +1,15 @@
+{
+  "ticker": "LITE",
+  "name": "Lumentum Holdings Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 970.7,
+  "previousClose": 1001.81,
+  "dayChangePct": -3.1053777,
+  "marketCap": 75520458752,
+  "fiftyTwoWeekHigh": 1085.68,
+  "fiftyTwoWeekLow": 71.04,
+  "trailingPE": 169.40663,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

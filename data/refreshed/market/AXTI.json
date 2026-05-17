@@ -1,0 +1,15 @@
+{
+  "ticker": "AXTI",
+  "name": "AXT, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 123.78,
+  "previousClose": 114.979996,
+  "dayChangePct": 7.6535077,
+  "marketCap": 8098081792,
+  "fiftyTwoWeekHigh": 134.0,
+  "fiftyTwoWeekLow": 1.38,
+  "trailingPE": null,
+  "fetchedAt": "2026-05-17T19:45:23+00:00",
+  "source": "yfinance.info"
+}

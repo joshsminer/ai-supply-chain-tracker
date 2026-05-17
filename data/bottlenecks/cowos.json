@@ -1,0 +1,62 @@
+{
+  "slug": "cowos",
+  "name": "CoWoS advanced packaging (TSMC)",
+  "shortName": "CoWoS packaging",
+  "layerId": "advanced-packaging",
+  "severity": "critical",
+  "severityNote": "TSMC-gated, sold out through 2026",
+  "description": "TSMC's Chip-on-Wafer-on-Substrate 2.5D packaging is the single point of integration for HBM + GPU/ASIC dies. Every NVIDIA, AMD, and most hyperscaler-custom AI accelerators must pass through CoWoS. CoWoS-L (with RDL interposer) is the volume node for Rubin and MI400-class parts.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "CoWoS-L capacity '26E", "value": "~75k wpm", "sub": "from 35k wpm ('24)", "direction": "up-good" },
+    { "label": "TSMC share", "value": "~95%", "sub": "Amkor/ASE as overflow", "direction": "neutral" },
+    { "label": "Lead time", "value": "~11 mo", "sub": "easing from 14 mo ('25)", "direction": "down-good" },
+    { "label": "Reticle-size demand", "value": "~3.5×", "sub": "Rubin/MI400 multi-reticle", "direction": "up-bad" }
+  ],
+  "stackPosition": "GPU/ASIC die (TSMC N3/N3P) + HBM stacks → CoWoS interposer (silicon interposer or RDL on glass) → C4 bump attach → underfill → substrate (ABF) → BGA → module → server. CoWoS is the only mass-volume 2.5D process that NVIDIA and AMD have qualified; TSMC's expansion in AP6 and AP7 is the binding constraint for total AI accelerator wafer-equivalent supply.",
+  "supplyStructure": [
+    { "name": "TSMC (CoWoS-S + CoWoS-L)", "location": "Taiwan · AP3/AP6/AP7", "sharePct": 95, "ticker": "TSM" },
+    { "name": "Amkor", "location": "Korea / US AZ · 2.5D pilot", "sharePct": 3, "note": "US-AZ pilot for Apple/AMD; not at NVIDIA volume yet", "ticker": "AMKR" },
+    { "name": "ASE / SPIL", "location": "Taiwan · FOCoS-Bridge", "sharePct": 2, "note": "Bridge-die alternative to silicon interposer", "ticker": "ASX" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 35, "demandIndex": 58, "status": "critical" },
+    { "year": "2025", "supplyIndex": 55, "demandIndex": 84, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 75, "demandIndex": 95, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 95, "demandIndex": 98, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 110, "demandIndex": 102, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "TSMC CoWoS capacity guidance and HPC segment mix", "source": "TSM earnings · investor day decks", "url": "https://investor.tsmc.com/english" },
+    { "cadence": "quarterly", "name": "Amkor advanced SiP/CoWoS revenue and Vietnam-AZ capex commentary", "source": "AMKR 10-Q" },
+    { "cadence": "quarterly", "name": "ASE advanced packaging share gains in FOCoS-Bridge", "source": "ASX earnings transcripts" },
+    { "cadence": "event", "name": "NVIDIA Rubin and AMD MI400 ramp dates / BOM disclosures", "source": "GTC, AMD analyst day" },
+    { "cadence": "event", "name": "TSMC AP6/AP7 ground-breaking and tool-move milestones", "source": "TSMC press · Taiwan trade press" },
+    { "cadence": "annual", "name": "Yole advanced packaging market report", "source": "Yole Développement (paid)" }
+  ],
+  "companies": [
+    { "name": "TSMC", "tier": "public-primary", "note": "Owns ~95% of CoWoS; pricing power on advanced packaging surcharge", "ticker": "TSM" },
+    { "name": "Amkor Technology", "tier": "public-enabler", "note": "Second-source CoWoS bet; AZ fab tied to Apple/AMD onshoring", "ticker": "AMKR" },
+    { "name": "ASE Technology", "tier": "public-enabler", "note": "FOCoS-Bridge; alternative architecture for cost-down packaging", "ticker": "ASX" },
+    { "name": "Applied Materials", "tier": "public-enabler", "note": "Hybrid-bonding and TSV tools for advanced packaging lines", "ticker": "AMAT" },
+    { "name": "Lam Research", "tier": "public-enabler", "note": "Etch + deposition for TSV/RDL flows", "ticker": "LRCX" },
+    { "name": "BE Semiconductor", "tier": "public-enabler", "note": "Hybrid bonding tools — overlap with HBM4 thesis", "ticker": "BESI.AS" }
+  ],
+  "insight": "CoWoS is the single most important constraint in AI compute, but the constraint is shifting from raw wafer capacity to reticle-stitching geometry. As Rubin and MI400 push past 3-reticle designs, *interposer area per accelerator* matters more than wafer count. The narrow-window trade is hybrid-bonding suppliers (BESI, applied) that enable the next geometry doubling. The widow-maker trade is CoWoS-S enablers — that node is being deprecated faster than consensus expects in favor of CoWoS-L on glass.",
+  "debates": [
+    {
+      "question": "Does Amkor's AZ CoWoS line reach NVIDIA-qualified volume by end of 2027?",
+      "currentBelief": "Apple and AMD likely first; NVIDIA qualification slips to 2028",
+      "probability": 0.40,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does CoWoS oversupply emerge in 2H 2027 as new capacity outruns demand?",
+      "currentBelief": "Tight through 2027; modest oversupply possible mid-2028 if accelerator unit growth normalizes",
+      "probability": 0.30,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["hbm-memory", "abf-substrates"],
+  "downstreamSlugs": ["datacenter-silicon"]
+}

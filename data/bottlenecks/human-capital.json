@@ -1,0 +1,65 @@
+{
+  "slug": "human-capital",
+  "name": "Skilled trades & semiconductor engineers",
+  "shortName": "Skilled labor",
+  "layerId": "human-capital",
+  "severity": "critical",
+  "severityNote": "Electrician + construction shortage gates every site",
+  "description": "Datacenter and fab construction is gated by an undersupply of licensed electricians, HVAC technicians, pipefitters, and millwrights, plus a parallel shortage of process engineers for advanced-node fab ramps. The labor constraint is structural — apprenticeship pipelines were thin in the 2010s and cannot be rebuilt on AI-cycle timelines.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "US electrician shortage '26E", "value": "~80k", "sub": "BLS / ABC estimate", "direction": "up-bad" },
+    { "label": "Datacenter wage inflation", "value": "+18%", "sub": "Skilled trades, YoY", "direction": "up-bad" },
+    { "label": "TSMC AZ project lag", "value": "~24 mo", "sub": "Original vs revised schedule", "direction": "up-bad" },
+    { "label": "EE/CompE grads '25", "value": "~38k", "sub": "US universities, vs ~100k demand", "direction": "up-bad" }
+  ],
+  "stackPosition": "Apprenticeship + journeyman pipeline (IBEW, NECA, Joint ATEPs) → certified trades labor pool → EPC contractor allocation (Bechtel, Fluor, Holder, MWH) → datacenter / fab site → commissioning crew → ops handoff. Engineering staffing for fabs follows a parallel path: undergrad EE/CompE → industrial-internship pipeline → process engineering → senior expert IC. Both pipelines are saturated by current AI-cycle demand.",
+  "supplyStructure": [
+    { "name": "Quanta Services", "location": "US national · electrical EPC", "sharePct": 28, "ticker": "PWR" },
+    { "name": "MasTec", "location": "US · infrastructure / industrial", "sharePct": 14, "ticker": "MTZ" },
+    { "name": "EMCOR Group", "location": "US national · mechanical + electrical", "sharePct": 12, "ticker": "EME" },
+    { "name": "Comfort Systems USA", "location": "US national · mechanical contractor", "sharePct": 9, "ticker": "FIX" },
+    { "name": "AECOM / Jacobs / Fluor", "location": "Global EPC", "sharePct": 14, "note": "Engineering + management; labor sourced from union halls", "ticker": "ACM" },
+    { "name": "Independent / regional", "location": "Various", "sharePct": 23, "note": "Long tail of regional electrical and mechanical contractors" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 60, "demandIndex": 80, "status": "critical" },
+    { "year": "2025", "supplyIndex": 64, "demandIndex": 92, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 68, "demandIndex": 98, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 74, "demandIndex": 98, "status": "critical" },
+    { "year": "2028E", "supplyIndex": 82, "demandIndex": 95, "status": "tight" }
+  ],
+  "indicators": [
+    { "cadence": "monthly", "name": "BLS construction employment + JOLTS openings, electrical trade SOC codes", "source": "bls.gov", "url": "https://www.bls.gov/iag/tgs/iag23.htm" },
+    { "cadence": "quarterly", "name": "Quanta Services + EMCOR + Comfort Systems backlog and book-to-bill", "source": "PWR / EME / FIX 10-Q" },
+    { "cadence": "quarterly", "name": "Major hyperscaler datacenter capex commentary on labor availability", "source": "MSFT, AMZN, GOOG, META earnings transcripts" },
+    { "cadence": "event", "name": "TSMC AZ phase 2/3 schedule revisions and union announcements", "source": "TSMC press, AZ trade press" },
+    { "cadence": "annual", "name": "ABC (Associated Builders & Contractors) annual workforce report", "source": "abc.org" },
+    { "cadence": "annual", "name": "SEMI workforce report — fab engineer demand vs supply", "source": "semi.org" }
+  ],
+  "companies": [
+    { "name": "Quanta Services", "tier": "public-primary", "note": "Largest US specialty electrical contractor; datacenter + grid exposure", "ticker": "PWR" },
+    { "name": "MasTec", "tier": "public-primary", "note": "Industrial + power generation EPC; less pure datacenter mix", "ticker": "MTZ" },
+    { "name": "EMCOR Group", "tier": "public-primary", "note": "Mechanical + electrical contractor; high datacenter mix", "ticker": "EME" },
+    { "name": "Comfort Systems USA", "tier": "public-primary", "note": "Pure-play mechanical contractor; modular construction beneficiary", "ticker": "FIX" },
+    { "name": "AECOM", "tier": "public-enabler", "note": "Engineering + program management; fewer billable hours per project", "ticker": "ACM" },
+    { "name": "Construction Partners / Sterling Infrastructure", "tier": "public-enabler", "note": "Site work, pad prep — earlier in project lifecycle", "ticker": "STRL" }
+  ],
+  "insight": "Skilled-trade contractors are the under-appreciated way to play the AI capex cycle — they are paid a premium for execution on a constrained input, and their backlog visibility now extends 3-5 years. EMCOR and Comfort Systems are the cleanest expressions: mechanical contractors with datacenter mix above 25% and accelerating. The widow-maker trade is academic — universities cannot scale EE/CompE grads on the relevant timescale, so engineering labor inflation is a permanent cost embedded in every new node. The asymmetric kicker is non-union states with H-1B-friendly counties: Phoenix, Austin, Columbus where labor supply elasticity is highest.",
+  "debates": [
+    {
+      "question": "Does electrician wage inflation peak in 2026 or run into 2027-2028?",
+      "currentBelief": "Runs through 2027 as concurrent fab + datacenter builds compound; 2028 normalization probable",
+      "probability": 0.55,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Do hyperscalers materially shift to modular / prefab construction by 2027?",
+      "currentBelief": "Yes for Microsoft and Meta; Amazon slower; Google ambivalent",
+      "probability": 0.65,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": [],
+  "downstreamSlugs": ["interconnection-queues"]
+}

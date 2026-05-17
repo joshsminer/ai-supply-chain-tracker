@@ -1,0 +1,28 @@
+{
+  "ticker": "MP",
+  "cik": "1801368",
+  "entityName": "MP Materials Corp. / DE",
+  "sicDescription": "Metal Mining",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-08",
+    "periodOfReport": null,
+    "accessionNumber": "0001801368-26-000029",
+    "primaryDocument": "mp-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1801368/000180136826000029/mp-20260331.htm",
+    "entityName": "MP Materials Corp. / DE",
+    "sicDescription": "Metal Mining"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 309820000,
+    "currency": "USD",
+    "periodEnd": "2022-06-30",
+    "fy": 2022,
+    "fp": "Q2",
+    "form": "10-Q",
+    "filed": "2022-08-05"
+  },
+  "fetchedAt": "2026-05-17T19:46:16+00:00",
+  "source": "sec.gov/edgar"
+}

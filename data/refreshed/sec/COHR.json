@@ -1,0 +1,28 @@
+{
+  "ticker": "COHR",
+  "cik": "820318",
+  "entityName": "COHERENT CORP.",
+  "sicDescription": "Optical Instruments & Lenses",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-06",
+    "periodOfReport": null,
+    "accessionNumber": "0000820318-26-000013",
+    "primaryDocument": "iivi-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000013/iivi-20260331.htm",
+    "entityName": "COHERENT CORP.",
+    "sicDescription": "Optical Instruments & Lenses"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 1158794000,
+    "currency": "USD",
+    "periodEnd": "2018-06-30",
+    "fy": 2018,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2018-08-28"
+  },
+  "fetchedAt": "2026-05-17T19:46:13+00:00",
+  "source": "sec.gov/edgar"
+}

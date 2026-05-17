@@ -1,0 +1,28 @@
+{
+  "ticker": "STRL",
+  "cik": "874238",
+  "entityName": "STERLING INFRASTRUCTURE, INC.",
+  "sicDescription": "Heavy Construction Other Than Bldg Const - Contractors",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-05",
+    "periodOfReport": null,
+    "accessionNumber": "0000874238-26-000055",
+    "primaryDocument": "strl-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/874238/000087423826000055/strl-20260331.htm",
+    "entityName": "STERLING INFRASTRUCTURE, INC.",
+    "sicDescription": "Heavy Construction Other Than Bldg Const - Contractors"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 222492000,
+    "currency": "USD",
+    "periodEnd": "2018-03-31",
+    "fy": 2018,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2018-05-08"
+  },
+  "fetchedAt": "2026-05-17T19:45:57+00:00",
+  "source": "sec.gov/edgar"
+}

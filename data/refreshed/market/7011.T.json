@@ -1,0 +1,15 @@
+{
+  "ticker": "7011.T",
+  "name": "Mitsubishi Heavy Industries, Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 4080.0,
+  "previousClose": 4162.0,
+  "dayChangePct": -1.9702066,
+  "marketCap": 13709654097920,
+  "fiftyTwoWeekHigh": 5208.0,
+  "fiftyTwoWeekLow": 2790.5,
+  "trailingPE": 38.90902,
+  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "source": "yfinance.info"
+}

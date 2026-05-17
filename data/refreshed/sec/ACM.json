@@ -1,0 +1,28 @@
+{
+  "ticker": "ACM",
+  "cik": "868857",
+  "entityName": "AECOM",
+  "sicDescription": "Services-Engineering Services",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-05-12",
+    "periodOfReport": null,
+    "accessionNumber": "0000868857-26-000014",
+    "primaryDocument": "acm-20260403.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/868857/000086885726000014/acm-20260403.htm",
+    "entityName": "AECOM",
+    "sicDescription": "Services-Engineering Services"
+  },
+  "latestRevenue": {
+    "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+    "value": 7631977000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q2",
+    "form": "10-Q",
+    "filed": "2026-05-12"
+  },
+  "fetchedAt": "2026-05-17T19:46:45+00:00",
+  "source": "sec.gov/edgar"
+}

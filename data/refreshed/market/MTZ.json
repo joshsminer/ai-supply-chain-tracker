@@ -1,0 +1,15 @@
+{
+  "ticker": "MTZ",
+  "name": "MasTec, Inc.",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 414.9,
+  "previousClose": 434.77,
+  "dayChangePct": -4.57023,
+  "marketCap": 32784799744,
+  "fiftyTwoWeekHigh": 441.43,
+  "fiftyTwoWeekLow": 145.46,
+  "trailingPE": 72.40838,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

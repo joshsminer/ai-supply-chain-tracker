@@ -1,0 +1,15 @@
+{
+  "ticker": "ACM",
+  "name": "AECOM",
+  "exchange": "NYQ",
+  "currency": "USD",
+  "price": 71.31,
+  "previousClose": 71.0,
+  "dayChangePct": 0.436616,
+  "marketCap": 9164968960,
+  "fiftyTwoWeekHigh": 135.52,
+  "fiftyTwoWeekLow": 67.64,
+  "trailingPE": 14.887265,
+  "fetchedAt": "2026-05-17T19:45:22+00:00",
+  "source": "yfinance.info"
+}

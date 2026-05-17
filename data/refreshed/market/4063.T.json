@@ -1,0 +1,15 @@
+{
+  "ticker": "4063.T",
+  "name": "Shin-Etsu Chemical Co., Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 7105.0,
+  "previousClose": 7476.0,
+  "dayChangePct": -4.962547,
+  "marketCap": 13192591835136,
+  "fiftyTwoWeekHigh": 7883.0,
+  "fiftyTwoWeekLow": 4280.0,
+  "trailingPE": 28.168736,
+  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "source": "yfinance.info"
+}

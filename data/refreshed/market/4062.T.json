@@ -1,0 +1,15 @@
+{
+  "ticker": "4062.T",
+  "name": "Ibiden Co.,Ltd.",
+  "exchange": "JPX",
+  "currency": "JPY",
+  "price": 15660.0,
+  "previousClose": 16960.0,
+  "dayChangePct": -7.665094,
+  "marketCap": 4372985020416,
+  "fiftyTwoWeekHigh": 18365.0,
+  "fiftyTwoWeekLow": 2522.5,
+  "trailingPE": 72.993385,
+  "fetchedAt": "2026-05-17T19:45:18+00:00",
+  "source": "yfinance.info"
+}

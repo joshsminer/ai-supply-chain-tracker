@@ -1,0 +1,61 @@
+{
+  "slug": "dram-wafer-capacity",
+  "name": "DRAM wafer capacity (HBM-eligible nodes)",
+  "shortName": "DRAM wafers",
+  "layerId": "memory",
+  "severity": "tight",
+  "severityNote": "HBM is consuming the marginal wafer; commodity tightening",
+  "description": "Total wafer-equivalent capacity at the three DRAM makers (SK Hynix, Samsung, Micron) sets the upstream ceiling on every HBM stack. Because HBM consumes roughly 3× the wafer area per equivalent bit of DDR5, allocation to HBM directly pulls wafer-starts away from commodity DRAM and tightens the broader memory market.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "HBM wafer-area mix '26E", "value": "~25%", "sub": "Of total DRAM wafer-starts", "direction": "up-bad" },
+    { "label": "Top-3 wafer-start share", "value": "~95%", "sub": "Hynix + Samsung + Micron", "direction": "neutral" },
+    { "label": "Wafer-equivalent per HBM bit", "value": "~3×", "sub": "vs DDR5", "direction": "up-bad" },
+    { "label": "Net new wafer-starts '26E", "value": "+8%", "sub": "Industry capacity growth YoY", "direction": "up-good" }
+  ],
+  "stackPosition": "Silicon wafer (Shin-Etsu, SUMCO) → DRAM fab front-end (1c/1d-nm nodes for HBM3E/HBM4 base die) → TSV etch + plating → singulation → stacking (TCB or hybrid bonding) → HBM cube → CoWoS attach. The wafer-fab stage is the upstream constraint; total wafer-area allocated to HBM directly subtracts from DDR5 / LPDDR5 / GDDR7 / NAND capacity at the same fab.",
+  "supplyStructure": [
+    { "name": "SK Hynix wafer capacity", "location": "Korea · M14/M15/M15X/M16 + Wuxi", "sharePct": 35, "ticker": "000660.KS" },
+    { "name": "Samsung wafer capacity", "location": "Korea · P1/P2/P3/P4 + Xi'an", "sharePct": 41, "ticker": "005930.KS" },
+    { "name": "Micron wafer capacity", "location": "Taichung + Hiroshima + Boise + Manassas", "sharePct": 23, "ticker": "MU" },
+    { "name": "CXMT (China-domestic)", "location": "Hefei · DDR4/DDR5", "sharePct": 1, "note": "Export-controlled out of frontier AI memory" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 75, "demandIndex": 80, "status": "tight" },
+    { "year": "2025", "supplyIndex": 80, "demandIndex": 92, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 88, "demandIndex": 98, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 98, "demandIndex": 100, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 108, "demandIndex": 102, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "SK Hynix wafer-start capacity guidance and HBM allocation mix", "source": "000660.KS earnings + investor day" },
+    { "cadence": "quarterly", "name": "Samsung memory segment wafer-start commentary and P4 ramp", "source": "005930.KS earnings" },
+    { "cadence": "quarterly", "name": "Micron HBM mix and total fab capacity guidance", "source": "MU 10-Q + investor day" },
+    { "cadence": "monthly", "name": "TrendForce + DRAMeXchange contract pricing for DDR5 / LPDDR5", "source": "TrendForce (paid)" },
+    { "cadence": "event", "name": "CXMT capacity expansion announcements and export-control delta", "source": "Korean trade press + BIS" }
+  ],
+  "companies": [
+    { "name": "SK Hynix", "tier": "public-primary", "note": "Most HBM-skewed wafer mix; M15X is the dedicated HBM fab", "ticker": "000660.KS" },
+    { "name": "Samsung Electronics", "tier": "public-primary", "note": "Largest absolute wafer capacity; HBM4 qualification is the swing factor", "ticker": "005930.KS" },
+    { "name": "Micron Technology", "tier": "public-primary", "note": "US-listed pure-play; HBM mix climbing aggressively", "ticker": "MU" },
+    { "name": "Hanmi Semiconductor", "tier": "public-enabler", "note": "TC-bonder market share = wafer capacity sensitivity proxy", "ticker": "042700.KS" },
+    { "name": "BE Semiconductor", "tier": "public-enabler", "note": "Hybrid bonding extends the wafer-cycle's investable surface", "ticker": "BESI.AS" }
+  ],
+  "insight": "DRAM wafer capacity is the cleanest 'shovels' play in the AI memory thesis. Industry wafer-start growth at 8-10% YoY cannot keep pace with HBM demand growth at 50%+, which means commodity DRAM allocation gets squeezed even as HBM eats the marginal wafer. The cleanest exposures are Hynix + Micron with Samsung as the call option on HBM4 qualification. The under-priced wedge is HBM's second-order tightening of LPDDR5 supply for mobile and DDR5 for general server — a re-rating that affects every memory-bill-of-materials in tech.",
+  "debates": [
+    {
+      "question": "Does HBM wafer-area mix exceed 30% of total industry DRAM by end of 2027?",
+      "currentBelief": "Likely on current capex trajectories; consensus closer to 27-28%",
+      "probability": 0.60,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Does commodity DRAM contract pricing inflect upward through 2H 2026 as HBM consumes wafer-starts?",
+      "currentBelief": "Yes — already showing in TrendForce monthly index",
+      "probability": 0.70,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["leading-edge-logic"],
+  "downstreamSlugs": ["hbm-memory"]
+}

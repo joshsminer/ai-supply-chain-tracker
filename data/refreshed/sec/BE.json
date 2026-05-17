@@ -1,0 +1,28 @@
+{
+  "ticker": "BE",
+  "cik": "1664703",
+  "entityName": "Bloom Energy Corp",
+  "sicDescription": "Electrical Industrial Apparatus",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-04-29",
+    "periodOfReport": null,
+    "accessionNumber": "0001628280-26-028021",
+    "primaryDocument": "be-20260331.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026028021/be-20260331.htm",
+    "entityName": "Bloom Energy Corp",
+    "sicDescription": "Electrical Industrial Apparatus"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 751054000,
+    "currency": "USD",
+    "periodEnd": "2026-03-31",
+    "fy": 2026,
+    "fp": "Q1",
+    "form": "10-Q",
+    "filed": "2026-04-29"
+  },
+  "fetchedAt": "2026-05-17T19:46:04+00:00",
+  "source": "sec.gov/edgar"
+}

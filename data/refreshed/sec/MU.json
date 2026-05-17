@@ -1,0 +1,28 @@
+{
+  "ticker": "MU",
+  "cik": "723125",
+  "entityName": "MICRON TECHNOLOGY INC",
+  "sicDescription": "Semiconductors & Related Devices",
+  "latestFiling": {
+    "form": "10-Q",
+    "filedAt": "2026-03-19",
+    "periodOfReport": null,
+    "accessionNumber": "0000723125-26-000006",
+    "primaryDocument": "mu-20260226.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/mu-20260226.htm",
+    "entityName": "MICRON TECHNOLOGY INC",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "latestRevenue": {
+    "tag": "Revenues",
+    "value": 30391000000,
+    "currency": "USD",
+    "periodEnd": "2018-08-30",
+    "fy": 2018,
+    "fp": "FY",
+    "form": "10-K",
+    "filed": "2018-10-15"
+  },
+  "fetchedAt": "2026-05-17T19:46:08+00:00",
+  "source": "sec.gov/edgar"
+}

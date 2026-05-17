@@ -1,0 +1,64 @@
+{
+  "slug": "transceivers-1-6t",
+  "name": "800G / 1.6T pluggable transceivers",
+  "shortName": "800G / 1.6T transceivers",
+  "layerId": "optical-interconnect",
+  "severity": "critical",
+  "severityNote": "EML supply tight; 1.6T ramp 2026-2027",
+  "description": "Pluggable optical transceivers at 800G (8×100G PAM4) and 1.6T (8×200G PAM4 or 16×100G) carry rack-to-rack and spine traffic in AI datacenter fabrics. Every additional GPU adds non-linear demand for fiber lanes; transceiver units per accelerator are climbing faster than total accelerator units.",
+  "lastUpdated": "2026-05-17",
+  "metrics": [
+    { "label": "800G+ shipments '26E", "value": "~38M", "sub": "LightCounting est.", "direction": "up-good" },
+    { "label": "1.6T ramp '26-'27", "value": "+220%", "sub": "Year-over-year", "direction": "up-good" },
+    { "label": "Top-3 vendor share", "value": "~75%", "sub": "Innolight + Coherent + Eoptolink", "direction": "neutral" },
+    { "label": "200G EML attach rate", "value": "~6×", "sub": "Lasers per 1.6T module vs 100G era", "direction": "up-bad" }
+  ],
+  "stackPosition": "InP wafer → epi → EML/DFB laser die (Coherent, Lumentum, MACOM) → laser TO-can assembly → driver/TIA ASIC integration (Semtech, Macom, Marvell) → optical sub-assembly → pluggable transceiver build (Innolight, Eoptolink, Coherent, Accelink) → qualification at NVIDIA/Broadcom/Arista → ship to hyperscaler. The 1.6T transition centers on 200G/lane PAM4 EMLs at the wafer end and DSP at the silicon end.",
+  "supplyStructure": [
+    { "name": "Innolight", "location": "Suzhou · China", "sharePct": 35, "ticker": "300308.SZ" },
+    { "name": "Coherent", "location": "US · vertically integrated", "sharePct": 22, "ticker": "COHR" },
+    { "name": "Eoptolink", "location": "Chengdu · China", "sharePct": 18, "ticker": "300502.SZ" },
+    { "name": "Accelink", "location": "Wuhan · China · state-linked", "sharePct": 12, "ticker": "002281.SZ" },
+    { "name": "Lumentum / Cisco / others", "location": "US · diversified", "sharePct": 13, "ticker": "LITE" }
+  ],
+  "supplyDemand": [
+    { "year": "2024", "supplyIndex": 50, "demandIndex": 70, "status": "tight" },
+    { "year": "2025", "supplyIndex": 68, "demandIndex": 88, "status": "critical" },
+    { "year": "2026E", "supplyIndex": 84, "demandIndex": 96, "status": "critical" },
+    { "year": "2027E", "supplyIndex": 96, "demandIndex": 99, "status": "tight" },
+    { "year": "2028E", "supplyIndex": 110, "demandIndex": 100, "status": "balanced" }
+  ],
+  "indicators": [
+    { "cadence": "quarterly", "name": "Innolight + Eoptolink revenue and 1.6T mix commentary", "source": "300308.SZ, 300502.SZ earnings" },
+    { "cadence": "quarterly", "name": "Coherent + Lumentum datacom segment + EML capacity", "source": "COHR, LITE 10-Q" },
+    { "cadence": "monthly", "name": "LightCounting transceiver forecast by speed and form factor", "source": "LightCounting (paid)" },
+    { "cadence": "event", "name": "NVIDIA Spectrum-X + Quantum-X switch refresh cycles", "source": "GTC, NVIDIA datacenter event" },
+    { "cadence": "event", "name": "OFC / ECOC 1.6T product demonstrations and qualifications", "source": "Conference press · March / September" }
+  ],
+  "companies": [
+    { "name": "Coherent", "tier": "public-primary", "note": "Vertically integrated; owns wafer + epi + device + module", "ticker": "COHR" },
+    { "name": "Lumentum", "tier": "public-primary", "note": "EML capacity expansion; 1.6T ramp is the upside", "ticker": "LITE" },
+    { "name": "Innolight", "tier": "public-primary", "note": "Largest transceiver vendor globally; A-share liquidity", "ticker": "300308.SZ" },
+    { "name": "Eoptolink", "tier": "public-primary", "note": "Fast-grower in 800G+; smaller share but high attach to NVIDIA", "ticker": "300502.SZ" },
+    { "name": "MACOM Technology", "tier": "public-enabler", "note": "EML lasers + driver/TIA portfolio", "ticker": "MTSI" },
+    { "name": "Marvell", "tier": "public-enabler", "note": "PAM4 DSP + electro-optical co-design", "ticker": "MRVL" },
+    { "name": "Semtech", "tier": "public-enabler", "note": "PAM4 DSP; smaller but pure-play", "ticker": "SMTC" }
+  ],
+  "insight": "Transceivers are the cleanest 'tax' on AI compute growth — every accelerator shipped adds 4-8 optics modules, and the per-accelerator optics dollar content is climbing as 1.6T adoption accelerates. The investable wedges are Coherent for vertical integration, Lumentum for EML pure-play, and (for those willing to take A-share risk) Innolight as the volume leader. The widow-maker is misjudging the CPO-vs-pluggables timing: pluggables remain dominant well past consensus expectations, but a 2027-2028 inflection toward co-packaged optics is real and would re-rate the module makers down.",
+  "debates": [
+    {
+      "question": "Does 1.6T pluggable shipment volume exceed 5M units in 2027?",
+      "currentBelief": "On track; Innolight + Coherent capacity ramps suggest 5-7M plausible",
+      "probability": 0.55,
+      "lastUpdated": "2026-05-17"
+    },
+    {
+      "question": "Do Chinese vendors gain US-hyperscaler share in 800G/1.6T despite export-control noise?",
+      "currentBelief": "Innolight + Eoptolink already qualified at NVIDIA; share gains likely absent escalating restrictions",
+      "probability": 0.65,
+      "lastUpdated": "2026-05-17"
+    }
+  ],
+  "upstreamSlugs": ["indium-phosphide"],
+  "downstreamSlugs": ["datacenter-silicon"]
+}
