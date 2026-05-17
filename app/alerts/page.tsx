@@ -56,7 +56,7 @@ function priceColor(pct: number): string {
 
 export default function AlertsPage() {
   const lookup = tickerToBottleneckMap();
-  const moves = allPriceMoves(30)
+  const moves = allPriceMoves(365)
     .filter((m) => lookup.has(m.ticker))
     .sort((a, b) => Math.abs(b.changePct) - Math.abs(a.changePct));
   const topMoves = moves.slice(0, 15);
@@ -77,10 +77,10 @@ export default function AlertsPage() {
       <section className="space-y-2">
         <h1 className="text-h1">Alerts</h1>
         <p className="max-w-[72ch] text-caption text-neutral-500">
-          Material moves derived from live data. Price moves are 30-day total
-          return per ticker (close-to-close), ranked by absolute magnitude.
-          Filings are the most recent 10-Q / 10-K / 20-F / 6-K landings across
-          tracked bottleneck tickers.
+          Material moves derived from live data. Price moves are LTM
+          (last-twelve-months) total return per ticker (close-to-close), ranked
+          by absolute magnitude. Filings are the most recent 10-Q / 10-K /
+          20-F / 6-K landings across tracked bottleneck tickers.
         </p>
         <p className="text-micro text-neutral-400">
           History up to {latestPriceDate ?? '—'} · {moves.length} tickers in
@@ -90,14 +90,14 @@ export default function AlertsPage() {
 
       <section className="space-y-3">
         <h3 className="text-micro font-medium uppercase tracking-wider text-neutral-500">
-          Top 30-day price moves
+          Top LTM price moves
         </h3>
         <div className="rounded-lg border-[0.5px] border-neutral-200">
           <div className="grid grid-cols-[1fr_120px_140px_90px] border-b-[0.5px] border-neutral-200 px-4 py-2 text-micro font-medium uppercase tracking-wider text-neutral-500">
             <span>Bottleneck · company</span>
             <span className="text-right">Window</span>
             <span className="text-right">Sparkline</span>
-            <span className="text-right">30d %</span>
+            <span className="text-right">LTM %</span>
           </div>
           {topMoves.map((m) => {
             const ref = lookup.get(m.ticker)!;

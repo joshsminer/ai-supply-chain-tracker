@@ -1,6 +1,6 @@
 import { bottlenecks, layers } from '@/data';
 import { FilterBar } from '@/components/stack/FilterBar';
-import { LivePricePanel } from '@/components/stack/LivePricePanel';
+import { MarketHeatmap } from '@/components/stack/MarketHeatmap';
 import { SeverityLegend } from '@/components/stack/SeverityLegend';
 import { StackView } from '@/components/stack/StackView';
 import { parseFilters } from '@/lib/filters';
@@ -13,7 +13,7 @@ export default function StackViewPage({ searchParams }: PageProps) {
   const filters = parseFilters(searchParams);
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <section className="flex flex-col gap-2">
         <h1 className="text-h1">Stack view</h1>
         <p className="text-caption text-neutral-500">
@@ -23,7 +23,7 @@ export default function StackViewPage({ searchParams }: PageProps) {
       <FilterBar />
       <SeverityLegend />
       <StackView filters={filters} />
-      <LivePricePanel />
+      <MarketHeatmap />
     </div>
   );
 }

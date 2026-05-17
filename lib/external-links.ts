@@ -22,6 +22,52 @@ export function comtradeHsUrl(hsCode: string): string {
 export const YFINANCE_HOME = 'https://finance.yahoo.com';
 export const EDGAR_HOME = 'https://www.sec.gov/edgar';
 
+/**
+ * Short display label for a ticker — used inside tight cells (e.g. the
+ * market-cap treemap) where the full exchange suffix is noisy. Falls back
+ * to the ticker itself for anything not in the map.
+ */
+const TICKER_DISPLAY: Record<string, string> = {
+  // Korean
+  '000660.KS': 'SK',
+  '005930.KS': 'SMSG',
+  '042700.KS': 'HNMI',
+  '357780.KS': 'SOUL',
+  '267260.KS': 'HHE',
+  // Japanese
+  '5802.T': 'SMTM',
+  '5016.T': 'JX',
+  '6501.T': 'HITA',
+  '6503.T': 'MELC',
+  '7011.T': 'MHI',
+  '4062.T': 'IBDN',
+  '4063.T': 'SHIN',
+  '4186.T': 'TOK',
+  '2802.T': 'AJI',
+  '8035.T': 'TEL',
+  // European
+  'ENR.DE': 'SIE',
+  'BESI.AS': 'BESI',
+  'SU.PA': 'SCHN',
+  'IQE.L': 'IQE',
+  'WRT1V.HE': 'WART',
+  // Taiwanese
+  '2308.TW': 'DLTA',
+  '3037.TW': 'UNMI',
+  '3189.TW': 'KSUS',
+  // Australian
+  'LYC.AX': 'LYC',
+  // Chinese A-shares
+  '600111.SS': 'CNRE',
+  '300308.SZ': 'INNO',
+  '300502.SZ': 'EOPT',
+  '002281.SZ': 'ACEL',
+};
+
+export function displayTicker(ticker: string): string {
+  return TICKER_DISPLAY[ticker] ?? ticker;
+}
+
 /** Best-guess "official" page for a non-EDGAR ticker (Asian / European listings). */
 export function vendorIrUrl(ticker: string | undefined): string | null {
   if (!ticker) return null;

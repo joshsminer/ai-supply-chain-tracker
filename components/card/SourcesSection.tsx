@@ -161,7 +161,7 @@ export function SourcesSection({ bottleneck }: { bottleneck: Bottleneck }) {
       </div>
       <p className="text-micro text-neutral-400">
         Editorial content (description, stack position, insight, debates) is
-        hand-curated by Maverick Silicon research. Sources cited inline above
+        hand-curated by internal research. Sources cited inline above
         and via <a href={COMTRADE_HOME} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">UN Comtrade</a>,{' '}
         <a href={EDGAR_HOME} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">SEC EDGAR</a>, and{' '}
         <a href={YFINANCE_HOME} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">Yahoo Finance</a> for the live data layer.

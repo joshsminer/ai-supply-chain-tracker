@@ -18,11 +18,12 @@ function StatusPill({ status }: { status: SupplyDemandYear['status'] }) {
 function GapRow({ row }: { row: SupplyDemandYear }) {
   const supplyPct = Math.max(0, Math.min(100, row.supplyIndex));
   const demandPct = Math.max(0, Math.min(100, row.demandIndex));
+  const gap = demandPct - supplyPct;
   return (
-    <div className="grid grid-cols-[70px_1fr_70px] items-center gap-3">
+    <div className="grid grid-cols-[60px_1fr_70px_72px] items-center gap-3">
       <span className="text-caption tabular-nums text-neutral-700">{row.year}</span>
       <div
-        className="relative h-3.5 overflow-hidden rounded bg-neutral-100"
+        className="relative h-4 overflow-hidden rounded bg-neutral-100"
         role="img"
         aria-label={`${row.year}: supply ${supplyPct}, demand ${demandPct}`}
       >
@@ -35,6 +36,14 @@ function GapRow({ row }: { row: SupplyDemandYear }) {
           style={{ width: `${demandPct}%` }}
         />
       </div>
+      <span
+        className={cn(
+          'text-right text-micro tabular-nums',
+          gap > 0 ? 'text-severity-critical-fg' : 'text-severity-balanced-fg'
+        )}
+      >
+        {gap > 0 ? `+${gap}` : gap} idx
+      </span>
       <div className="flex justify-end">
         <StatusPill status={row.status} />
       </div>
@@ -47,20 +56,22 @@ export function SupplyDemandGap({ rows }: { rows: SupplyDemandYear[] }) {
     ? `${rows[0].year}–${rows[rows.length - 1].year}`
     : '';
   return (
-    <section className="space-y-2.5">
-      <header className="flex items-baseline justify-between">
+    <section className="space-y-3">
+      <header className="flex items-baseline justify-between gap-3">
         <h3 className="text-micro font-medium uppercase tracking-wider text-neutral-500">
           Supply vs. demand · {yearRange}
         </h3>
         <div className="flex items-center gap-3 text-micro text-neutral-500">
           <span className="flex items-center gap-1.5">
-            <span aria-hidden className="supply-stripes h-2 w-3 rounded-sm" />
+            <span aria-hidden className="supply-stripes h-2.5 w-4 rounded-sm" />
             Supply
           </span>
           <span className="flex items-center gap-1.5">
-            <span aria-hidden className="h-2 w-3 rounded-sm bg-demand" />
+            <span aria-hidden className="h-2.5 w-4 rounded-sm bg-demand" />
             Demand
           </span>
+          <span className="text-neutral-400">|</span>
+          <span className="text-neutral-400">Gap = demand − supply</span>
         </div>
       </header>
       <div className="space-y-2">

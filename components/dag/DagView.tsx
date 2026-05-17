@@ -26,21 +26,25 @@ const SEVERITY_TEXT: Record<Severity, string> = {
 
 function edgePath(e: DagEdge): string {
   const halfH = NODE_HEIGHT_PX / 2;
-  // Source bottom, target top.
   const sx = e.fromX;
   const sy = e.fromY + halfH;
   const tx = e.toX;
   const ty = e.toY - halfH;
   const dy = ty - sy;
-  // Vertical bezier with horizontal slack proportional to the gap.
   const c1y = sy + dy * 0.4;
   const c2y = ty - dy * 0.4;
   return `M ${sx} ${sy} C ${sx} ${c1y}, ${tx} ${c2y}, ${tx} ${ty}`;
 }
 
+function truncate(s: string, max: number): string {
+  if (s.length <= max) return s;
+  return s.slice(0, max - 1) + '…';
+}
+
 function Node({ node }: { node: DagNode }) {
   const halfW = node.width / 2;
   const halfH = NODE_HEIGHT_PX / 2;
+  const supplier = node.topSupplier;
   return (
     <Link href={`/bottleneck/${node.slug}`}>
       <g className="cursor-pointer">
@@ -49,7 +53,7 @@ function Node({ node }: { node: DagNode }) {
           y={node.y - halfH}
           width={node.width}
           height={NODE_HEIGHT_PX}
-          rx={15}
+          rx={8}
           fill={SEVERITY_FILL[node.severity]}
           stroke={SEVERITY_STROKE[node.severity]}
           strokeWidth={0.75}
@@ -57,20 +61,48 @@ function Node({ node }: { node: DagNode }) {
         />
         <circle
           cx={node.x - halfW + 14}
-          cy={node.y}
+          cy={node.y - 9}
           r={3}
           fill={SEVERITY_STROKE[node.severity]}
         />
         <text
           x={node.x - halfW + 24}
-          y={node.y + 4}
+          y={node.y - 5}
           fontSize={12}
           fontFamily="Inter, system-ui, sans-serif"
-          fontWeight={500}
+          fontWeight={600}
           fill={SEVERITY_TEXT[node.severity]}
         >
-          {node.shortName}
+          {truncate(node.shortName, 26)}
         </text>
+        {supplier ? (
+          <text
+            x={node.x - halfW + 24}
+            y={node.y + 12}
+            fontSize={11}
+            fontFamily="Inter, system-ui, sans-serif"
+            fontWeight={400}
+            fill={SEVERITY_TEXT[node.severity]}
+            opacity={0.85}
+          >
+            <tspan fontWeight={500}>{truncate(supplier.name, 22)}</tspan>
+            <tspan dx={4} fontFamily="ui-monospace, SFMono-Regular, monospace">
+              {supplier.sharePct}%
+            </tspan>
+          </text>
+        ) : (
+          <text
+            x={node.x - halfW + 24}
+            y={node.y + 12}
+            fontSize={11}
+            fontFamily="Inter, system-ui, sans-serif"
+            fill={SEVERITY_TEXT[node.severity]}
+            opacity={0.7}
+            fontStyle="italic"
+          >
+            diverse supply
+          </text>
+        )}
       </g>
     </Link>
   );
@@ -89,7 +121,7 @@ export function DagView() {
       >
         {/* Layer rows + labels */}
         {layout.layers.map((layer, i) => {
-          const rowY = 32 + i * layout.rowHeight;
+          const rowY = 36 + i * layout.rowHeight;
           return (
             <g key={layer.id}>
               <line

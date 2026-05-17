@@ -5,6 +5,7 @@ import './globals.css';
 import { lastRefreshed } from '@/data';
 import { liveDataSummary } from '@/lib/refreshed';
 import { formatDate, formatRelativeTime } from '@/lib/utils';
+import { HeaderNav } from '@/components/HeaderNav';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -13,8 +14,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'AI Supply Chain Tracker · Maverick Silicon',
-  description: 'Internal research tool for tracking critical bottlenecks across the AI hardware supply chain.',
+  title: 'AI Supply Chain Tracker',
+  description:
+    'Internal research tool for tracking critical bottlenecks across the AI hardware supply chain.',
 };
 
 export default function RootLayout({
@@ -27,49 +29,32 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
-        <header className="border-b-[0.5px] border-neutral-200">
-          <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-8 py-4">
-            <Link href="/" className="flex items-center gap-3">
+        <header className="sticky top-0 z-30 border-b-[0.5px] border-neutral-200 bg-white/85 backdrop-blur-sm">
+          <div className="mx-auto flex max-w-[1240px] items-center gap-6 px-8 py-3.5">
+            <Link
+              href="/"
+              className="group flex items-center gap-3"
+              aria-label="Home"
+            >
               <span
                 aria-hidden
-                className="flex h-7 w-7 items-center justify-center bg-black text-[14px] font-medium text-white"
+                className="flex h-7 w-7 items-center justify-center rounded-sm bg-neutral-900 text-[13px] font-medium text-white transition-colors group-hover:bg-black"
               >
                 M
               </span>
               <span className="flex flex-col leading-tight">
-                <span className="text-h3">AI Supply Chain Tracker</span>
+                <span className="text-h3 text-neutral-900">
+                  AI Supply Chain Tracker
+                </span>
                 <span className="text-micro text-neutral-500">
-                  Maverick Silicon · Internal research
+                  Internal research
                 </span>
               </span>
             </Link>
-            <nav className="ml-auto flex items-center gap-4 text-caption text-neutral-500">
-              <Link
-                href="/"
-                className="hover:text-neutral-900 hover:underline"
-              >
-                Stack
-              </Link>
-              <Link
-                href="/dag"
-                className="hover:text-neutral-900 hover:underline"
-              >
-                DAG
-              </Link>
-              <Link
-                href="/private"
-                className="hover:text-neutral-900 hover:underline"
-              >
-                Private
-              </Link>
-              <Link
-                href="/alerts"
-                className="hover:text-neutral-900 hover:underline"
-              >
-                Alerts
-              </Link>
-            </nav>
-            <div className="flex flex-col items-end gap-0.5 leading-tight">
+            <div className="ml-4 hidden md:block">
+              <HeaderNav />
+            </div>
+            <div className="ml-auto flex flex-col items-end gap-0.5 leading-tight">
               {refreshed ? (
                 <span className="text-micro text-neutral-500">
                   Editorial · {formatDate(refreshed)}
@@ -90,13 +75,18 @@ export default function RootLayout({
                 </Link>
               ) : (
                 <span className="text-micro text-neutral-400">
-                  No live data — run python tools/refresh_market_data.py
+                  No live data — run tools/refresh_market_data.py
                 </span>
               )}
             </div>
           </div>
+          <div className="border-t-[0.5px] border-neutral-200 px-8 py-2 md:hidden">
+            <div className="mx-auto max-w-[1240px]">
+              <HeaderNav />
+            </div>
+          </div>
         </header>
-        <main className="mx-auto max-w-[1200px] px-8 py-8">{children}</main>
+        <main className="mx-auto max-w-[1240px] px-8 py-8">{children}</main>
       </body>
     </html>
   );

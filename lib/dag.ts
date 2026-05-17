@@ -1,4 +1,4 @@
-import type { Bottleneck, Layer } from './types';
+import type { Bottleneck, Layer, Supplier } from './types';
 
 export interface DagNode {
   slug: string;
@@ -6,6 +6,7 @@ export interface DagNode {
   layerId: string;
   layerNumber: number;
   severity: Bottleneck['severity'];
+  topSupplier: { name: string; sharePct: number; ticker?: string } | null;
   x: number;
   y: number;
   width: number;
@@ -33,7 +34,6 @@ export interface DagLayout {
 }
 
 // Manual x-positions per slug, chosen to minimise crossings for the current set.
-// Add new slugs here when you add new bottlenecks.
 const X_OFFSETS: Record<string, number> = {
   // Compute trunk on the left
   'raw-materials': 480,
@@ -57,16 +57,23 @@ const X_OFFSETS: Record<string, number> = {
   'interconnection-queues': 760,
 };
 
-const ROW_HEIGHT = 64;
-const TOP_PADDING = 32;
+const ROW_HEIGHT = 92;
+const TOP_PADDING = 36;
 const LABEL_X = 16;
 const LABEL_WIDTH = 170;
-const NODE_HEIGHT = 30;
+const NODE_HEIGHT = 48;
 const VIEW_WIDTH = 1440;
+const NODE_WIDTH = 240;
 
-function nodeWidth(shortName: string): number {
-  // ~7.2px per character, plus dot + padding.
-  return Math.min(220, Math.max(120, shortName.length * 8 + 28));
+function pickTopSupplier(b: Bottleneck): DagNode['topSupplier'] {
+  if (!b.supplyStructure || b.supplyStructure.length === 0) return null;
+  const ranked = [...b.supplyStructure].sort((a, b) => b.sharePct - a.sharePct);
+  const top = ranked[0];
+  return {
+    name: top.name,
+    sharePct: top.sharePct,
+    ticker: top.ticker,
+  };
 }
 
 export function buildDagLayout(
@@ -89,9 +96,10 @@ export function buildDagLayout(
         layerId: b.layerId,
         layerNumber: layer.number,
         severity: b.severity,
+        topSupplier: pickTopSupplier(b),
         x,
         y: TOP_PADDING + rowIdx * ROW_HEIGHT + ROW_HEIGHT / 2,
-        width: nodeWidth(b.shortName),
+        width: NODE_WIDTH,
       } as DagNode;
     })
     .filter((n): n is DagNode => n !== null);
@@ -143,3 +151,72 @@ export function buildDagLayout(
 }
 
 export const NODE_HEIGHT_PX = NODE_HEIGHT;
+
+// -------------- Critical companies extraction --------------
+
+const SEVERITY_WEIGHT: Record<Bottleneck['severity'], number> = {
+  critical: 3,
+  tight: 1.5,
+  balanced: 0.5,
+  monitoring: 0.25,
+};
+
+export interface CriticalCompanyRow {
+  name: string;
+  ticker: string | null;
+  totalScore: number; // sum of (sharePct/100) * severity weight across gated bottlenecks
+  gates: {
+    bottleneckSlug: string;
+    bottleneckName: string;
+    severity: Bottleneck['severity'];
+    sharePct: number;
+  }[];
+  maxShare: number;
+  isPrivate: boolean;
+}
+
+export function topCriticalCompanies(
+  bottlenecks: Bottleneck[],
+  threshold = 30
+): CriticalCompanyRow[] {
+  // Aggregate by company name (preserve case). Treat suppliers and "companies"
+  // separately — the supplier list is the supply structure we care about most.
+  const map = new Map<string, CriticalCompanyRow>();
+
+  for (const b of bottlenecks) {
+    for (const s of b.supplyStructure) {
+      if (s.sharePct < threshold) continue;
+      const key = s.name.toLowerCase();
+      const existing = map.get(key) ?? {
+        name: s.name,
+        ticker: s.ticker ?? null,
+        totalScore: 0,
+        gates: [],
+        maxShare: 0,
+        isPrivate: !s.ticker,
+      };
+      const weight = SEVERITY_WEIGHT[b.severity] ?? 1;
+      existing.totalScore += (s.sharePct / 100) * weight;
+      existing.gates.push({
+        bottleneckSlug: b.slug,
+        bottleneckName: b.name,
+        severity: b.severity,
+        sharePct: s.sharePct,
+      });
+      existing.maxShare = Math.max(existing.maxShare, s.sharePct);
+      // Pick up ticker from any mention
+      if (s.ticker && !existing.ticker) existing.ticker = s.ticker;
+      map.set(key, existing);
+    }
+  }
+
+  return Array.from(map.values()).sort(
+    (a, b) =>
+      b.totalScore - a.totalScore || b.maxShare - a.maxShare
+  );
+}
+
+export interface SupplierMention {
+  bottleneck: Bottleneck;
+  supplier: Supplier;
+}

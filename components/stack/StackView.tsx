@@ -1,6 +1,6 @@
 import { bottlenecks, layers } from '@/data';
 import { severityOrder } from '@/lib/severity';
-import { matchesFilters, type Filters } from '@/lib/filters';
+import { matchesFilters, hasAnyFilter, type Filters } from '@/lib/filters';
 import { LayerRow } from './LayerRow';
 
 interface StackViewProps {
@@ -10,13 +10,22 @@ interface StackViewProps {
 export function StackView({ filters }: StackViewProps) {
   const orderedLayers = [...layers].sort((a, b) => b.number - a.number);
   const totalMatching = bottlenecks.filter((b) => matchesFilters(b, filters)).length;
+  const filterActive = hasAnyFilter(filters);
 
   return (
     <div className="space-y-2">
-      <div className="rounded-lg border-[0.5px] border-neutral-200">
+      <div className="flex items-baseline justify-between gap-3 px-1">
+        <p className="text-caption text-neutral-500">
+          Showing <span className="font-medium text-neutral-900">{totalMatching}</span> of{' '}
+          <span className="font-medium text-neutral-900">{bottlenecks.length}</span>{' '}
+          bottlenecks
+          {filterActive ? ' · filter active' : ''}
+        </p>
+      </div>
+      <div className="overflow-hidden rounded-lg border-[0.5px] border-neutral-200 bg-white">
         {orderedLayers.map((layer) => {
-          const all = bottlenecks.filter((b) => b.layerId === layer.id);
-          const filtered = all
+          const filtered = bottlenecks
+            .filter((b) => b.layerId === layer.id)
             .filter((b) => matchesFilters(b, filters))
             .sort(
               (a, b) =>
@@ -24,12 +33,7 @@ export function StackView({ filters }: StackViewProps) {
                 a.shortName.localeCompare(b.shortName)
             );
           return (
-            <LayerRow
-              key={layer.id}
-              layer={layer}
-              bottlenecks={filtered}
-              totalCount={all.length}
-            />
+            <LayerRow key={layer.id} layer={layer} bottlenecks={filtered} />
           );
         })}
       </div>

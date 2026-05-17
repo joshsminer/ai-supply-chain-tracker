@@ -84,7 +84,7 @@ export interface PriceMove {
 
 export function priceMove(
   ticker: string,
-  windowDays = 30
+  windowDays = 365
 ): PriceMove | null {
   const series = getPriceSeries(ticker);
   if (series.length < 2) return null;
@@ -112,7 +112,7 @@ export function priceMove(
   };
 }
 
-export function allPriceMoves(windowDays = 30): PriceMove[] {
+export function allPriceMoves(windowDays = 365): PriceMove[] {
   const out: PriceMove[] = [];
   for (const t of Object.keys(getHistory().byTicker)) {
     const m = priceMove(t, windowDays);

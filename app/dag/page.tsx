@@ -2,6 +2,7 @@ import { bottlenecks } from '@/data';
 import { buildDagLayout } from '@/lib/dag';
 import { layers } from '@/data';
 import { DagView } from '@/components/dag/DagView';
+import { CriticalCompaniesPanel } from '@/components/dag/CriticalCompaniesPanel';
 import { SeverityLegend } from '@/components/stack/SeverityLegend';
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default function DagPage() {
       </section>
       <SeverityLegend />
       <DagView />
+      <CriticalCompaniesPanel />
       {orderedGhosts.length > 0 ? (
         <section className="space-y-2">
           <h3 className="text-micro font-medium uppercase tracking-wider text-neutral-500">

@@ -43,7 +43,7 @@ function LivePrice({ snap }: { snap: MarketSnapshot }) {
         ? 'text-severity-balanced-fg'
         : 'text-severity-critical-fg';
   const series = getPriceSeries(snap.ticker);
-  const move = priceMove(snap.ticker, 30);
+  const move = priceMove(snap.ticker, 365);
   const moveSign = move && move.changePct >= 0 ? '+' : '';
   const moveColor =
     move == null
@@ -81,7 +81,7 @@ function LivePrice({ snap }: { snap: MarketSnapshot }) {
           <Sparkline series={series} />
           {move ? (
             <span className={cn('text-micro tabular-nums', moveColor)}>
-              30d {moveSign}
+              LTM {moveSign}
               {move.changePct.toFixed(1)}%
             </span>
           ) : null}
@@ -148,16 +148,38 @@ function CompanyCard({ company }: { company: Company }) {
 }
 
 export function InvestmentLandscape({ companies }: { companies: Company[] }) {
+  const publicCos = companies.filter((c) => c.tier !== 'private');
+  const privateCos = companies.filter((c) => c.tier === 'private');
+
   return (
-    <section className="space-y-2.5">
+    <section className="space-y-4">
       <h3 className="text-micro font-medium uppercase tracking-wider text-neutral-500">
         Investment landscape
       </h3>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
-        {companies.map((c) => (
-          <CompanyCard key={c.name} company={c} />
-        ))}
-      </div>
+      {publicCos.length > 0 ? (
+        <div className="space-y-2">
+          <h4 className="text-micro font-medium uppercase tracking-wider text-neutral-400">
+            Public — {publicCos.length}
+          </h4>
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {publicCos.map((c) => (
+              <CompanyCard key={c.name} company={c} />
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {privateCos.length > 0 ? (
+        <div className="space-y-2">
+          <h4 className="text-micro font-medium uppercase tracking-wider text-neutral-400">
+            Private builders — {privateCos.length}
+          </h4>
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {privateCos.map((c) => (
+              <CompanyCard key={c.name} company={c} />
+            ))}
+          </div>
+        </div>
+      ) : null}
     </section>
   );
 }
