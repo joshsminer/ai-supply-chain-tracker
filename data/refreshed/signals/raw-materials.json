@@ -1,0 +1,17 @@
+{
+  "slug": "raw-materials",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": null,
+  "rationale": "Neither the MP Materials 10-Q (Q1 2026) nor the Linde 10-Q (Q1 2026) disclose numeric utilization rates, lead times, pricing deltas, or capex guidance changes for the raw-materials bottleneck stage (REE, neon, helium, photoresist precursors); MP's filing references NdPr price floor protection at $110/kg under the DoW PPA and notes \"increasing costs or limited access to raw materials\" as a risk factor, but provides no hard supply-chain metrics (lead times, utilization %, sequential pricing %) for any of the five binding sub-components.",
+  "sourceTickers": [
+    "MP",
+    "LIN"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:45:08+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

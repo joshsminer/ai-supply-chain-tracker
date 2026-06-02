@@ -2,7 +2,7 @@
   "slug": "cowos",
   "name": "CoWoS advanced packaging (TSMC)",
   "shortName": "CoWoS packaging",
-  "layerId": "advanced-packaging",
+  "layerId": "compute",
   "severity": "critical",
   "severityNote": "TSMC-gated, sold out through 2026",
   "description": "TSMC's Chip-on-Wafer-on-Substrate 2.5D packaging is the single point of integration for HBM + GPU/ASIC dies. Every NVIDIA, AMD, and most hyperscaler-custom AI accelerators must pass through CoWoS. CoWoS-L (with RDL interposer) is the volume node for Rubin and MI400-class parts.",

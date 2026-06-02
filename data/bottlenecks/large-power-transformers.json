@@ -2,7 +2,7 @@
   "slug": "large-power-transformers",
   "name": "Large power transformers (LPT)",
   "shortName": "Large transformers",
-  "layerId": "power-equipment",
+  "layerId": "energy-site",
   "severity": "critical",
   "severityNote": "Lead times 4-5 years; structural shortage",
   "description": "Large power transformers (≥100 MVA) step voltage between transmission and datacenter substations. Lead times have stretched from ~50 weeks (2020) to 200+ weeks (2026) as datacenter demand collides with grid-replacement cycles and a global manufacturing base that did not anticipate the load.",

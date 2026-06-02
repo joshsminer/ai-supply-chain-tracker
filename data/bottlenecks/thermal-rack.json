@@ -2,7 +2,7 @@
   "slug": "thermal-rack",
   "name": "Liquid cooling & rack-scale thermal",
   "shortName": "Liquid cooling",
-  "layerId": "thermal-rack",
+  "layerId": "datacenter",
   "severity": "tight",
   "severityNote": "Capacity ramping fast; spec compliance is the gate",
   "description": "Direct-to-chip cold plates, coolant distribution units (CDUs), and rack manifolds are mandatory for NVL72-class racks running >100 kW per rack. The market is supply-constrained on engineering hours and validation labs more than on materials; lead times are falling but qualification cycles per hyperscaler are long.",

@@ -1,0 +1,17 @@
+{
+  "slug": "thermal-rack",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 208,
+  "nodeMixNote": null,
+  "rationale": "VRT Q1 2026 10-Q shows total net sales of $2,649.5M (vs. $2,036.0M in Q1 2025, +30% YoY) and capex of $112.6M in Q1 2026 vs. $36.5M in Q1 2025 (+208% YoY), strongly indicating accelerating investment in thermal/cooling capacity; deferred revenue surged to $2,461.8M from $1,814.7M at year-end, signaling robust demand pull-through for liquid cooling and related rack thermal products. Neither filing discloses explicit lead-time weeks, utilization %, pricing delta %, or node-mix data for the thermal-rack stage.",
+  "sourceTickers": [
+    "VRT",
+    "NVT"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:46:57+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 
 const ITEMS = [
   { href: '/', label: 'Stack', match: (p: string) => p === '/' },
+  { href: '/forecast', label: 'Forecast', match: (p: string) => p.startsWith('/forecast') },
   { href: '/dag', label: 'DAG', match: (p: string) => p.startsWith('/dag') },
   {
     href: '/alerts',

@@ -2,7 +2,7 @@
   "slug": "datacenter-silicon",
   "name": "AI accelerator silicon (GPU + ASIC)",
   "shortName": "AI accelerators",
-  "layerId": "datacenter-silicon",
+  "layerId": "compute",
   "severity": "critical",
   "severityNote": "NVIDIA allocation-gated; custom ASIC ramps lag",
   "description": "GPUs (NVIDIA H/B/Rubin, AMD MI300/400) and hyperscaler-custom ASICs (Google TPU, AWS Trainium, Meta MTIA, Microsoft Maia) are the silicon endpoint of the whole AI capex chain. Aggregate AI accelerator wafer-equivalent demand exceeds TSMC's combined N3/N3P/CoWoS-coupled output, so allocation is the operative variable rather than spot-price.",

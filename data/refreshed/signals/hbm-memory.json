@@ -1,0 +1,16 @@
+{
+  "slug": "hbm-memory",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 62,
+  "nodeMixNote": "HBM4 logic base die coupling to TSMC noted in context; filing does not disclose node-mix detail",
+  "rationale": "MU 10-Q (Feb 26, 2026) shows capex (property, plant & equipment expenditures) of $11,776M for the first six months of fiscal 2026 vs. $7,261M in the same period of fiscal 2025, implying ~62% YoY increase in capital spending, consistent with aggressive HBM and advanced DRAM capacity expansion; no explicit HBM lead-time, utilization, or pricing figures are disclosed in the filing text.",
+  "sourceTickers": [
+    "MU"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:37:44+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

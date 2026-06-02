@@ -1,0 +1,17 @@
+{
+  "slug": "cpo-ramp",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": null,
+  "rationale": "Neither the TSMC 6-K (which covers only the planned sale of VIS shares) nor the AVGO 10-Q for the quarter ended February 1, 2026 contains any CPO-specific disclosures \u2014 no lead times, utilization rates, CPO pricing, or CPO-related capex guidance are mentioned in either filing.",
+  "sourceTickers": [
+    "TSM",
+    "AVGO"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:35:02+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

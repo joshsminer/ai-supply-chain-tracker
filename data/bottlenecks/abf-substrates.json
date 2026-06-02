@@ -2,7 +2,7 @@
   "slug": "abf-substrates",
   "name": "ABF substrates (high-layer-count)",
   "shortName": "ABF substrates",
-  "layerId": "substrates-wafers",
+  "layerId": "compute",
   "severity": "tight",
   "severityNote": "Easing from '22-'24 critical, AI SKUs still constrained",
   "description": "Ajinomoto Build-up Film substrates with 14–20+ layer counts are the package-level interposer between BGA and PCB for every AI accelerator, CPU, and FPGA. The high-layer-count, large-body SKUs used by Rubin and MI400-class parts remain capacity-constrained even as mainstream substrate supply has eased.",

@@ -1,0 +1,17 @@
+{
+  "slug": "human-capital",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": null,
+  "rationale": "PWR Q1-2026 10-Q reports revenue of $7.87B (+26% YoY from $6.23B) and remaining performance obligations of $26.24B (up from $23.76B at Dec-2025), and explicitly lists \"the future demand for, availability of and costs related to labor resources\" and \"our inability to attract, the potential shortage of, and increased costs with respect to skilled employees\" as forward-looking risk factors, but discloses no specific lead times, utilization rates, or pricing deltas for the skilled-trades labor bottleneck; MTZ Q1-2026 10-Q similarly shows revenue up 34% YoY to $3.83B with no quantified labor-availability or wage-rate metrics disclosed.",
+  "sourceTickers": [
+    "PWR",
+    "MTZ"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:39:33+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

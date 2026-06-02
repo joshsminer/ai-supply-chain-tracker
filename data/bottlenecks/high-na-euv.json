@@ -2,7 +2,7 @@
   "slug": "high-na-euv",
   "name": "High-NA EUV lithography",
   "shortName": "High-NA EUV",
-  "layerId": "wafer-fab-equipment",
+  "layerId": "compute",
   "severity": "tight",
   "severityNote": "ASML monopoly; customer ramp is the gate",
   "description": "ASML's Twinscan EXE high-numerical-aperture EUV scanners are the lithography path beyond the A14 / Intel-14A node. Each tool costs ~$380M, ships ~10 units per year initially, and represents the only viable path to sub-A10 logic for TSMC, Samsung, and Intel. The constraint is not capacity at ASML so much as customer qualification pace and node-economics.",

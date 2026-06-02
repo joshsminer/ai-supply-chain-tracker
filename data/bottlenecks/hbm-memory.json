@@ -2,7 +2,7 @@
   "slug": "hbm-memory",
   "name": "High-bandwidth memory (HBM3E to HBM4)",
   "shortName": "HBM3E / HBM4",
-  "layerId": "memory",
+  "layerId": "compute",
   "severity": "critical",
   "severityNote": "Sold out through 2026",
   "description": "Stacked DRAM with TSV interconnect, attached to GPU and ASIC dies via 2.5D packaging. HBM4 introduces a logic base die fabbed at TSMC, deepening the foundry-memory coupling. HBM bit growth is the single most important AI memory metric.",

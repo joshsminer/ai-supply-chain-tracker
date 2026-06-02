@@ -2,7 +2,7 @@
   "slug": "raw-materials",
   "name": "Critical raw materials (REE, neon, helium, photoresist precursors)",
   "shortName": "Critical materials",
-  "layerId": "raw-materials",
+  "layerId": "energy-site",
   "severity": "tight",
   "severityNote": "Diversified but several single-country exposures",
   "description": "The semi/datacenter materials base spans rare earth elements (NdPr for motor magnets in cooling/power, Dy/Tb for high-temp magnets), neon (excimer laser fill, mostly Ukrainian/Korean), helium (cryogenics + lithography), high-purity quartz (silicon crucibles), and photoresist precursors. Each is a sub-bottleneck with its own geopolitical exposure; collectively they do not currently gate the cycle but individually any one could.",

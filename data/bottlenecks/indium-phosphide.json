@@ -2,7 +2,7 @@
   "slug": "indium-phosphide",
   "name": "Indium phosphide (InP)",
   "shortName": "Indium phosphide",
-  "layerId": "optical-interconnect",
+  "layerId": "datacenter",
   "severity": "critical",
   "severityNote": "Single-source exposure",
   "description": "III-V semiconductor used for EMLs, DFB lasers, and photodiodes in 800G/1.6T pluggable transceivers and the InP die in co-packaged optics. The 4\" to 6\" wafer transition is the binding constraint for the 2026 to 2028 optics ramp.",

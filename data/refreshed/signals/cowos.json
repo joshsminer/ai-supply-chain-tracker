@@ -1,0 +1,17 @@
+{
+  "slug": "cowos",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 181,
+  "nodeMixNote": "TSMC divesting VIS stake while retaining interposer outsourcing relationship, signaling continued CoWoS-L RDL interposer reliance on VIS",
+  "rationale": "AMKR Q1 2026 10-Q shows capital expenditures of $224.6M in Q1 2026 vs. $79.9M in Q1 2025 (~+181% YoY), with advanced products revenue (flip chip, memory, wafer-level processing) rising to $1,372M from $1,064M (+29% YoY), reflecting accelerating investment in advanced packaging capacity; the TSM 6-K confirms TSMC retains its interposer outsourcing relationship with VIS post share-sale, but neither filing discloses CoWoS-specific lead times, utilization, or pricing.",
+  "sourceTickers": [
+    "TSM",
+    "AMKR"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:34:12+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

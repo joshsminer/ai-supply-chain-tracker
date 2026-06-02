@@ -2,7 +2,7 @@
   "slug": "human-capital",
   "name": "Skilled trades & semiconductor engineers",
   "shortName": "Skilled labor",
-  "layerId": "human-capital",
+  "layerId": "energy-site",
   "severity": "critical",
   "severityNote": "Electrician + construction shortage gates every site",
   "description": "Datacenter and fab construction is gated by an undersupply of licensed electricians, HVAC technicians, pipefitters, and millwrights, plus a parallel shortage of process engineers for advanced-node fab ramps. The labor constraint is structural — apprenticeship pipelines were thin in the 2010s and cannot be rebuilt on AI-cycle timelines.",

@@ -27,7 +27,7 @@ from dotenv import load_dotenv
 from _common import REFRESHED_DIR, now_iso, write_refreshed
 from sec_edgar_client import SEC_USER_AGENT
 
-load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=True)
 
 try:
     from anthropic import Anthropic

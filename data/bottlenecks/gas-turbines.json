@@ -2,7 +2,7 @@
   "slug": "gas-turbines",
   "name": "Heavy-duty gas turbines",
   "shortName": "Gas turbines",
-  "layerId": "power-equipment",
+  "layerId": "energy-site",
   "severity": "critical",
   "severityNote": "Lead times 4-5 years; OEM books full to 2030",
   "description": "H-class and J-class heavy-duty gas turbines are the fastest path to firm dispatchable generation for behind-the-meter datacenter power. The three-OEM oligopoly (GE Vernova, Siemens Energy, Mitsubishi Power) is sold out through end-of-decade for both new builds and major-overhaul slots.",

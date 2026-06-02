@@ -1,0 +1,17 @@
+{
+  "slug": "indium-phosphide",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": 39,
+  "capexGuidancePct": 77,
+  "nodeMixNote": "4-inch to 6-inch wafer transition implied by supply ramp context but not explicitly stated in filings",
+  "rationale": "AXTI Q1 2026 10-Q shows InP substrate revenue recovering (Q1 2026 total revenue $26.9M vs $19.4M in Q1 2025, a ~39% YoY increase), with inventories building $90.2M vs $81.7M and capex of $1.4M in Q1 2026 vs $0.5M in Q1 2025 (~175% increase); COHR Q3 FY2026 10-Q shows Datacenter & Communications revenue of $1.362B in Q3 FY2026 vs $969M in Q3 FY2025 (~40% YoY growth) and nine-month capex of $547M vs $309M prior year (~77% increase), with inventory surging to $2.127B from $1.438B, consistent with strong InP-based transceiver demand ramp; neither filing explicitly states InP lead times, utilization rates, or node-mix shift in numeric terms.",
+  "sourceTickers": [
+    "AXTI",
+    "COHR"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:42:15+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

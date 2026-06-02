@@ -1,0 +1,17 @@
+{
+  "slug": "leading-edge-logic",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": "Intel 18A (14A) pre-HVM; TSMC filing covers only VIS stake sale, no N3/N2/A16 node-mix data disclosed",
+  "rationale": "Neither the TSM 6-K (May 2026, covering only the VIS block-trade stake sale) nor the INTC 10-Q (Q1 2026, containing XBRL taxonomy and financial statements with no node-specific utilization, lead-time, or pricing disclosures for leading-edge logic) provides any hard numeric supply-chain indicators for the N3\u2192A14 bottleneck stage; Intel's forward-looking statements do flag a potential pause of Intel 14A if sufficient external customer design-wins are not secured, confirming pre-HVM status but supplying no quantifiable metrics.",
+  "sourceTickers": [
+    "TSM",
+    "INTC"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:44:27+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

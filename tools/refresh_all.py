@@ -35,6 +35,7 @@ STEPS = [
     ("sec", ["tools/refresh_sec_filings.py"]),
     ("korea_trade", ["tools/refresh_korea_trade.py"]),
     ("extracts", ["tools/refresh_earnings_extracts.py"]),
+    ("signals", ["tools/extract_signals.py"]),
     ("priors", ["tools/snapshot_priors.py"]),
     ("severities", ["tools/snapshot_severities.py"]),
 ]

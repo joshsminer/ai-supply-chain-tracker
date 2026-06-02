@@ -1,0 +1,17 @@
+{
+  "slug": "high-na-euv",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": null,
+  "rationale": "Neither the ASML 6-K (an AGM results press release with no operational detail) nor the AMAT 10-Q (which covers process-agnostic semiconductor equipment and contains no mention of High-NA EUV, EXE scanners, lead times, utilization, or node-specific pricing) provides any numeric data directly supporting High-NA EUV supply-chain indicators; all fields must be null.",
+  "sourceTickers": [
+    "ASML",
+    "AMAT"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:38:30+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

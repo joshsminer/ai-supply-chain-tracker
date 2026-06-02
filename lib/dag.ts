@@ -33,37 +33,39 @@ export interface DagLayout {
   layers: Layer[];
 }
 
-// Manual x-positions per slug, chosen to minimise crossings for the current set.
+// X-positions per slug. The DAG now collapses to 3 rows (L1/L2/L3 of the AI
+// 5-layer cake), so we have multiple nodes per row and need to spread them
+// horizontally without overlap. Order left->right reflects supply-chain flow
+// within each row where possible.
 const X_OFFSETS: Record<string, number> = {
-  // Compute trunk on the left
-  'raw-materials': 480,
-  'high-na-euv': 220,
-  'leading-edge-logic': 220,
-  'abf-substrates': 360,
-  'dram-wafer-capacity': 200,
-  'hbm-memory': 380,
-  'cowos': 420,
-  'datacenter-silicon': 540,
-  // Optical side branch
-  'cpo-ramp': 1020,
-  'indium-phosphide': 1170,
-  'transceivers-1-6t': 1320,
-  // Thermal side branch
-  'thermal-rack': 900,
-  // Power / labour cluster on the right
-  'human-capital': 760,
-  'large-power-transformers': 680,
-  'gas-turbines': 860,
-  'interconnection-queues': 760,
+  // L3 — Compute & silicon (7 nodes)
+  'abf-substrates': 130,
+  'high-na-euv': 320,
+  'leading-edge-logic': 510,
+  'dram-wafer-capacity': 700,
+  'hbm-memory': 890,
+  'cowos': 1080,
+  'datacenter-silicon': 1280,
+  // L2 — Datacenter & networking (4 nodes)
+  'thermal-rack': 280,
+  'indium-phosphide': 620,
+  'cpo-ramp': 960,
+  'transceivers-1-6t': 1280,
+  // L1 — Energy, site & upstream (5 nodes)
+  'raw-materials': 200,
+  'human-capital': 450,
+  'large-power-transformers': 700,
+  'gas-turbines': 950,
+  'interconnection-queues': 1280,
 };
 
-const ROW_HEIGHT = 92;
-const TOP_PADDING = 36;
+const ROW_HEIGHT = 140;
+const TOP_PADDING = 40;
 const LABEL_X = 16;
 const LABEL_WIDTH = 170;
-const NODE_HEIGHT = 48;
-const VIEW_WIDTH = 1440;
-const NODE_WIDTH = 240;
+const NODE_HEIGHT = 52;
+const VIEW_WIDTH = 1500;
+const NODE_WIDTH = 200;
 
 function pickTopSupplier(b: Bottleneck): DagNode['topSupplier'] {
   if (!b.supplyStructure || b.supplyStructure.length === 0) return null;

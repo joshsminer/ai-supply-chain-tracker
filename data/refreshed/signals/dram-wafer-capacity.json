@@ -1,0 +1,16 @@
+{
+  "slug": "dram-wafer-capacity",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 62,
+  "nodeMixNote": "HBM capacity ramp underway; Micron acquired a wafer fab in Tongluo, Taiwan (Powerchip, $1.8B) completed March 15, 2026, signaling node-eligible DRAM wafer capacity expansion",
+  "rationale": "Micron's cash capex for PP&E in the first six months of FY2026 was $11,776M vs. $7,261M in the prior-year period (a ~62% YoY increase), and on March 15, 2026 Micron completed the $1.8B acquisition of a wafer fab from Powerchip in Taiwan, both disclosed in the MU 10-Q for the quarter ended February 26, 2026.",
+  "sourceTickers": [
+    "MU"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:37:01+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

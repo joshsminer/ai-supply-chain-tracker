@@ -2,7 +2,7 @@
   "slug": "transceivers-1-6t",
   "name": "800G / 1.6T pluggable transceivers",
   "shortName": "800G / 1.6T transceivers",
-  "layerId": "optical-interconnect",
+  "layerId": "datacenter",
   "severity": "critical",
   "severityNote": "EML supply tight; 1.6T ramp 2026-2027",
   "description": "Pluggable optical transceivers at 800G (8×100G PAM4) and 1.6T (8×200G PAM4 or 16×100G) carry rack-to-rack and spine traffic in AI datacenter fabrics. Every additional GPU adds non-linear demand for fiber lanes; transceiver units per accelerator are climbing faster than total accelerator units.",

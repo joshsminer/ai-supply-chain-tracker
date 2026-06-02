@@ -1,0 +1,17 @@
+{
+  "slug": "interconnection-queues",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": null,
+  "nodeMixNote": null,
+  "rationale": "Neither the VST 10-Q (2026-05-08) nor the CEG 10-Q (2026-05-11) filing texts contain any disclosed numeric data on grid interconnection queue lead times, queue utilization, interconnection-related pricing changes, capex guidance tied to queue progression, or process-node mix relevant to the interconnection-queue bottleneck stage; both filings are XBRL-heavy financial statement extracts focused on segment revenues, derivatives, debt, and M&A (e.g., CEG's Calpine acquisition), with no quantitative interconnection queue metrics stated.",
+  "sourceTickers": [
+    "VST",
+    "CEG"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:40:46+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

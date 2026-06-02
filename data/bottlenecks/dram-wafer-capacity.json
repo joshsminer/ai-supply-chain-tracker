@@ -2,7 +2,7 @@
   "slug": "dram-wafer-capacity",
   "name": "DRAM wafer capacity (HBM-eligible nodes)",
   "shortName": "DRAM wafers",
-  "layerId": "memory",
+  "layerId": "compute",
   "severity": "tight",
   "severityNote": "HBM is consuming the marginal wafer; commodity tightening",
   "description": "Total wafer-equivalent capacity at the three DRAM makers (SK Hynix, Samsung, Micron) sets the upstream ceiling on every HBM stack. Because HBM consumes roughly 3× the wafer area per equivalent bit of DDR5, allocation to HBM directly pulls wafer-starts away from commodity DRAM and tightens the broader memory market.",

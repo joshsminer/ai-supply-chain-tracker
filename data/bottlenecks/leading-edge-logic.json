@@ -2,7 +2,7 @@
   "slug": "leading-edge-logic",
   "name": "Leading-edge logic nodes (TSMC N3 → A14)",
   "shortName": "Leading-edge nodes",
-  "layerId": "leading-edge-logic",
+  "layerId": "compute",
   "severity": "critical",
   "severityNote": "TSMC single-source for AI; Samsung + Intel not at qualification",
   "description": "TSMC's N3P / N3X / N2 / A16 / A14 family is the only volume foundry path for the most advanced AI accelerator silicon. Samsung's GAA 2nm is technically available but not customer-qualified at NVIDIA / AMD volumes; Intel 18A is the closest second-source watch item but pre-HVM. The constraint is single-source qualification, not capacity in absolute terms.",

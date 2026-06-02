@@ -9,7 +9,7 @@ from typing import Optional
 import requests
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=True)
 
 SEC_USER_AGENT = os.getenv(
     "SEC_USER_AGENT", "AI-Supply-Chain-Tracker contact@example.com"

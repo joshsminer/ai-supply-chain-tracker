@@ -1,0 +1,17 @@
+{
+  "slug": "transceivers-1-6t",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": 40.6,
+  "capexGuidancePct": 76.8,
+  "nodeMixNote": null,
+  "rationale": "COHR (Coherent Corp.) COHR 10-Q for Q3 FY2026 (period ended March 31, 2026) reports Datacenter & Communications segment revenue of $1,361,677K for the three months ended March 31, 2026 vs. $968,650K for the three months ended March 31, 2025, a YoY increase of ~40.6%; capex (additions to PP&E) for the nine months ended March 31, 2026 was $547,228K vs. $309,486K for the prior year nine-month period, a ~76.8% increase; inventories grew from $1,437,636K (June 30, 2025) to $2,126,823K (March 31, 2026), a ~47.9% build; no explicit lead time, utilization, or ASP figures for transceivers are disclosed in the filing text.",
+  "sourceTickers": [
+    "COHR",
+    "LITE"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:47:44+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

@@ -2,7 +2,7 @@
   "slug": "cpo-ramp",
   "name": "Co-packaged optics (CPO)",
   "shortName": "CPO ramp",
-  "layerId": "optical-interconnect",
+  "layerId": "datacenter",
   "severity": "monitoring",
   "severityNote": "Real but timing uncertain; pluggables dominate near-term",
   "description": "Co-packaged optics integrate optical engines onto the switch/GPU substrate rather than into a pluggable cage, slashing electrical-channel loss and pluggable-transceiver power overhead. NVIDIA Quantum-X (CPO switch) and Broadcom Bailly are the leading commercial efforts; volume ramp is gated by yield, optical-engine modularity, and serviceability — not by underlying technology readiness.",

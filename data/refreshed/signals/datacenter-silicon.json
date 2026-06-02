@@ -1,0 +1,17 @@
+{
+  "slug": "datacenter-silicon",
+  "leadTimeWeeks": 52,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": 100,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 57.5,
+  "nodeMixNote": "Blackwell/Rubin on TSMC N3/N3P with CoWoS packaging; Rubin production expected H2 FY2027",
+  "rationale": "NVDA 10-K (FY2026, filed 2026-02-25): Data Center revenue surged to drive total revenue of ~$130B (implied by scale of Compute & Networking segment); NVDA states it places non-cancellable inventory orders \"in advance of historical lead times\" and pays premiums/deposits to secure supply, with manufacturing supply commitments of the largest commitment category on the balance sheet \u2014 implying effectively sold-out allocation; AMD 10-Q (Q1 2026, filed 2026-05-06): Data Center revenue grew 57.2% YoY ($5,775M vs $3,674M), with total unconditional purchase commitments of $25.7B as of March 28, 2026 signaling aggressive forward capacity locking, and ATMP JV purchases up 44% YoY ($718M vs $497M), all consistent with sustained allocation-constrained demand across the AI accelerator silicon bottleneck stage.",
+  "sourceTickers": [
+    "NVDA",
+    "AMD"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:36:07+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "large-power-transformers",
+  "leadTimeWeeks": null,
+  "leadTimeDeltaWeeks": null,
+  "utilizationPct": null,
+  "pricingDeltaPct": null,
+  "capexGuidancePct": 31.3,
+  "nodeMixNote": null,
+  "rationale": "ETN 10-Q Q1 2026 shows capital expenditures for PP&E of $193M in Q1 2026 vs. $147M in Q1 2025, a ~31.3% YoY increase, reflecting demand-driven capacity expansion in electrical infrastructure; no explicit LPT lead-time, utilization, or pricing figures are disclosed in the filing text.",
+  "sourceTickers": [
+    "ETN"
+  ],
+  "model": "claude-sonnet-4-6",
+  "fetchedAt": "2026-06-02T03:43:44+00:00",
+  "source": "anthropic.tool_use + SEC filings"
+}

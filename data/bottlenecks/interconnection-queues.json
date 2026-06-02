@@ -2,7 +2,7 @@
   "slug": "interconnection-queues",
   "name": "Grid interconnection queues",
   "shortName": "Interconnection queues",
-  "layerId": "site-grid",
+  "layerId": "energy-site",
   "severity": "critical",
   "severityNote": "PJM 5-7 yr; structural across all ISOs",
   "description": "Grid interconnection queues are the wall every new datacenter must scale to get connected to the transmission system. PJM's queue alone holds >250 GW of pending generation and load requests, with study cycles measured in years. The constraint is not a supplier market — it is a regulatory and engineering process inside the ISOs/RTOs.",
