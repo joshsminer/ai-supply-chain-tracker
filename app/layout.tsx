@@ -55,7 +55,11 @@ export default function RootLayout({
               <HeaderNav />
             </div>
             <div className="ml-auto flex flex-col items-end gap-0.5 leading-tight">
-              {refreshed ? (
+              {live.latestFetchAt ? (
+                <span className="text-micro text-neutral-500">
+                  Data refreshed · {formatDate(live.latestFetchAt)}
+                </span>
+              ) : refreshed ? (
                 <span className="text-micro text-neutral-500">
                   Editorial · {formatDate(refreshed)}
                 </span>

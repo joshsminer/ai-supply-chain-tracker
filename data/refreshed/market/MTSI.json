@@ -1,0 +1,15 @@
+{
+  "ticker": "MTSI",
+  "name": "MACOM Technology Solutions Holdings, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 382.74,
+  "previousClose": 390.34,
+  "dayChangePct": -1.94702,
+  "marketCap": 29201444864,
+  "fiftyTwoWeekHigh": 418.9,
+  "fiftyTwoWeekLow": 118.16,
+  "trailingPE": 163.5641,
+  "fetchedAt": "2026-06-05T01:10:55+00:00",
+  "source": "yfinance.info"
+}

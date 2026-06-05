@@ -1,0 +1,15 @@
+{
+  "ticker": "ALAB",
+  "name": "Astera Labs, Inc.",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 358.05,
+  "previousClose": 363.54,
+  "dayChangePct": -1.51016,
+  "marketCap": 61372608512,
+  "fiftyTwoWeekHigh": 372.37,
+  "fiftyTwoWeekLow": 84.78,
+  "trailingPE": 240.302,
+  "fetchedAt": "2026-06-05T01:10:35+00:00",
+  "source": "yfinance.info"
+}

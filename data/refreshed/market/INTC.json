@@ -3,13 +3,13 @@
   "name": "Intel Corporation",
   "exchange": "NMS",
   "currency": "USD",
-  "price": 108.77,
-  "previousClose": 115.92999,
-  "dayChangePct": -6.176138,
-  "marketCap": 546677981184,
+  "price": 111.78,
+  "previousClose": 112.71,
+  "dayChangePct": -0.825127,
+  "marketCap": 561806245888,
   "fiftyTwoWeekHigh": 132.75,
   "fiftyTwoWeekLow": 18.97,
   "trailingPE": null,
-  "fetchedAt": "2026-05-17T19:45:20+00:00",
+  "fetchedAt": "2026-06-05T01:10:29+00:00",
   "source": "yfinance.info"
 }

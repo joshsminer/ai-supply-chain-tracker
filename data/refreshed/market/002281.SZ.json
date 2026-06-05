@@ -1,0 +1,15 @@
+{
+  "ticker": "002281.SZ",
+  "name": "Accelink Technologies Co,Ltd.",
+  "exchange": "SHZ",
+  "currency": "CNY",
+  "price": 220.56,
+  "previousClose": 224.0,
+  "dayChangePct": -1.5357153,
+  "marketCap": 177920409600,
+  "fiftyTwoWeekHigh": 246.8,
+  "fiftyTwoWeekLow": 41.46,
+  "trailingPE": 169.66154,
+  "fetchedAt": "2026-06-05T01:10:55+00:00",
+  "source": "yfinance.info"
+}

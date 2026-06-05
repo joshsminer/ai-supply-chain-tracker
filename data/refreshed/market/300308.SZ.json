@@ -1,0 +1,15 @@
+{
+  "ticker": "300308.SZ",
+  "name": "Zhongji Innolight Co., Ltd.",
+  "exchange": "SHZ",
+  "currency": "CNY",
+  "price": 1280.0,
+  "previousClose": 1275.0,
+  "dayChangePct": 0.3921569,
+  "marketCap": 1427085066240,
+  "fiftyTwoWeekHigh": 1320.0,
+  "fiftyTwoWeekLow": 96.5,
+  "trailingPE": 95.2381,
+  "fetchedAt": "2026-06-05T01:10:54+00:00",
+  "source": "yfinance.info"
+}

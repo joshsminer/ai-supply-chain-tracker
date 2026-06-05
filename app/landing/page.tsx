@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { ShaderAnimation } from '@/components/ui/shader-animation';
-import { bottlenecks } from '@/data';
+import { bottlenecks, layers } from '@/data';
 
 export const metadata = {
   title: 'AI Supply Chain Tracker',
@@ -31,9 +31,10 @@ export default function LandingPage() {
         </h1>
         <p className="mt-5 max-w-[58ch] text-lg leading-relaxed text-white/75">
           Real-time view of the {criticalCount} critical and {tightCount} tight
-          bottlenecks across the 12-layer AI hardware stack — InP wafers, HBM,
-          CoWoS, leading-edge logic, transformers, interconnection queues, and
-          the labor and materials feeding them.
+          bottlenecks across the {layers.length} layers of the AI hardware stack
+          — compute, datacenter, and energy/site: InP wafers, HBM, CoWoS,
+          leading-edge logic, transformers, interconnection queues, and the labor
+          and materials feeding them.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
@@ -61,7 +62,7 @@ export default function LandingPage() {
           </div>
           <div className="flex flex-col">
             <span className="text-3xl font-semibold tabular-nums text-white">
-              12
+              {layers.length}
             </span>
             <span className="mt-1 text-micro uppercase tracking-wider">
               Stack layers

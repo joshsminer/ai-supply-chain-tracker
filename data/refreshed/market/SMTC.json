@@ -1,0 +1,15 @@
+{
+  "ticker": "SMTC",
+  "name": "Semtech Corporation",
+  "exchange": "NMS",
+  "currency": "USD",
+  "price": 169.35,
+  "previousClose": 163.5,
+  "dayChangePct": 3.57799,
+  "marketCap": 15775151104,
+  "fiftyTwoWeekHigh": 172.36,
+  "fiftyTwoWeekLow": 37.03,
+  "trailingPE": null,
+  "fetchedAt": "2026-06-05T01:10:56+00:00",
+  "source": "yfinance.info"
+}

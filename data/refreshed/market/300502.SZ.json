@@ -1,0 +1,15 @@
+{
+  "ticker": "300502.SZ",
+  "name": "Eoptolink Technology Inc., Ltd.",
+  "exchange": "SHZ",
+  "currency": "CNY",
+  "price": 775.94,
+  "previousClose": 782.25,
+  "dayChangePct": -0.8066472,
+  "marketCap": 772756799488,
+  "fiftyTwoWeekHigh": 815.98,
+  "fiftyTwoWeekLow": 92.33,
+  "trailingPE": 76.37205,
+  "fetchedAt": "2026-06-05T01:10:54+00:00",
+  "source": "yfinance.info"
+}

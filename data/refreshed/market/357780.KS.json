@@ -8,8 +8,8 @@
   "dayChangePct": 0.0,
   "marketCap": null,
   "fiftyTwoWeekHigh": 530000.0,
-  "fiftyTwoWeekLow": 155000.0,
+  "fiftyTwoWeekLow": 162100.0,
   "trailingPE": null,
-  "fetchedAt": "2026-05-17T19:45:21+00:00",
+  "fetchedAt": "2026-06-05T01:10:34+00:00",
   "source": "yfinance.info"
 }

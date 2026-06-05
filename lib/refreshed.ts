@@ -145,12 +145,24 @@ export interface LiveDataSummary {
 }
 
 export function liveDataSummary(): LiveDataSummary {
+  // latestFetchAt scans every live-data source so the "last refreshed" stamp in
+  // the UI reflects the freshest data we hold — not a hard-coded editorial date.
+  // It updates automatically each time any refresh tool runs.
   const allTimes: string[] = [];
   for (const m of Object.values(marketData)) {
     if (m.fetchedAt) allTimes.push(m.fetchedAt);
   }
   for (const s of Object.values(secData)) {
     if (s.fetchedAt) allTimes.push(s.fetchedAt);
+  }
+  for (const k of Object.values(koreaTradeData)) {
+    if (k.fetchedAt) allTimes.push(k.fetchedAt);
+  }
+  for (const e of Object.values(extractsData)) {
+    if (e.fetchedAt) allTimes.push(e.fetchedAt);
+  }
+  for (const sig of Object.values(loadDir<{ fetchedAt?: string }>('signals'))) {
+    if (sig.fetchedAt) allTimes.push(sig.fetchedAt);
   }
   allTimes.sort();
   return {
